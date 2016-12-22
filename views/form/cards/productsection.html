@@ -7,8 +7,8 @@
         </md-card-title>
         <md-card-content>
             <div layout="row">
-                <div flex=50>{{'product' | translate}}:  {{data.productgroup}}</div>
-                <div flex=50>{{'plancode' | translate}}: {{data.plan.value}}
+                <div flex=25>{{'product' | translate}}:  {{data.productgroup}}</div>
+                <div flex=75>{{'plancode' | translate}}: {{data.plan.value}}
                      
                 </div>               
                 {{getPlan(data.productid, data.planid)}}

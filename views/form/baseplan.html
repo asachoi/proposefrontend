@@ -24,7 +24,9 @@
                         </md-input-container>
                         <md-input-container class="md-block" flex=75>
                             <label>Plan</label>
-                            <md-autocomplete md-selected-item="baseObj.product.plan" md-search-text="searchText" md-items="n in planSearch(searchText, baseObj.product.productgroup)"
+                            <md-autocomplete md-selected-item="baseObj.product.plan"
+                            md-selected-item-change="planChange()" 
+                            md-search-text="searchText" md-items="n in planSearch(searchText, baseObj.product.productgroup)"
                                 md-item-text="n.value" md-min-length="0" flex=100>
                                 <md-item-template>
                                     <span md-highlight-text="searchText" md-highlight-flags="^i">{{n.value}}</span>
@@ -35,9 +37,10 @@
                             </md-autocomplete>
                         </md-input-container>
                     </div>
-                    <!--demo//-->
 
-                    <div layout="row" ng-if="customForm(baseObj.product.plan.key)" ng-include="'customizations/views/baseplan/' + customForm(baseObj.product.plan.key) + '.html?cb=d' +cachebuster">
+                    <div layout="row" 
+                    ng-if="customForm(baseObj.product.plan.key)" 
+                    ng-include="'customizations/views/baseplan/' + customForm(baseObj.product.plan.key) + '.html?cb=3332' +cachebuster">
                     </div>
                     
                     <!--demo//-->

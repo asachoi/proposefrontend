@@ -59,6 +59,7 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                 function ($scope, $rootScope, $filter, $state, productServices) {
                     var vm = $scope;
 
+
                     vm.current = $state.current;
                     vm.baseObj = $rootScope.stateObj;
                     vm.settingObj = $rootScope.settingObj;
@@ -67,6 +68,10 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                         return productServices.getProductGroups();
                     }
 
+                    vm.planChange = function() {
+                     //console.debug(vm.baseObj.riders);
+                     vm.baseObj.riders = null;
+                    }
                     vm.getProductGroup = function (productgroupid) {
                         return productServices.getProductGroup(productgroupid);
                     }
@@ -86,7 +91,6 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                     vm.getPlan = function (planid) {
                         return productServices.getPlan(planid);
                     }
-
                     vm.customForm = function(planid) {
                         //vm.getProduct();
                         if(planid==null) return;
@@ -95,9 +99,6 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                         return productServices.getProduct(planid).customform;
 
                     }
-
-
-
                     vm.planSearch = function (text, productgroupid) {                        
                         var sel = vm.getPlans(productgroupid);
 
@@ -119,15 +120,20 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                 vm.current = $state.current;
                 vm.baseObj = $rootScope.stateObj;
                 vm.settingObj = $rootScope.settingObj;
-                vm.selectedRiders = [];
+                vm.selectedRiders = $rootScope.settingObj.selectedRiders;
+
+                if($rootScope.settingObj.selectedRiders==null) {
+                    $rootScope.settingObj.selectedRiders = [];
+                }
 
                 vm.getRiderObject = function (ridercode) {
                     return $filter('filter')(vm.baseObj.riders, { ridercode: ridercode })[0];
                 }
 
-                vm.setRiderList = function () {
-                    if ($rootScope.selectedPlan == null) return;
-                    var rs = $rootScope.selectedPlan.riders;
+                vm.setRiderList = function (planid) {
+                    if (planid == null) return;    
+                    if (vm.baseObj.riders != null) return vm.baseObj.riders;
+                    var rs = productServices.getPlan(planid).riders;
                     var riders = [];
 
                     rs.forEach(
@@ -142,12 +148,11 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                         }
                     );
                     return riders;
-
                 }
 
-                vm.getRiderList = function () {
-                    if ($rootScope.selectedPlan == null) return;
-                    var rs = $rootScope.selectedPlan.riders;
+                vm.getRiderList = function (planid) {
+                    if (planid == null) return;    
+                    var rs = productServices.getPlan(planid).riders;
                     return rs;
                 }
 
@@ -156,31 +161,24 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                 }
 
                 vm.toggle = function (item, list) {
-
+                    //console.debug(item);
                     var idx = list.indexOf(item);
                     if (idx > -1) { // remove
                         list.splice(idx, 1);
-                        vm.getRiderObject(item).selected = false;
+                        item.selected  = false;
                     }
                     else {  //add
                         list.push(item);
-                        vm.getRiderObject(item).selected = true;
+                        item.selected = true;
                     }
                 };
 
                 vm.exists = function (item, list) {
                     if (list == null) return;
-
-                    return list.indexOf(item) > -1;
+                    return $filter('filter')(list, { ridercode: item.ridercode }).length > 0;
+                
+                    
                 };
-
-                vm.getPlan = function (productid, planid) {
-                    return "XXX";
-                    //console.debug(planid);
-                    //return productServices.getPlan(productid, planid);
-                }
-
-
             }
         })
         .state('form.summary', {

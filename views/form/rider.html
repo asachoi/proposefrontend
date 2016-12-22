@@ -3,7 +3,8 @@
     <customer-section data="baseObj.customers.insured"></customer-section>
     <product-section data="baseObj.product"></product-section>
 
-    <form name="riderForm" ng-keyup="" ng-mouseup="">
+    <form name="riderForm" ng-keyup="" ng-mouseup="" ng-init="baseObj.riders=setRiderList(baseObj.product.plan.key);" >
+         
         <section>
             <md-card>
                 <md-card-title>
@@ -12,18 +13,19 @@
                     </md-card-title-text>
                 </md-card-title>
                 <md-card-content>
-                    <div ng-repeat="item in getRiderList();" ng-init="baseObj.riders=setRiderList();" layout="row">
+   
+                    
+                    <div ng-repeat="item in baseObj.riders;" layout="row" ng-init="ridersetting = getRiderSetting(item.ridercode)">
                         <div class="md-block" flex=30>
                             <md-input-container class="md-block" flex=30>
                                 <md-checkbox ng-checked="exists(item, selectedRiders)" ng-click="toggle(item,  selectedRiders)">
-                                    {{getRiderSetting(item).ridername}}
+                                   {{item.ridercode}}                                
                                 </md-checkbox>
                             </md-input-container>
                         </div>
-
-                        <div ng-if="!getRiderSetting(item).ridertype" ng-include="'customizations/views/rider/default.html'" class="md-block" flex=70
+                        <div ng-if="!ridersetting.ridertype" ng-include="'customizations/views/rider/default.html?111'" class="md-block" flex=70
                             layout="row"></div>
-                        <div ng-if="getRiderSetting(item).ridertype" ng-include="'customizations/views/rider/' + getRiderSetting(item).ridertype + '.html'"
+                        <div ng-if="ridersetting.ridertype" ng-include="'customizations/views/rider/' + ridersetting.ridertype + '.html?333333'"
                             class="md-block" flex=70 layout="row"></div>
                     </div>
                 </md-card-content>
@@ -34,6 +36,4 @@
 
 </md-content>
 
-{{selectedRiders}}
-
-<br> {{baseObj.riders}}
+ 

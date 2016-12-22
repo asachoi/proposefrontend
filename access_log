@@ -7976,3 +7976,478 @@
 127.0.0.1 - - [22/Dec/2016:16:02:27 +0800] "GET /customizations/views/rider/default.html HTTP/1.1" 304 -
 127.0.0.1 - - [22/Dec/2016:16:02:38 +0800] " " 400 -
 127.0.0.1 - - [22/Dec/2016:16:02:38 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:16:25:35 +0800] "GET /poc/forms.html HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:16:25:35 +0800] "GET /favicon.ico HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1172
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:16:25:38 +0800] "GET /views/list.html HTTP/1.1" 200 3590
+127.0.0.1 - - [22/Dec/2016:16:25:40 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:16:25:40 +0800] "GET /views/form/customer.html HTTP/1.1" 200 572
+127.0.0.1 - - [22/Dec/2016:16:25:40 +0800] "GET /views/form/cards/customerinput.html HTTP/1.1" 200 3812
+127.0.0.1 - - [22/Dec/2016:16:26:10 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:16:26:10 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:16:26:10 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:16:26:10 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:16:26:10 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:16:26:14 +0800] "GET /customizations/views/baseplan/LP.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:16:26:21 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:16:26:21 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:16:26:21 +0800] "GET /customizations/views/rider/default.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:16:26:22 +0800] "GET /customizations/views/rider/payorage.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:07:49 +0800] "GET /poc/forms.html HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:07:49 +0800] "GET /favicon.ico HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /js/index.js HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1172
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:07:52 +0800] "GET /views/list.html HTTP/1.1" 200 3590
+127.0.0.1 - - [22/Dec/2016:17:07:53 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:07:53 +0800] "GET /views/form/customer.html HTTP/1.1" 200 572
+127.0.0.1 - - [22/Dec/2016:17:07:53 +0800] "GET /views/form/cards/customerinput.html HTTP/1.1" 200 3812
+127.0.0.1 - - [22/Dec/2016:17:07:56 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:07:56 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:07:59 +0800] "GET /customizations/views/baseplan/LP.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:08:06 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:08:06 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:08:06 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:08:06 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:08:06 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:08:07 +0800] "GET /customizations/views/rider/default.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:08:07 +0800] "GET /customizations/views/rider/payorage.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:08:23 +0800] "GET /views/form/summary.html HTTP/1.1" 200 0
+127.0.0.1 - - [22/Dec/2016:17:09:09 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:09:09 +0800] "GET /customizations/views/tabs/debug.html HTTP/1.1" 200 11
+127.0.0.1 - - [22/Dec/2016:17:11:40 +0800] "GET /poc/forms.html HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:11:40 +0800] "GET /favicon.ico HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:19:40 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:19:40 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:19:40 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:19:40 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1172
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:29:27 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:29:29 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:29:33 +0800] "GET /customizations/views/baseplan/LP.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:29:34 +0800] "GET /customizations/views/rider/default.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:29:34 +0800] "GET /customizations/views/rider/payorage.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:30:34 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:30:35 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:30:44 +0800] "GET /views/form/summary.html HTTP/1.1" 200 0
+127.0.0.1 - - [22/Dec/2016:17:30:47 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:30:47 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:30:47 +0800] "GET /customizations/views/tabs/debug.html HTTP/1.1" 200 11
+127.0.0.1 - - [22/Dec/2016:17:31:27 +0800] "GET /views/form/customer.html HTTP/1.1" 200 572
+127.0.0.1 - - [22/Dec/2016:17:31:27 +0800] "GET /views/form/cards/customerinput.html HTTP/1.1" 200 3812
+127.0.0.1 - - [22/Dec/2016:17:31:31 +0800] "GET /views/list.html HTTP/1.1" 200 3590
+127.0.0.1 - - [22/Dec/2016:17:35:11 +0800] "GET / HTTP/1.1" 200 3816
+127.0.0.1 - - [22/Dec/2016:17:35:11 +0800] "GET /customizations/style.css HTTP/1.1" 200 0
+127.0.0.1 - - [22/Dec/2016:17:35:11 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:35:12 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:35:56 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:35:56 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:35:56 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:35:56 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:35:56 +0800] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /customizations/style.css HTTP/1.1" 200 41
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:35:57 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /customizations/style.css HTTP/1.1" 200 37
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:36:54 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:36:58 +0800] "GET /views/form/customer.html HTTP/1.1" 200 572
+127.0.0.1 - - [22/Dec/2016:17:36:58 +0800] "GET /views/form/cards/customerinput.html HTTP/1.1" 200 3812
+127.0.0.1 - - [22/Dec/2016:17:37:00 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:37:00 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:37:11 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:37:11 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:37:11 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:37:11 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:37:11 +0800] "GET /views/form/summary.html HTTP/1.1" 200 0
+127.0.0.1 - - [22/Dec/2016:17:37:12 +0800] "GET /customizations/views/tabs/debug.html HTTP/1.1" 200 11
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET / HTTP/1.1" 200 3832
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /customizations/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:40:56 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET / HTTP/1.1" 200 3847
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /customizations/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:41:22 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET / HTTP/1.1" 200 3831
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:41:32 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:41:35 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET / HTTP/1.1" 200 3846
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /customizations/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:41:55 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:41:56 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:41:56 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:41:56 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:41:56 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:41:56 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:41:56 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET / HTTP/1.1" 200 3847
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:42:12 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:42:13 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:42:13 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:42:13 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:42:13 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:42:13 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:42:13 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:42:17 +0800] "GET /views/list.html HTTP/1.1" 200 3590
+127.0.0.1 - - [22/Dec/2016:17:42:19 +0800] "GET /views/form/customer.html HTTP/1.1" 200 572
+127.0.0.1 - - [22/Dec/2016:17:42:19 +0800] "GET /views/form/cards/customerinput.html HTTP/1.1" 200 3812
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /customizations/style.css HTTP/1.1" 200 75
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:43:08 +0800] "GET /views/list.html HTTP/1.1" 200 3590
+127.0.0.1 - - [22/Dec/2016:17:43:20 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:43:20 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:43:20 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:43:20 +0800] "GET /views/form/customer.html HTTP/1.1" 200 572
+127.0.0.1 - - [22/Dec/2016:17:43:20 +0800] "GET /views/form/cards/customerinput.html HTTP/1.1" 200 3812
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /customizations/style.css HTTP/1.1" 200 33
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:43:56 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:43:57 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:43:57 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:43:57 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:43:57 +0800] "GET /views/form/customer.html HTTP/1.1" 200 572
+127.0.0.1 - - [22/Dec/2016:17:43:57 +0800] "GET /views/form/cards/customerinput.html HTTP/1.1" 200 3812
+127.0.0.1 - - [22/Dec/2016:17:44:01 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:44:01 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:44:02 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:44:02 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:44:53 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:44:53 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:44:53 +0800] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:44:53 +0800] "GET /customizations/style.css HTTP/1.1" 200 84
+127.0.0.1 - - [22/Dec/2016:17:44:53 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /views/form/customer.html HTTP/1.1" 200 572
+127.0.0.1 - - [22/Dec/2016:17:44:54 +0800] "GET /views/form/cards/customerinput.html HTTP/1.1" 200 3812
+127.0.0.1 - - [22/Dec/2016:17:44:55 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:44:55 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:44:57 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:44:57 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:45:03 +0800] "GET /views/form/summary.html HTTP/1.1" 200 0
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET / HTTP/1.1" 200 3867
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /customizations/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:45:40 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:45:44 +0800] "GET /customizations/views/baseplan/LP.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:45:50 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:45:50 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:45:50 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:45:50 +0800] "GET /customizations/views/rider/default.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:45:50 +0800] "GET /customizations/views/rider/payorage.html HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:46:05 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:46:05 +0800] "GET /views/form/customer.html HTTP/1.1" 200 572
+127.0.0.1 - - [22/Dec/2016:17:46:05 +0800] "GET /views/form/cards/customerinput.html HTTP/1.1" 200 3812
+127.0.0.1 - - [22/Dec/2016:17:46:31 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:46:31 +0800] "GET /views/form/summary.html HTTP/1.1" 200 0
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET / HTTP/1.1" 200 3663
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /customizations/style.css HTTP/1.1" 304 -
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /core/static.js HTTP/1.1" 200 263
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /core/app.js HTTP/1.1" 200 233
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /core/filters.js HTTP/1.1" 200 513
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /core/config.js HTTP/1.1" 200 236
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /core/route.js HTTP/1.1" 200 7341
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /core/directives.js HTTP/1.1" 200 1003
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /core/commonServices.js HTTP/1.1" 200 189
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /core/productServices.js HTTP/1.1" 200 2272
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /controllers/mainController.js HTTP/1.1" 200 1605
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /customizations/translate.js HTTP/1.1" 200 1205
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /customizations/route.js HTTP/1.1" 200 419
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /cordova.js HTTP/1.1" 403 -
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /customizations/data/product1.json HTTP/1.1" 200 8886
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /customizations/data/rider.json HTTP/1.1" 200 4629
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /views/form.html HTTP/1.1" 200 1136
+127.0.0.1 - - [22/Dec/2016:17:47:09 +0800] "GET /views/form/baseplan.html HTTP/1.1" 200 2624
+127.0.0.1 - - [22/Dec/2016:17:47:10 +0800] "GET /views/form/cards/customersection.html HTTP/1.1" 200 704
+127.0.0.1 - - [22/Dec/2016:17:47:17 +0800] "GET /views/form/rider.html HTTP/1.1" 200 1848
+127.0.0.1 - - [22/Dec/2016:17:47:17 +0800] "GET /views/form/cards/productsection.html HTTP/1.1" 200 655
+127.0.0.1 - - [22/Dec/2016:17:49:28 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:49:28 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:49:28 +0800] " " 400 -
+127.0.0.1 - - [22/Dec/2016:17:49:28 +0800] " " 400 -

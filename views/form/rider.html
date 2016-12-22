@@ -16,8 +16,8 @@
    
                     
                     <div ng-repeat="item in baseObj.riders;" layout="row" ng-init="ridersetting = getRiderSetting(item.ridercode)">
-                        <div class="md-block" flex=30>
-                            <md-input-container class="md-block" flex=30>
+                        <div class="md-block" flex=25>
+                            <md-input-container class="md-block" flex=25>
                                 <md-checkbox ng-checked="exists(item, selectedRiders)" ng-click="toggle(item,  selectedRiders)">
                                    {{item.ridercode}}                                
                                 </md-checkbox>

@@ -3,31 +3,30 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <link rel="stylesheet" href="customizations/style.css">
   <link rel="icon" href="data:;base64,=">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body ng-app="mainApp" ng-cloak ng-controller="mainController" >
-  <md-content>
-    <md-toolbar class="md-small-tall">
+  <md-content >
+    <md-toolbar class="md-small-tall" layout-padding>
       <div class="md-toolbar-tools" layout="row" layout-wrap>
-        <div flex="none">
+        <div flex="none" layout-padding>
           <a ui-sref="list"> <i class="material-icons">home</i></a>
         </div>
         <div flex>
           {{'CUSTOMER' | translate}} {{'LIST' || translate}}
         </div>
         <div flex="nogrow" ng-show="saveButton=='true'">
-          <md-button class="md-raised md-primary" ng-click="saveState(title);">
-            <i class="material-icons" style="vertical-align: middle;display: inline-flex;">save</i>
-          </md-button>
+
         </div>
       </div>
     </md-toolbar>
 
 
     <md-content class="container">
-      <md-content ui-view></md-content>
+      <md-content class="incontainer" ui-view></md-content>
     </md-content>
 
     <footer>

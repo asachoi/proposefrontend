@@ -1,0 +1,19 @@
+<section >
+    <md-card>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{'planinfo' | translate}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <div layout="row">
+                <div flex=50>{{'product' | translate}}:  {{data.productgroup}}</div>
+                <div flex=50>{{'plancode' | translate}}: {{data.plan.value}}
+                     
+                </div>               
+                {{getPlan(data.productid, data.planid)}}
+            
+            </div>
+        </md-card-content>
+    </md-card>
+</section>

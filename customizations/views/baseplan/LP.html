@@ -1,0 +1,19 @@
+<span layout="row" flex=100 ng-init="currentPlan = getPlan(baseObj.product.plan.key)">
+<md-input-container class="md-block" flex=20>
+    <md-select name="currency" ng-model="baseObj.product.currency" ng-init="baseObj.product.currency=currentPlan.currency;"
+        ng-disabled="true">
+        <md-option ng-value="currentPlan.currency">{{currentPlan.currency}}</md-option>
+    </md-select>
+</md-input-container>
+
+<md-input-container class="md-block" flex=40>
+    <label>{{'faceamount'|translate}}</label>
+    <input ng-model="baseObj.product.faceamount" type="number" min="{{currentPlan.minifaceamount}}" max="{{currentPlan.maxfaceamount}}">
+    </md-input>
+</md-input-container>
+
+<md-input-container class="md-block" flex=40>
+    <label>{{'payperiod'|translate}}</label>
+    <input ng-model="baseObj.product.payperiod" ng-value="currentPlan.payperiod">
+</md-input-container>
+</span>

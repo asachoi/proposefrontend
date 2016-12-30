@@ -1,68 +1,70 @@
-<md-button ui-sref="form.customer">Create Proposal</md-button>
-<md-content class="md-padding" style="background-color:EEE" flex="auto" layout="row">
-    <w3TestDirective ng-model="stateObj"></w3TestDirective>
-     
-    <div flex-gt-sm="50" flex class="md-padding">
-        <md-toolbar layout="row">
-            <div class="md-toolbar-tools">
-                <span>{{'CUSTOMER' | translate}}</span>
-            </div>
-        </md-toolbar>
-        <md-content ng-init='cList=[
+<md-content class="md-padding" style="background-color:EEE" flex="auto">
+    <div layout-align="center center" class="md-padding">
+        <md-button ui-sref="form.customer" class="md-raised">Create Proposal</md-button>
+    </div>
+
+    <div layout="row">
+        <div flex-gt-sm="50" flex class="md-padding">
+            <md-toolbar layout="row">
+                <div class="md-toolbar-tools">
+                    <span>{{'CUSTOMER' | translate}}</span>
+                </div>
+            </md-toolbar>
+            <md-content ng-init='cList=[
         {"insured":{"guid":"2a28f26a-28d4-f858-4259-aab94bbf39f6","source":"PE","role":"insurer","smoking":"S","surname":"Peter","title":"MR","given":"Choi","gender":"Male","dob":"1955-09-01T16:00:00.000Z","phone":"95200123","email":"asa.choi@gmail.com"},"policyholder":{"role":"policyholder","smoking":"S","firstname":"","surname":""}},
         {"insured":{"guid":"2a28f26a-28d4-f858-4259-aab94bbf39f6","source":"PE","role":"insurer","smoking":"S","surname":"John","title":"MR","given":"Albert","gender":"Male","dob":"1955-09-01T16:00:00.000Z","phone":"95200123","email":"asa.choi@gmail.com"},"policyholder":{"role":"policyholder","smoking":"S","firstname":"","surname":""}},
         {"insured":{"guid":"2a28f26a-28d4-f858-4259-aab94bbf39f6","source":"PE","role":"insurer","smoking":"S","surname":"Mary","title":"MR","given":"WONG","gender":"Male","dob":"1955-09-01T16:00:00.000Z","phone":"95200123","email":"asa.choi@gmail.com"},"policyholder":{"role":"policyholder","smoking":"S","firstname":"","surname":""}}                
         ]'>
-            <md-list flex ng-repeat="item in cList  | filter: {$:searchKey}"
-            >
-                <md-list-item class="md-3-line" ng-click="gotoProposal();">
-                    <div class="md-list-item-text" layout="column">
-                        {{item.insured.surname}}{{item.insured.given}}
-                        <p> {{ item.phone }}</p>
-                    </div>
-                </md-list-item>
-                <md-divider></md-divider>
-            </md-list>
-        </md-content>
-    </div>
-    <div flex-gt-sm="50" flex class="md-padding">
-        <md-toolbar layout="row">
-            <div class="md-toolbar-tools">
-                <span>{{'Pending' | translate}}</span>
-            </div>
-        </md-toolbar>
-        <md-content>
-            <md-list flex ng-repeat="item in pList  | filter: {status:'pending', $:searchKey}">
+                <md-list flex ng-repeat="item in cList  | filter: {$:searchKey}">
+                    <md-list-item class="md-3-line" ng-click="gotoProposal();">
+                        <div class="md-list-item-text" layout="column">
+                            {{item.insured.surname}}{{item.insured.given}}
+                            <p> {{ item.phone }}</p>
+                        </div>
+                    </md-list-item>
+                    <md-divider></md-divider>
+                </md-list>
+            </md-content>
+        </div>
+        <div flex-gt-sm="50" flex class="md-padding">
+            <md-toolbar layout="row">
+                <div class="md-toolbar-tools">
+                    <span>{{'Pending' | translate}}</span>
+                </div>
+            </md-toolbar>
+            <md-content>
+                <md-list flex ng-repeat="item in pList  | filter: {status:'pending', $:searchKey}">
 
-                <md-list-item class="md-3-line" ng-click="gotoProposal();">
-                    <div class="md-list-item-text" layout="column">
-                        {{ item.pID }}
-                        <p> {{item.name}} | {{ item.plan }}</p>
+                    <md-list-item class="md-3-line" ng-click="gotoProposal();">
+                        <div class="md-list-item-text" layout="column">
+                            {{ item.pID }}
+                            <p> {{item.name}} | {{ item.plan }}</p>
 
-                    </div>
-                </md-list-item>
-                <md-divider></md-divider>
-            </md-list>
-        </md-content>
-    </div>
-    <div flex-gt-sm="50" flex class="md-padding">
-        <md-toolbar layout="row">
-            <div class="md-toolbar-tools">
-                <span>Moved to POS</span>
-            </div>
-        </md-toolbar>
-        <md-content>
-            <md-list flex ng-repeat="item in pList  | filter: {status:'completed', $:searchKey}">
+                        </div>
+                    </md-list-item>
+                    <md-divider></md-divider>
+                </md-list>
+            </md-content>
+        </div>
+        <div flex-gt-sm="50" flex class="md-padding">
+            <md-toolbar layout="row">
+                <div class="md-toolbar-tools">
+                    <span>Moved to POS</span>
+                </div>
+            </md-toolbar>
+            <md-content>
+                <md-list flex ng-repeat="item in pList  | filter: {status:'completed', $:searchKey}">
 
-                <md-list-item class="md-3-line" ng-click="gotoProposal();">
+                    <md-list-item class="md-3-line" ng-click="gotoProposal();">
 
-                    <div class="md-list-item-text" layout="column">
-                        {{ item.pID }}
-                        <p> {{item.name}} | {{ item.plan }}</p>
-                    </div>
-                </md-list-item>
-                <md-divider></md-divider>
-            </md-list>
-        </md-content>
+                        <div class="md-list-item-text" layout="column">
+                            {{ item.pID }}
+                            <p> {{item.name}} | {{ item.plan }}</p>
+                        </div>
+                    </md-list-item>
+                    <md-divider></md-divider>
+                </md-list>
+            </md-content>
+        </div>
     </div>
 </md-content>

@@ -2,7 +2,7 @@
     <md-card>
         <md-card-title>
             <md-card-title-text>
-                <span class="md-headline">{{data.role}}</span>
+                <span class="md-headline">{{data.role | translate}}</span>
             </md-card-title-text>
         </md-card-title>
         <md-card-content>
@@ -35,7 +35,6 @@
             </div>
             <div layout="row">
 
-
                 <md-input-container class="md-block " flex=50>
                     <p>Gender</p>
                     <md-radio-group name="gender " ng-model="data.gender " aria-required=" " layout="row">
@@ -55,7 +54,7 @@
             <div layout="row">
                 <md-input-container class="md-block " flex=50>
                     <label>Date of Birth</label>
-                    <md-datepicker ng-model="data.dob " md-current-view="year " required> </md-datepicker>
+                    <md-datepicker ng-model="data.dob " md-current-view="year " required layout-align="start start"> </md-datepicker>
                 </md-input-container>
                 <md-input-container class="md-block " flex=50>
                     Age: {{ data.dob | Age }}

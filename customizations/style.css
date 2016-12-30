@@ -5,5 +5,31 @@ section {
 }
 
 .container {
-    background-color: green;
+
+ 
+  
+
+}
+
+md-toolbar {
+  background: linear-gradient(to right, seagreen, darkgreen); /* Standard syntax */
+}
+
+.logo {
+width: 162px;
+    height: 30px;
+}
+
+body {
+    font-family: Frutiger,Arial,Helvetica,sans-serif;
+    
+}
+
+.container md-content {
+    background: linear-gradient(to right,white, lightgray); /* Standard syntax */ 
+}
+
+footer md-toolbar {
+    background: linear-gradient(to right,darkslategray, darkslategray); 
+    height: 20%;
 }

@@ -29,10 +29,7 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                 vm.title = 'title.form';
                 vm.customFormTabs = $rootScope.customFormTabs;
 
-                vm.setDisable = function (section) {
-
-                    return true;
-                }
+   
             }
         })
         .state('form.customer', {
@@ -59,10 +56,17 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                 function ($scope, $rootScope, $filter, $state, productServices) {
                     var vm = $scope;
 
-
                     vm.current = $state.current;
                     vm.baseObj = $rootScope.stateObj;
                     vm.settingObj = $rootScope.settingObj;
+
+
+                    $scope.$watch('productForm.$valid', function(form) {
+                         $rootScope.settingObj.validPlan = form;                     
+                        //alert('change value' + form);
+                    
+                    });
+                    //
 
                     vm.getProductGroups = function () {
                         return productServices.getProductGroups();
@@ -191,6 +195,14 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
                 vm.current = $state.current;
                 vm.baseObj = $rootScope.stateObj;
                 vm.settingObj = $rootScope.settingObj;
+                vm.baseObj.baseplan = {};
+                vm.baseObj.baseplan.premium = {
+                    'annual':1000000,
+                    'semiannual': 600000,
+                    'quarterly': 400000,
+                    'monthly':180000
+                };
+                
             }
         })
         ;

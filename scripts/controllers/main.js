@@ -8,44 +8,40 @@ mainApp.controller('mainController',
                 function (event, toState, toParams, fromState, fromParams) {
                     vm.currentstate = toState.name;
                 });
+ 
 
-            var promise = commonServices.getCustomConfig();
 
-            promise.then(
+            $rootScope.stateObj = productServices.loadInitState();
+            vm.stateObj = $rootScope.stateObj;
+
+            commonServices.getCustomConfig().then(
                 function (payload) {
                     //console.debug(payload.data.tabs);
                     $rootScope.customFormTabs = payload.data.tabs;
                 }
             );
 
-            promise = productServices.loadProducts();
             //console.debug('x');
-            promise.then(
+            productServices.loadProducts().then(
                 function (payload) {
                     $rootScope.settingObj = payload.data;
                     console.debug(payload);
                     vm.settingObj = $rootScope.settingObj;
+
+                    productServices.loadRiders().then(
+                        function (payload) {
+                            $rootScope.settingObj.riders = payload.data;
+                            console.debug(payload);
+
+                            vm.settingObj = $rootScope.settingObj;
+                        }
+                    );                //console.debug('x');
+                                  
                 }
             );
 
-            promise = productServices.loadRiders();
-            //console.debug('x');
-            promise.then(
-                function (payload) {
-                    $rootScope.settingObj.riders = payload.data;
-                    console.debug(payload);
-
-                    vm.settingObj = $rootScope.settingObj;
-                }
-            );
-
-
-            $rootScope.stateObj = productServices.loadInitState();
-            vm.stateObj = $rootScope.stateObj;
-
-
-
-
+            
+     
 
         }]);
 

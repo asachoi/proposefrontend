@@ -10,15 +10,11 @@
                     <span>{{'CUSTOMER' | translate}}</span>
                 </div>
             </md-toolbar>
-            <md-content ng-init='cList=[
-        {"insured":{"guid":"2a28f26a-28d4-f858-4259-aab94bbf39f6","source":"PE","role":"insurer","smoking":"S","surname":"Peter","title":"MR","given":"Choi","gender":"Male","dob":"1955-09-01T16:00:00.000Z","phone":"95200123","email":"asa.choi@gmail.com"},"policyholder":{"role":"policyholder","smoking":"S","firstname":"","surname":""}},
-        {"insured":{"guid":"2a28f26a-28d4-f858-4259-aab94bbf39f6","source":"PE","role":"insurer","smoking":"S","surname":"John","title":"MR","given":"Albert","gender":"Male","dob":"1955-09-01T16:00:00.000Z","phone":"95200123","email":"asa.choi@gmail.com"},"policyholder":{"role":"policyholder","smoking":"S","firstname":"","surname":""}},
-        {"insured":{"guid":"2a28f26a-28d4-f858-4259-aab94bbf39f6","source":"PE","role":"insurer","smoking":"S","surname":"Mary","title":"MR","given":"WONG","gender":"Male","dob":"1955-09-01T16:00:00.000Z","phone":"95200123","email":"asa.choi@gmail.com"},"policyholder":{"role":"policyholder","smoking":"S","firstname":"","surname":""}}                
-        ]'>
-                <md-list flex ng-repeat="item in cList  | filter: {$:searchKey}">
+            <md-content>
+                <md-list flex ng-repeat="item in customerList  | filter: {$:searchKey}">
                     <md-list-item class="md-3-line" ng-click="gotoProposal();">
                         <div class="md-list-item-text" layout="column">
-                            {{item.insured.surname}}{{item.insured.given}}
+                            {{item.insured.surname}} {{item.insured.given}}
                             <p> {{ item.phone }}</p>
                         </div>
                     </md-list-item>

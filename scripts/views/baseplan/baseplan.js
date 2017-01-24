@@ -2,7 +2,7 @@ mainApp.controller('formbaseplanController',
     ['$scope', '$rootScope', '$filter', '$state', 'productServices', '$controller',
         function ($scope, $rootScope, $filter, $state, productServices, $controller) {
             var vm = $scope;
- 
+
             $controller('baseController', { $scope: $scope });
 
 
@@ -27,7 +27,7 @@ mainApp.controller('formbaseplanController',
 
             vm.getPlans = function (productgroupid) {
                 if (productgroupid == null) return;
-
+ 
                 return productServices.getPlans(productgroupid).map(function (p) {
                     return {
                         value: p.planname,

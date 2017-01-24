@@ -1,12 +1,12 @@
 
-mainApp.filter('YesNo', function () {
+mainApp
+.filter('YesNo', function () {
     return function (x) {
         if (x == 'S') return 'Standard';
         return x ? 'Yes' : 'No';
     };
-});
-
-mainApp.filter('Age', function () {
+})
+.filter('Age', function () {
     return function (birthday) { // birthday is a date
         if (birthday == null)
             return 'NaN';

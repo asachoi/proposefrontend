@@ -37,19 +37,19 @@
 
                 <md-input-container class="md-block " flex=50>
                     <p>Gender</p>
-                    <md-radio-group name="gender " ng-model="data.gender " aria-required=" " layout="row">
+                    <md-radio-group name="sex" ng-model="data.sex" aria-required=" " layout="row">
                         <md-radio-button value="Male ">Male</md-radio-button>
                         <md-radio-button value="Female ">Female</md-radio-button>
                     </md-radio-group>
                 </md-input-container>
                 <md-input-container class="md-input-has-value">
                     <p>Smoking Status</p>
-                    <md-radio-group ng-model="data.smoking" ng-init="data.smoking='S'" ng-disabled="true" layout="row">
+                    <md-radio-group ng-model="data.smokingstatus" ng-init="data.smokingstatus='S'" ng-disabled="true" layout="row">
                         <md-radio-button value="Y ">Yes</md-radio-button>
                         <md-radio-button value="N ">No</md-radio-button>
                         <md-radio-button value="S ">Standard</md-radio-button>
                     </md-radio-group>
-                </md-input-container>
+
  
 
             </div>

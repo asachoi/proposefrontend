@@ -29,25 +29,25 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
         .state('form.customer', {
             url: '/customers',
             cache: false,
-            templateUrl: 'scripts/views/form/customer.html?cb=' + cachebuster,
+            templateUrl: 'scripts/views/customer/customer.html?cb=' + cachebuster,
             controller: 'form.customer.controller'
         })
         .state('form.baseplan', {
             url: '/baseplan',
             cache: false,
-            templateUrl: 'scripts/views/form/baseplan.html?cb=' + cachebuster,
+            templateUrl: 'scripts/views/baseplan/baseplan.html?cb=' + cachebuster,
             controller: 'formbaseplanController'
         })
         .state('form.rider', {
             url: '/rider',
             cache: false,
-            templateUrl: 'scripts/views/form/rider.html?cb=' + cachebuster,
+            templateUrl: 'scripts/views/rider/rider.html?cb=' + cachebuster,
             controller: 'formriderController'
         })
         .state('form.summary', {
             url: '/summary',
             cache: false,
-            templateUrl: 'scripts/views/form/summary.html?cb=' + cachebuster,
+            templateUrl: 'scripts/views/summary/summary.html?cb=' + cachebuster,
             controller: 'form.summary.controller'
         })
         ;

@@ -12,12 +12,12 @@ var mainApp = angular.module('mainApp', [
   //'LocalStorageModule'
 ]);
 
-/*
+
 mainApp
   //define constants
   .constant('availableLanguages', ['en-US', 'ja-JP', 'en-PH'])
-  .constant('defaultLanguage', 'en-PH')
-
+  .constant('defaultLanguage', 'en-PH');
+/*
   .run(function ($ionicPlatform, tmhDynamicLocale, $translate, $cordovaGlobalization, $rootScope, $state, availableLanguages, defaultLanguage, localStorageService) {
     function applyLanguage(language) {
       tmhDynamicLocale.set(language.toLowerCase());

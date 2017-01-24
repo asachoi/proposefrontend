@@ -19,6 +19,8 @@ mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
 
     vm.getPlans = function (productgroupid) {
         if (productgroupid == null) return;
+
+        console.debug($rootScope.settingObj);
         return $filter('filter')($rootScope.settingObj.plans, { productgroupname: productgroupid });
     }
 
@@ -34,7 +36,8 @@ mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
 
 
     vm.loadProducts = function () {
-        return $http.get("customizations/data/product1.json?cb=" + cachebuster);
+        
+        return $http.get("customizations/data/product.json?cb=" + cachebuster);
     };
 
     vm.loadRiders = function () {

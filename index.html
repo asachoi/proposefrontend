@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,7 +42,7 @@
 <!-- it will be replaced by gulp //-->
 <!-- inject:vendor:js --><!-- endinject -->
     <!-- Angular Material requires Angular.js Libraries -->
-    <script src="assets/libs/angular-1.5.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script src="assets/libs/angular-1.5.9/angular-animate.min.js"></script>
     <script src="assets/libs/angular-1.5.9/angular-aria.min.js"></script>
     <script src="assets/libs/angular-1.5.9/angular-messages.min.js"></script>
@@ -67,17 +68,20 @@
         document.write('<scr'+'ipt type="text/javascript" src="scripts/common/filters.js?cb=' +cachebuster+'"></scr' + 'ipt>');
         document.write('<scr'+'ipt type="text/javascript" src="scripts/common/config.js?cb=' +cachebuster+'"></scr' + 'ipt>');
         
-        document.write('<scr'+'ipt type="text/javascript" src="scripts/common/directives.js?cb=' +cachebuster+'"></scr' + 'ipt>');                
+        document.write('<scr'+'ipt type="text/javascript" src="scripts/shared/directives.js?cb=' +cachebuster+'"></scr' + 'ipt>');                
         document.write('<scr'+'ipt type="text/javascript" src="scripts/services/commonServices.js?cb=' +cachebuster+'"></scr' + 'ipt>');
         document.write('<scr'+'ipt type="text/javascript" src="scripts/services/productServices.js?cb=' +cachebuster+'"></scr' + 'ipt>');
         
-        document.write('<scr'+'ipt type="text/javascript" src="scripts/controllers/base.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="scripts/controllers/form.customer.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="scripts/controllers/main.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="scripts/controllers/form.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="scripts/controllers/formbaseplan.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="scripts/controllers/formrider.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="scripts/controllers/form.summary.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+        document.write('<scr'+'ipt type="text/javascript" src="scripts/shared/base.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+        document.write('<scr'+'ipt type="text/javascript" src="scripts/shared/main.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+        
+        
+        
+        document.write('<scr'+'ipt type="text/javascript" src="scripts/views/form.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+        document.write('<scr'+'ipt type="text/javascript" src="scripts/views/customer/customer.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+        document.write('<scr'+'ipt type="text/javascript" src="scripts/views/baseplan/baseplan.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+        document.write('<scr'+'ipt type="text/javascript" src="scripts/views/rider/rider.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+        document.write('<scr'+'ipt type="text/javascript" src="scripts/views/summary/summary.js?cb=' +cachebuster+'"></scr' + 'ipt>');
 
         document.write('<scr'+'ipt type="text/javascript" src="i18n/translate.js?cb=' +cachebuster+'"></scr' + 'ipt>');
         document.write('<scr'+'ipt type="text/javascript" src="customizations/route.js?cb=' +cachebuster+'"></scr' + 'ipt>');      

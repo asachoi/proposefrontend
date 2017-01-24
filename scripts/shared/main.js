@@ -8,7 +8,7 @@ mainApp.controller('mainController',
                 function (event, toState, toParams, fromState, fromParams) {
                     vm.currentstate = toState.name;
                 });
- 
+
 
 
             $rootScope.stateObj = productServices.loadInitState();
@@ -16,32 +16,30 @@ mainApp.controller('mainController',
 
             commonServices.getCustomConfig().then(
                 function (payload) {
-                    //console.debug(payload.data.tabs);
                     $rootScope.customFormTabs = payload.data.tabs;
+                    
                 }
             );
 
-            //console.debug('x');
+
             productServices.loadProducts().then(
                 function (payload) {
                     $rootScope.settingObj = payload.data;
-                    console.debug(payload);
-                    vm.settingObj = $rootScope.settingObj;
 
+                    vm.settingObj = $rootScope.settingObj;
+//console.info(vm.settingObj);
                     productServices.loadRiders().then(
                         function (payload) {
                             $rootScope.settingObj.riders = payload.data;
-                            console.debug(payload);
-
                             vm.settingObj = $rootScope.settingObj;
                         }
-                    );                //console.debug('x');
-                                  
+                    );
                 }
             );
 
-            
-     
+
+
+
 
         }]);
 

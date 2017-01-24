@@ -31,6 +31,7 @@ mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
 
     vm.getRiderSetting = function (ridercode) {
         if (ridercode == null) return;
+        if ($filter('filter')($rootScope.settingObj.riders, { ridercode: ridercode }) == null) return;
         return $filter('filter')($rootScope.settingObj.riders, { ridercode: ridercode })[0];
     }
 

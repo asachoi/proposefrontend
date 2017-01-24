@@ -14,6 +14,7 @@
                 </md-card-title>
                 <md-card-content>
                     <div ng-repeat="item in baseObj.riders;" layout="row" ng-init="ridersetting = getRiderSetting(item.ridercode)">
+                        {{ridersetting}}
                         <div class="md-block" flex=25>
                             <md-input-container class="md-block" flex=25>
                                 <md-checkbox
@@ -22,9 +23,10 @@
                                 </md-checkbox>
                             </md-input-container>
                         </div>
-                        <div ng-if="!ridersetting.ridertype" ng-include="'customizations/views/rider/default.html?111'" class="md-block" flex=70
+                        <div ng-if="ridersetting==null || !ridersetting.ridertype" ng-include="'customizations/views/rider/default.html?111'" class="md-block" flex=70
                             layout="row"></div>
-                        <div ng-if="ridersetting==null || ridersetting.ridertype" ng-include="'customizations/views/rider/' + ridersetting.ridertype + '.html?333333'"
+                            
+                        <div ng-if="ridersetting.ridertype" ng-include="'customizations/views/rider/' + ridersetting.ridertype + '.html?333333'"
                             class="md-block" flex=70 layout="row"></div>
                     </div>
                 </md-card-content>

@@ -20,24 +20,26 @@ mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
     vm.getPlans = function (productgroupid) {
         if (productgroupid == null) return;
 
-        console.debug($rootScope.settingObj);
+        //console.debug($rootScope.settingObj);
         return $filter('filter')($rootScope.settingObj.plans, { productgroupname: productgroupid });
     }
 
     vm.getPlan = function (planid) {
         if (planid == null) return;
-        return $filter('filter')($rootScope.settingObj.plans, { planid: planid })[0];
+        var plans = $filter('filter')($rootScope.settingObj.plans, { planid: planid });
+        if (plans == null) return;
+        return plans[0];
     }
 
     vm.getRiderSetting = function (ridercode) {
         if (ridercode == null) return;
-        if ($filter('filter')($rootScope.settingObj.riders, { ridercode: ridercode }) == null) return;
-        return $filter('filter')($rootScope.settingObj.riders, { ridercode: ridercode })[0];
+        var riders = $filter('filter')($rootScope.settingObj.riders, { ridercode: ridercode });
+        if(riders == null) return;
+        return riders[0];
     }
 
 
-    vm.loadProducts = function () {
-        
+    vm.loadProducts = function () {        
         return $http.get("customizations/data/product.json?cb=" + cachebuster);
     };
 

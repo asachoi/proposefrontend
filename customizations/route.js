@@ -10,9 +10,7 @@ mainApp.config(
             controller: function ($scope, $rootScope) {
                 //$scope.title = 'title_list';
             }
-        })
-        ;
+        });
     }
-
 );
 

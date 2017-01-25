@@ -57,18 +57,10 @@ mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
             {
                 insured:
                 {
-                    guid: guid(),
-                    source: 'PE',
-                    role: 'insurer',
-                    smoking: 'S',
-                    surname: 'Asa'
+ 
                 },
                 policyholder:
-                {
-                    role: 'policyholder',
-                    smoking: 'S',
-                    firstname: '',
-                    surname: ''
+                { 
 
                 }
             },

@@ -16,7 +16,7 @@ mainApp.controller('form.customer.controller',
             }
             $rootScope.customerList.push(vm.baseObj.customers);
 
-            console.debug($rootScope.customerList);
+            //console.debug($rootScope.customerList);
 
         }
     }

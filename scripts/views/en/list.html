@@ -10,7 +10,7 @@
                     <span>{{'CUSTOMER' | translate}}</span>
                 </div>
             </md-toolbar>
-            <md-content>
+            <md-content>                
                 <md-list flex ng-repeat="item in customerList  | filter: {$:searchKey}">
                     <md-list-item class="md-3-line" ng-click="gotoProposal();">
                         <div class="md-list-item-text" layout="column">

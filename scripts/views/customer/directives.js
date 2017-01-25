@@ -6,7 +6,7 @@ mainApp
                 data: '='
             },
             //template: "<h1>{{customer}}</h1>",
-            templateUrl: 'scripts/shared/cards/customersection.html?cb=' + cachebuster
+            templateUrl: 'scripts/views/customer/en/cards/customersection.html?cb=' + cachebuster
         };
     })
     .directive("productSection", function () {
@@ -16,7 +16,7 @@ mainApp
                 data: '='
             },
             //template: "product: <h1>{{data}}</h1>",
-            templateUrl: 'scripts/shared/cards/productsection.html?cb=' + cachebuster
+            templateUrl: 'scripts/views/customer/en/cards/productsection.html?cb=' + cachebuster
         };
     })
     .directive("customerInput", function () {
@@ -27,6 +27,6 @@ mainApp
                 title: '='
             },
             //template: "Customer: <h1>{{data}}</h1> {{title}}",
-            templateUrl: 'scripts/shared/cards/customerinput.html?cb=' + cachebuster
+            templateUrl: 'scripts/views/customer/en/cards/customerinput.html?cb=' + cachebuster
         };
     });

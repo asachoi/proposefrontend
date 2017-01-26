@@ -1,17 +1,48 @@
-<section>
-    <md-card>
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">{{'customerinfo' | translate }}</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-            <div layout="row">
-                <div flex=25>{{'name' | translate }}:{{data.surname}} {{data.given}}</div>
-                <div flex=25>{{'gender' | translate }}: {{data.gender}}</div>
-                <div flex=25>{{'age' | translate }}: {{ data.dob | Age }}</div>
-                <div flex=25>{{'smoker' | translate }}: {{ data.smoking | YesNo}}</div>
-            </div>
-        </md-card-content>
-    </md-card>
+<section class="viewDetailBlock viewDetailBlock--firstBlock">
+    <div class="viewDetailBlock__header">
+        <h3 class="viewDetailBlock__title">{{'customerinfo' | translate }}</h3>
+    </div>
+    <div class="viewDetailBlock__content">
+        <div class="grid">
+            <section class="span12">
+
+                <div class="valuePairBlock">
+                    <div class="valuePairBlock__leftBlock">
+                        <span class="valuePairBlock__description">{{'name' | translate }}</span>
+                    </div>
+                    <div class="valuePairBlock__rightBlock">
+                        <span class="valuePairBlock__value">{{data.surname}} {{data.given}}</span>
+                    </div>
+                </div>
+
+                <div class="valuePairBlock">
+                    <div class="valuePairBlock__leftBlock">
+                        <span class="valuePairBlock__description">{{'gender' | translate }}</span>
+                    </div>
+                    <div class="valuePairBlock__rightBlock">
+                        <span class="valuePairBlock__value">{{data.gender}}</span>
+                    </div>
+                </div>
+                <div class="valuePairBlock">
+                    <div class="valuePairBlock__leftBlock">
+                        <span class="valuePairBlock__description">{{'age' | translate }}</span>
+                    </div>
+                    <div class="valuePairBlock__rightBlock">
+                        <span class="valuePairBlock__value">{{data.dob | Age}}</span>
+                    </div>
+                </div>
+
+                <div class="valuePairBlock">
+                    <div class="valuePairBlock__leftBlock">
+                        <span class="valuePairBlock__description">{{'smoker' | translate }}</span>
+                    </div>
+                    <div class="valuePairBlock__rightBlock">
+                        <span class="valuePairBlock__value">{{data.smoking | YesNo}}</span>
+                    </div>
+                </div>
+            </section>
+            <section class="span0">
+            </section>
+        </div>
+    </div>
 </section>

@@ -17,14 +17,7 @@ mainApp.config(function ($stateProvider, $urlRouterProvider) {
             url: '/form',
             cache: false,
             templateUrl: 'scripts/views/en/form.html?cb=' + cachebuster,
-            controller: function ($scope, $rootScope, $state) {
-                var vm = $scope;
-                //vm.state = $state;
-                vm.baseObj = $rootScope.stateObj;
-                vm.settingObj = $rootScope.settingObj;
-                vm.title = 'title.form';
-                vm.customFormTabs = $rootScope.customFormTabs;
-            }
+            controller: 'formController'
         })
         .state('form.customer', {
             url: '/customers',

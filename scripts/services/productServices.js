@@ -6,13 +6,13 @@ mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
         return $rootScope.settingObj.productgroups;
     }
 
-    vm.getProductGroup = function (productgroupid) {        
+    vm.getProductGroup = function (productgroupid) {
         return $filter('filter')($rootScope.settingObj.productgroups, { productgroupname: productgroupid })[0];
     }
 
 
     vm.getProduct = function (planid) {
-        if (planid == null) return;        
+        if (planid == null) return;
         return $filter('filter')($rootScope.settingObj.products, { productcode: vm.getPlan(planid).productcode })[0];
     }
 
@@ -34,12 +34,12 @@ mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
     vm.getRiderSetting = function (ridercode) {
         if (ridercode == null) return;
         var riders = $filter('filter')($rootScope.settingObj.riders, { ridercode: ridercode });
-        if(riders == null) return;
+        if (riders == null) return;
         return riders[0];
     }
 
 
-    vm.loadProducts = function () {        
+    vm.loadProducts = function () {
         return $http.get("customizations/data/product.json?cb=" + cachebuster);
     };
 
@@ -60,7 +60,7 @@ mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
                     role: "insured"
                 },
                 policyholder:
-                { 
+                {
                     role: "policyholder"
                 }
             },

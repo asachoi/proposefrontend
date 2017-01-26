@@ -1,10 +1,12 @@
 mainApp.controller('form.customer.controller',
-    function ($scope, $rootScope, $state) {
+    function ($scope, $rootScope, $state, $controller) {
+        $controller('baseController', { $scope: $scope });
         var vm = $scope;
 
         vm.current = $state.current;
         vm.baseObj = $rootScope.stateObj;
         vm.settingObj = $rootScope.settingObj;
+ 
 
         vm.updateSamePerson = function () {
             $rootScope.settings.customerFormComplete = vm.userForm.$valid;

@@ -43,7 +43,7 @@ mainApp.controller('form.summary.controller',
                 "columns": null,
             };
             
-            alert(JSON.stringify(req));
+            //alert(JSON.stringify(req));
 
         }
 

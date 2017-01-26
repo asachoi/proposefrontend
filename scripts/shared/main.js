@@ -1,10 +1,10 @@
 mainApp.controller('mainController',
     ['$scope', '$rootScope', '$translate', '$http', 'productServices', 'commonServices',
         function ($scope, $rootScope, $translate, $http, productServices, commonServices) {
-
+            
             var vm = $scope;
 
-            vm.$on('$stateChangeSuccess',
+            $rootScope.$on('$stateChangeSuccess',
                 function (event, toState, toParams, fromState, fromParams) {
                     vm.currentstate = toState.name;
                 });
@@ -27,7 +27,7 @@ mainApp.controller('mainController',
                     $rootScope.settingObj = payload.data;
 
                     vm.settingObj = $rootScope.settingObj;
-//console.info(vm.settingObj);
+ 
                     productServices.loadRiders().then(
                         function (payload) {
                             $rootScope.settingObj.riders = payload.data;

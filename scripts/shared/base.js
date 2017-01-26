@@ -6,9 +6,8 @@ mainApp.controller('baseController',
             vm.baseObj = $rootScope.stateObj;
             vm.settingObj = $rootScope.settingObj;
             vm.title = 'title.form';
-            vm.customFormTabs = $rootScope.customFormTabs;
-
-            
+            vm.customFormTabs = $rootScope.customFormTabs;         
+            //vm.currentTab = 'Testing';   
         }]
 );
 

@@ -14,7 +14,7 @@
   <header class="pageHeader pageHeader--editMode">
 
     <div class="pageHeader__cancelArea">
-      <button myclick="goToPage('')"><span class="imageIcon imageIconBack"></span><span class="accessible">Back</span></button>
+      <button><span class="imageIcon imageIconBack"></span><span class="accessible">Back</span></button>
 
     </div>
 
@@ -25,15 +25,13 @@
 
     <div class="headerControl">
       <ul>
-
-
-        <li><button class="pageActionButton" myclick="goToPage('edisclosure-basic-info.html')">Next</button></li>
+        <li><button class="pageActionButton" myclick="goToPage('edisclosure-basic-info.html')">Save</button></li>
 
       </ul>
     </div>
   </header>
   <div id="app" class="full-screen editMode">
-    <md-content ui-view></md-content>
+    <div ui-view></div>
   </div>
 
 

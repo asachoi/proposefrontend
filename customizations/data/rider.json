@@ -28,7 +28,7 @@
     {
         "ridercode": "PE885",
         "ridername": "PB",
-        "ridertype": "payorage", //rider type.
+        "ridertype": "payorage",
         "issueagemin": "0",
         "issueagemax": "15",
         "payeragemin": "18",

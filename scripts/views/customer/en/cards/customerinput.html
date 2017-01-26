@@ -1,77 +1,108 @@
-<section ng-if="!baseObj.settings.isSamePerson || data.role=='insurer'">
-    <md-card>
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">{{data.role | translate}}</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-            <div layout="row">
-                <md-input-container class="md-block" flex=20>
-                    <label>Title</label>
-                    <md-select name="title" ng-model="data.title" required>
-                        <md-option value="MR">Mr</md-option>
-                        <md-option value="MS">Ms</md-option>
-                    </md-select>
-                </md-input-container>
-                <md-input-container class="md-block" flex=40>
-                    <label>Surname</label>
-                    <input ng-model="data.surname" required>
-                    <div ng-messages="data.surname.$error" role="alert">
-                        <div ng-message-exp="['required']">
-                            {{'error_surname' | translate}}
-                        </div>
+<div class="content padded">
+    <h2 class="mainTitle"> {{data.role | translate}}</h2>
+    <fieldset>
+
+        <div class="sideBySideBlock sideBySideBlock--7030">
+            <div class="sideBySideBlock__leftBlock">
+                <h2 class="mainTitle">Title</h2>
+                <div class="myToggle myToggle--clearFix myToggle--large">
+                    <div class="radio">
+                        <input id="titleMR" type="radio" value='MR' ng-model="data.title">
+                        <label for="titleMR">Mr</label>
                     </div>
-                </md-input-container>
-                <md-input-container class="md-block" flex=40>
-                    <label>Given</label>
-                    <input ng-model="data.given" required>
-                    <div ng-messages="data.given.$error" role="alert">
-                        <div ng-message-exp="['required']">
-                            Your surname must be between 10 and 100 characters long and look like an e-mail address.
-                        </div>
+                    <div class="radio">
+                        <input id="titleMS" type="radio" value='MS' ng-model="data.title">
+                        <label for="titleMS">Ms</label>
                     </div>
-                </md-input-container>
-            </div>
-            <div layout="row">
 
-                <md-input-container class="md-block " flex=50>
-                    <p>Gender</p>
-                    <md-radio-group name="sex" ng-model="data.sex" aria-required=" " layout="row">
-                        <md-radio-button value="Male ">Male</md-radio-button>
-                        <md-radio-button value="Female ">Female</md-radio-button>
-                    </md-radio-group>
-                </md-input-container>
-                <md-input-container class="md-input-has-value">
-                    <p>Smoking Status</p>
-                    <md-radio-group ng-model="data.smokingstatus" ng-init="data.smokingstatus='S'" ng-disabled="true" layout="row">
-                        <md-radio-button value="Y ">Yes</md-radio-button>
-                        <md-radio-button value="N ">No</md-radio-button>
-                        <md-radio-button value="S ">Standard</md-radio-button>
-                    </md-radio-group>
+                </div>
+            </div>
+            <div class="sideBySideBlock__leftBlock">
+                <h2 class="mainTitle">Gender</h2>
+                <div class="myToggle myToggle--clearFix myToggle--large">
+                    <div class="radio">
+                        <input id="genderMale" name="gender" type="radio" value='Male' ng-model="data.sex">
+                        <label for="genderMale">Male</label>
+                    </div>
+                    <div class="radio">
+                        <input id="genderFemale" name="gender" type="radio" value='Female' ng-model="data.sex">
+                        <label for="genderFemale">Female</label>
+                    </div>
 
- 
+                </div>
+            </div>
+        </div>
+
+        <div class="sideBySideBlock sideBySideBlock--7030">
+            <div class="sideBySideBlock__leftBlock">
+                <label for="Surname">Surname</label>
+            </div>
+            <div class="sideBySideBlock__rightBlock">
+                <input name="surname" type="text" class="text" ng-model="data.surname">
+            </div>
+        </div>
+
+        <div class="sideBySideBlock sideBySideBlock--7030">
+            <div class="sideBySideBlock__leftBlock">
+                <label for="Surname">Given</label>
+            </div>
+            <div class="sideBySideBlock__rightBlock">
+
+                <input name="given" type="text" class="text" ng-model="data.given">
+            </div>
+        </div>
+
+
+
+        <div class="commonForm" style="padding: 30px 0; border-bottom: 1px solid #e5e5e5;">
+
+            <h2 class="mainTitle">Smoking status</h2>
+            <div class="myToggle myToggle--clearFix myToggle--large">
+                <div class="radio">
+                    <input id="smokingStatusSmoker" name="smokingStatus" type="radio" value='Y' ng-model="data.smokingstatus">
+                    <label for="smokingStatusSmoker">Smoker</label>
+                </div>
+                <div class="radio">
+                    <input id="smokingStatusNonSmoker" name="smokingStatus" type="radio" value='N' ng-model="data.smokingstatus">
+                    <label for="smokingStatusNonSmoker">Non-smoker</label>
+                </div>
+                <div class="radio">
+                    <input id="smokingStatusStandard" name="smokingStatus" type="radio" value='S' ng-model="data.smokingstatus">
+                    <label for="smokingStatusStandard">Standard</label>
+                </div>
 
             </div>
-            <div layout="row">
-                <md-input-container class="md-block " flex=50>
-                    <label>Date of Birth</label>
-                    <md-datepicker ng-model="data.dob " md-current-view="year " required layout-align="start start"> </md-datepicker>
-                </md-input-container>
-                <md-input-container class="md-block " flex=50>
-                    Age: {{ data.dob | Age }}
-                </md-input-container>
+
+        </div>
+
+        <div class="sideBySideBlock sideBySideBlock--7030">
+            <div class="sideBySideBlock__leftBlock">
+                <label for="Surname">Date of Birth</label>
             </div>
-            <div layout-gt-xs="row ">
-                <md-input-container class="md-block " flex=50>
-                    <label>Mobile (optional)</label>
-                    <md-icon>phone</md-icon><input ng-model="data.phone ">
-                </md-input-container>
-                <md-input-container class="md-block " flex=50>
-                    <label>Email (optional)</label>
-                    <md-icon>email</md-icon><input ng-model="data.email " type="email ">
-                </md-input-container>
+            <div class="sideBySideBlock__rightBlock">
+                <md-datepicker ng-model="data.dob " md-current-view="year " required layout-align="start start"> </md-datepicker> Age: {{ data.dob | Age }}
             </div>
-        </md-card-content>
-    </md-card>
-</section>
+        </div>
+
+
+        <div class="sideBySideBlock sideBySideBlock--7030">
+            <div class="sideBySideBlock__leftBlock">
+                <label for="phone">Mobile (optional)</label>
+            </div>
+            <div class="sideBySideBlock__rightBlock">
+
+                <input name="phone" type="text" class="text" ng-model="data.phone">
+            </div>
+        </div>
+
+        <div class="sideBySideBlock sideBySideBlock--7030">
+            <div class="sideBySideBlock__leftBlock">
+                <label for="phone">Email (optional)</label>
+            </div>
+            <div class="sideBySideBlock__rightBlock">
+
+                <input name="phone" type="text" class="text" ng-model="data.email ">
+            </div>
+        </div>
+    </fieldset>
+</div>

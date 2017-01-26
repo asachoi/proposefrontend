@@ -1,16 +1,11 @@
-<md-content class="md-padding">
-  <md-nav-bar md-selected-nav-item="currentstate" nav-bar-aria-label="navigation links">
-    <md-nav-item md-nav-click="" name="form.customer" ui-sref=".customer">{{'customer'|translate}}</md-nav-item>
-    <md-nav-item md-nav-click="" name="form.baseplan" ui-sref=".baseplan">{{'baseplan'|translate}}</md-nav-item>
-    <md-nav-item md-nav-click="" name="form.rider" ui-sref=".rider" ng-if="settingObj.validPlan">{{'rider'|translate}}</md-nav-item>
-    <md-nav-item md-nav-click="" name="form.summary" ui-sref=".summary" ng-if="settingObj.validPlan">{{'summary'|translate}}</md-nav-item>
-
-    <md-nav-item md-nav-click="" ng-repeat="tab in customFormTabs" name="form.{{tab}}" ui-sref=".{{tab}}" ng-disabled="!settingObj.validPlan">{{tab|translate}}</md-nav-item>
-
-  </md-nav-bar>
-
-  <div class="container">
-    <div ui-view></div>
-  </div>
-
-</md-content>
+<nav class="horizontalNav">
+  {{$state}}
+  <ul>
+    <li class="item" ng-class="{'is-active' : selectedTab == 0}" ui-sref=".customer"><a href="#/form/customers">{{'Customer'|translate}}</a></li>
+    <li class="item" ng-class="{'is-active' : selectedTab == 0}" ui-sref=".baseplan"><a href="#/form/baseplan">{{'Base Plan'|translate}}</a></li>
+    <li class="item" ng-class="{'is-active' : selectedTab == 0}" ui-sref=".rider"><a href="#/form/baseplan" ng-if="settingObj.validPlan">{{'rider'|translate}}</a></li>
+    <li class="item" ng-class="{'is-active' : selectedTab == 0}" ui-sref=".summary"><a href="#/form/summary" ng-if="settingObj.validPlan">{{'baseplan'|translate}}</a></li>
+    <li class="item" ng-repeat="tab in customFormTabs" ng-class="{'is-active' : selectedTab == 0}" ui-sref=".{{tab}}"><a href="#/form/summary">{{tab|translate}}</a></li>
+  </ul>
+</nav>
+<div ui-view></div>

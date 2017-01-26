@@ -57,11 +57,11 @@ mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
             {
                 insured:
                 {
- 
+                    role: "insured"
                 },
                 policyholder:
                 { 
-
+                    role: "policyholder"
                 }
             },
             product: {

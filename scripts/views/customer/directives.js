@@ -19,7 +19,7 @@ mainApp
             templateUrl: 'scripts/views/customer/en/cards/productsection.html?cb=' + cachebuster
         };
     })
-    .directive("customerInput", function () {
+    .directive("policyHolderInput", function () {
         return {
             restrict: "AE",
             scope: {
@@ -27,6 +27,17 @@ mainApp
                 title: '='
             },
             //template: "Customer: <h1>{{data}}</h1> {{title}}",
-            templateUrl: 'scripts/views/customer/en/cards/customerinput.html?cb=' + cachebuster
+            templateUrl: 'scripts/views/customer/en/cards/policyHolderInput.html?cb=' + cachebuster
+        };
+    })
+    .directive("insuredInput", function () {
+        return {
+            restrict: "AE",
+            scope: {
+                data: '=',
+                title: '='
+            },
+            //template: "Customer: <h1>{{data}}</h1> {{title}}",
+            templateUrl: 'scripts/views/customer/en/cards/insuredInput.html?cb=' + cachebuster
         };
     });

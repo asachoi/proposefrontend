@@ -36,17 +36,17 @@
         <div class="sideBySideBlock sideBySideBlock--7030">
             <div class="sideBySideBlock__leftBlock">
                 <h2 class="mainTitle">Surname</h2>
-                <input name="surname"  type="text" class="text" ng-model="data.surname">
+                <input name="surname" type="text" class="text" ng-model="data.surname">
             </div>
         </div>
         <div class="sideBySideBlock sideBySideBlock--7030">
             <div class="sideBySideBlock__leftBlock">
                 <h2 class="mainTitle">Given name</h2>
-                <input name="given"  type="text" class="text" ng-model="data.given">
+                <input name="given" type="text" class="text" ng-model="data.given">
             </div>
         </div>
 
- 
+
 
 
 
@@ -70,35 +70,34 @@
             </div>
 
         </div>
+        <div class="commonForm" style="padding: 30px 0; border-bottom: 1px solid #e5e5e5;">
 
-        <div class="sideBySideBlock sideBySideBlock--7030">
-            <div class="sideBySideBlock__leftBlock">
-                <label for="Surname">Date of Birth</label>
-            </div>
-            <div class="sideBySideBlock__rightBlock">
+            <h2 class="mainTitle">Date of Birth</h2>
+            <div class="myToggle myToggle--clearFix myToggle--large">
                 <md-datepicker ng-model="data.dob " md-current-view="year " required layout-align="start start"> </md-datepicker> Age: {{ data.dob | Age }}
+
             </div>
+
         </div>
+        <div class="commonForm" style="padding: 30px 0; border-bottom: 1px solid #e5e5e5;">
 
-
-        <div class="sideBySideBlock sideBySideBlock--7030">
-            <div class="sideBySideBlock__leftBlock">
-                <label for="phone">Mobile (optional)</label>
-            </div>
-            <div class="sideBySideBlock__rightBlock">
-
+            <h2 class="mainTitle">Mobile (optional)</h2>
+            <div class="myToggle myToggle--clearFix myToggle--large">
                 <input name="phone" type="text" class="text" ng-model="data.phone">
+
             </div>
+
+        </div>
+        <div class="commonForm" style="padding: 30px 0; border-bottom: 1px solid #e5e5e5;">
+
+            <h2 class="mainTitle">Email (optional)</h2>
+            <div class="myToggle myToggle--clearFix myToggle--large">
+                <input name="phone" type="text" class="text" ng-model="data.phone">
+
+            </div>
+
         </div>
 
-        <div class="sideBySideBlock sideBySideBlock--7030">
-            <div class="sideBySideBlock__leftBlock">
-                <label for="phone">Email (optional)</label>
-            </div>
-            <div class="sideBySideBlock__rightBlock">
 
-                <input name="phone" type="text" class="text" ng-model="data.email ">
-            </div>
-        </div>
     </fieldset>
 </div>

@@ -11,7 +11,7 @@
       <a href="#/form/baseplan" ng-show="settingObj.validPlan">    {{'rider'|translate}}</a>
     </li>
     <li class="item" ng-class="{'is-active' : currentstate == 'form.summary'}" ui-sref=".summary">
-      <a href="#/form/summary" ng-show="settingObj.validPlan">{{'baseplan'|translate}}</a>
+      <a href="#/form/summary" ng-show="settingObj.validPlan">{{'summary'|translate}}</a>
     </li>
     <li class="item" ng-repeat="tab in customFormTabs" ng-class="{'is-active' : selectedTab == 0}" ui-sref=".{{tab}}">
       <a href="#/form/summary">{{tab|translate}}</a>

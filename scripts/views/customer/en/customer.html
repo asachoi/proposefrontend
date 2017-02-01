@@ -1,6 +1,9 @@
 <section class="panelz panelz--withTabs">
     <form name="userForm" ng-keyup="" ng-mouseup="" class="my-form commonForm">
         <div class="scrollable scrollable--vertical">
+            <div class="content padded">
+                <h2 class="mainTitle"> {{'customerinfo' | translate}}</h2>
+            </div>
             <insured-input data="baseObj.customers.insured" title="'Insured'"></insured-input>
             <div class="grid">
                 <div class="span6" style="width: calc(50% - 10px); margin-right: 10px;">
@@ -20,5 +23,6 @@
                 </div>
             </div>
             <policy-holder-input data="baseObj.customers.policyholder" title="'Policy Holder'" ng-if="!baseObj.settings.isSamePerson"></policy-holder-input>
+
     </form>
 </section>

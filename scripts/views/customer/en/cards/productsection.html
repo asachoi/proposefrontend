@@ -1,19 +1,35 @@
-<section >
-    <md-card>
-        <md-card-title>
-            <md-card-title-text>
-                <span class="md-headline">{{'planinfo' | translate}}</span>
-            </md-card-title-text>
-        </md-card-title>
-        <md-card-content>
-            <div layout="row">
-                <div flex=25>{{'product' | translate}}:  {{data.productgroup}}</div>
-                <div flex=75>{{'plancode' | translate}}: {{data.plan.value}}
-                     
-                </div>               
-                {{getPlan(data.productid, data.planid)}}
-            
-            </div>
-        </md-card-content>
-    </md-card>
+<h2 class="mainTitle">
+
+
+    {{'planinfo' | translate}}</h2>
+
+<section class="viewDetailBlock viewDetailBlock--firstBlock">
+    <div class="viewDetailBlock__header">
+
+    </div>
+    <div class="viewDetailBlock__content">
+        <div class="grid">
+            <section class="span12">
+
+                <div class="valuePairBlock">
+                    <div class="valuePairBlock__leftBlock">
+                        <span class="valuePairBlock__description">{{'product' | translate}}</span>
+                    </div>
+                    <div class="valuePairBlock__rightBlock">
+                        <span class="valuePairBlock__value">{{data.productgroup}}</span>
+                    </div>
+                </div>
+
+                <div class="valuePairBlock">
+                    <div class="valuePairBlock__leftBlock">
+                        <span class="valuePairBlock__description">{{'plancode' | translate}}</span>
+                    </div>
+                    <div class="valuePairBlock__rightBlock">
+                        <span class="valuePairBlock__value">{{data.plan.value}}</span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
 </section>

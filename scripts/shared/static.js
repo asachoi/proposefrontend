@@ -8,3 +8,24 @@ function guid() {
     return s4() + s4() + '-' + s4() + '-' + s4() + '-' +
         s4() + '-' + s4() + s4() + s4();
 }
+
+function PEHelper() {
+    return {
+        getProducts:  function() {
+
+        },
+        getProductDetail: function(productID) {
+
+        },
+        getRiders: function(productID) {
+
+        },
+        getRiderDetail: function(riderID) {
+
+        },
+        getPremium: function(submission) {
+            
+        }
+    }
+}
+

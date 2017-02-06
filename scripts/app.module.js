@@ -1,31 +1,19 @@
- 
-(function() {
-    'use strict';
+(function () {
+  'use strict';
 
-    angular
-        .module('eProposeApp', [
-            'ngMaterial',
-            'ngStorage', 
-            'tmh.dynamicLocale',
-            'pascalprecht.translate', 
-            'ngResource',
-            'ngCookies',
-            'ngAria',
-            'ngCacheBuster',
-            'ngFileUpload',
-            'ui.bootstrap',
-            'ui.bootstrap.datetimepicker',
-            'ui.router',
-            'infinite-scroll',
-            // jhipster-needle-angularjs-add-module JHipster will add new module here
-            'angular-loading-bar'
-        ])
-        .run(run);
+  angular.module('eProposeApp', [
+    'ngMaterial',
+    'ui.router',
+    'pascalprecht.translate',
 
-    run.$inject = ['stateHandler', 'translationHandler'];
+  ]);
 
-    function run(stateHandler, translationHandler) {
-        stateHandler.initialize();
-        translationHandler.initialize();
-    }
+  angular.module('eProposeApp').config(function ($mdIconProvider, $mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+      .primaryPalette('green')
+      .accentPalette('orange');
+
+    $mdIconProvider.fontSet('md', 'material-icons');
+  });
 })();
+

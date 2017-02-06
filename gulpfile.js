@@ -117,12 +117,12 @@ gulp.task('ngconstant:prod', function () {
         stream: true
     })
     .pipe(rename('app.constants.js'))
-    .pipe(gulp.dest(config.app + 'scripts/'));
+    .pipe(gulp.dest(config.app + 'app/'));
 });
 
 // check app for eslint errors
 gulp.task('eslint', function () {
-    return gulp.src(['gulpfile.js', config.app + 'scripts/**/*.js'])
+    return gulp.src(['gulpfile.js', config.app + 'app/**/*.js'])
         .pipe(plumber({errorHandler: handleErrors}))
         .pipe(eslint())
         .pipe(eslint.format())

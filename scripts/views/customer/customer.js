@@ -1,6 +1,7 @@
 (function () {
     'use strict';
     angular.module('eProposeApp').controller('form.customer.controller',
+        
         function ($scope, $rootScope, $state, $controller) {
             $controller('baseController', { $scope: $scope });
             var vm = $scope;
@@ -9,18 +10,18 @@
             vm.baseObj = $rootScope.stateObj;
             vm.settingObj = $rootScope.settingObj;
 
-
-            vm.updateSamePerson = function () {
+            vm.saveCustomer = saveCustomer;
+            vm.updateSamePerson = updateSamePerson;
+            
+            function updateSamePerson() {
                 $rootScope.settings.customerFormComplete = vm.userForm.$valid;
-            }
-
-            vm.saveCustomer = function () {
+            }            
+            
+            function saveCustomer() {
                 if ($rootScope.customerList == null) {
                     $rootScope.customerList = [];
                 }
                 $rootScope.customerList.push(vm.baseObj.customers);
-
-                //console.debug($rootScope.customerList);
 
             }
         }

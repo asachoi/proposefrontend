@@ -1,4 +1,4 @@
-mainApp.controller('mainController',
+angular.module('eProposeApp').controller('mainController',
     ['$scope', '$rootScope', '$translate', '$http', 'productServices', 'commonServices',
         function ($scope, $rootScope, $translate, $http, productServices, commonServices) {
             

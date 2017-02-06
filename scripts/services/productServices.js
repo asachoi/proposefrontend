@@ -1,4 +1,4 @@
-mainApp.service('productServices', function ($http, $rootScope, $filter, $q) {
+angular.module('eProposeApp').service('productServices', function ($http, $rootScope, $filter, $q) {
 
     var vm = this;
 

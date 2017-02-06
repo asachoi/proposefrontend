@@ -1,6 +1,6 @@
 
  
-var mainApp = angular.module('mainApp', [
+var eProposeApp = angular.module('eProposeApp', [
   'ngMaterial',
   
   'ui.router',
@@ -13,7 +13,7 @@ var mainApp = angular.module('mainApp', [
   //'LocalStorageModule'
 ]);
 
-mainApp.config(function ($mdIconProvider, $mdThemingProvider) {
+angular.module('eProposeApp').config(function ($mdIconProvider, $mdThemingProvider) {
     $mdThemingProvider.theme('default')
         .primaryPalette('green')
         .accentPalette('orange');
@@ -23,7 +23,7 @@ mainApp.config(function ($mdIconProvider, $mdThemingProvider) {
 
 
 /*
-mainApp
+eProposeApp
 	.run(function (logging) {
 		logging.init('main');
 		logging.setLogLevel(log4javascript.Level.ALL);
@@ -31,7 +31,7 @@ mainApp
 	});
 */
 
-mainApp
+angular.module('eProposeApp')
   //define constants
   .constant('availableLanguages', ['en-US', 'ja-JP', 'en-PH'])
   .constant('defaultLanguage', 'en-PH');

@@ -1,4 +1,4 @@
-angular.module('mainApp')
+angular.module('eProposeApp')
 .config(function (tmhDynamicLocaleProvider, $translateProvider, defaultLanguage) {
     tmhDynamicLocaleProvider.localeLocationPattern('scripts/locales/angular-locale_{{locale}}.js');
     $translateProvider.useStaticFilesLoader({

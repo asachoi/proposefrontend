@@ -1,4 +1,4 @@
-mainApp.controller('formriderController',
+angular.module('eProposeApp').controller('formriderController',
     function ($scope, $rootScope, $filter, $state, productServices, $controller) {
         var vm = $scope;
 

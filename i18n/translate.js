@@ -1,4 +1,4 @@
-mainApp.config(
+angular.module('eProposeApp').config(
     function ($translateProvider) {
         $translateProvider.translations('en', {
             TITLE: 'Hello',

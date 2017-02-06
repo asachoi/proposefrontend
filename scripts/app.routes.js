@@ -1,4 +1,4 @@
-mainApp.config(function ($stateProvider, $urlRouterProvider) {
+angular.module('eProposeApp').config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/list');
 

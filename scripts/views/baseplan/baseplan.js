@@ -1,4 +1,4 @@
-mainApp.controller('formbaseplanController',
+angular.module('eProposeApp').controller('formbaseplanController',
     ['$scope', '$rootScope', '$filter', '$state', 'productServices', '$controller',
         function ($scope, $rootScope, $filter, $state, productServices, $controller) {
             var vm = $scope;

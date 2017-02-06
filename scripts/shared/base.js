@@ -1,4 +1,4 @@
-mainApp.controller('baseController',
+angular.module('eProposeApp').controller('baseController',
     ['$scope', '$rootScope', '$state',
         function ($scope, $rootScope, $state) {
             var vm = $scope;

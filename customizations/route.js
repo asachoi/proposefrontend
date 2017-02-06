@@ -1,5 +1,6 @@
 
-mainApp.config(
+angular.module('eProposeApp')
+.config(
     function ($stateProvider) {
         $stateProvider
         .state('form.debug', {

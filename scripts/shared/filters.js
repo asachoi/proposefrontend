@@ -1,5 +1,5 @@
 
-mainApp
+eProposeApp
 .filter('YesNo', function () {
     return function (x) {
         if (x == 'S') return 'Standard';

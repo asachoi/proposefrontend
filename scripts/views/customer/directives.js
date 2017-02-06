@@ -1,4 +1,4 @@
-mainApp
+eProposeApp
     .directive("customerSection", function () {
         return {
             restrict: "AE",

@@ -17,6 +17,11 @@
     "jquery": "^3.1.1",
     "angular-ui-router": "ui-router#^0.4.2",
     "ngCordova": "^0.1.27-alpha",
-    "angularLocalStorage": "ngStorage#^0.3.2"
+    "angularLocalStorage": "ngStorage#^0.3.2",
+    "angular-translate": "^2.13.1",
+    "angular-sanitize": "^1.6.1"
+  },
+  "resolutions": {
+    "angular": "^1.6.1"
   }
 }

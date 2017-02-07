@@ -9,10 +9,7 @@
   ]);
 
   angular.module('eProposeApp').config(function ($mdIconProvider, $mdThemingProvider) {
-    $mdThemingProvider.theme('default')
-      .primaryPalette('green')
-      .accentPalette('orange');
-
+    $mdThemingProvider.theme('default');
     $mdIconProvider.fontSet('md', 'material-icons');
   });
 })();

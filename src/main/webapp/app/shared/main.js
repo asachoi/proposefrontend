@@ -15,12 +15,7 @@ angular
             $rootScope.stateObj = productServices.loadInitState();
             vm.stateObj = $rootScope.stateObj;
 
-            commonServices.getCustomConfig().then(
-                function (payload) {
-                    $rootScope.customFormTabs = payload.data.tabs;
-
-                }
-            );
+ 
 
 
             productServices.loadProducts().then(

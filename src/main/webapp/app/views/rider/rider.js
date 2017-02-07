@@ -44,7 +44,7 @@ angular.module('eProposeApp').controller('formriderController',
         }
 
         vm.toggle = function (item, list) {
-             if (list == null || item == null) return;
+            if (list == null || item == null) return;
 
             var idx = list.indexOf(item);
             if (idx > -1) { // remove

@@ -46,11 +46,11 @@
 
 
             vm.loadProducts = function () {
-                return $http.get("customizations/data/product.json?cb=" + cachebuster);
+                return $http.get("app/customizations/data/product.json");
             };
 
             vm.loadRiders = function () {
-                return $http.get("customizations/data/rider.json?cb=" + cachebuster);
+                return $http.get("app/customizations/data/rider.json");
             };
 
 

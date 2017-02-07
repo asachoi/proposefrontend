@@ -8,6 +8,17 @@
   <link rel="icon" href="data:;base64,=">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="content/style/default.css?4=1">
+
+    <!-- build:css content/css/vendor.css -->
+    <!-- bower:css -->
+ 
+    <link rel="stylesheet" href="../../../bower_components/angular-material/angular-material.css">
+ 
+    <!-- endinject -->
+    <!-- endbuild -->
+    <!-- build:css content/css/main.css -->
+ 
+    <!-- endbuild -->  
 </head>
 
 <body ng-app="eProposeApp" ng-cloak ng-controller="mainController">
@@ -34,60 +45,80 @@
     <div ui-view></div>
   </div>
 
+ 
 
+  
 
+    <!-- build:js app/vendor.js -->
+    <!-- bower:js -->
 
+    <script src="../../../bower_components/angular/angular.js"></script>
 
+    <script src="../../../bower_components/angular-animate/angular-animate.js"></script>
 
+    <script src="../../../bower_components/angular-aria/angular-aria.js"></script>
 
-  <!-- it will be replaced by gulp and requirejs //-->
-  <!-- inject:vendor:js -->
-  <!-- endinject -->
-  <!-- Angular Material requires Angular.js Libraries -->
-  <script src="bower_components/angular/angular.min.js"></script>
-  <script src="bower_components/angular-animate/angular-animate.min.js"></script>
-  <script src="bower_components/angular-aria/angular-aria.min.js"></script>
-  <script src="bower_components/angular-messages/angular-messages.min.js"></script>
-  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-  <script src="bower_components/angular-material/angular-material.min.js"></script>
-  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-  <script src="bower_components/angular-translate/angular-translate.min.js"></script>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <!-- inject:app:js -->
-  <!-- endinject -->
+    <script src="../../../bower_components/angular-messages/angular-messages.js"></script>
 
+    <script src="../../../bower_components/jquery/dist/jquery.js"></script>
 
-  <script type="text/javascript">
-        var cachebuster = Math.round(new Date().getTime() / 1000);
+    <script src="../../../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
-        
-        document.write('<scr'+'ipt type="text/javascript" src="app/app.module.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="app/app.routes.js?cb=' +cachebuster+'"></scr' + 'ipt>'); 
+    <script src="../../../bower_components/angular-translate/angular-translate.js"></script>
 
-        document.write('<scr'+'ipt type="text/javascript" src="app/shared/base.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="app/shared/main.js?cb=' +cachebuster+'"></scr' + 'ipt>');        
-        document.write('<scr'+'ipt type="text/javascript" src="app/shared/static.js?cb=' +cachebuster+'"></scr' + 'ipt>');        
-        document.write('<scr'+'ipt type="text/javascript" src="app/shared/filters.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        
+    <script src="../../../bower_components/angular-sanitize/angular-sanitize.js"></script>
 
-        document.write('<scr'+'ipt type="text/javascript" src="app/services/commonServices.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="app/services/productServices.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+    <script src="../../../bower_components/angular-material/angular-material.js"></script>
 
-        document.write('<scr'+'ipt type="text/javascript" src="app/views/form.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="app/views/customer/customer.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="app/views/customer/directives.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="app/views/baseplan/baseplan.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="app/views/rider/rider.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="app/views/summary/summary.js?cb=' +cachebuster+'"></scr' + 'ipt>');
+    <!-- endinject -->
+    <!-- endbuild -->
 
-        document.write('<scr'+'ipt type="text/javascript" src="i18n/translate.js?cb=' +cachebuster+'"></scr' + 'ipt>');
-        document.write('<scr'+'ipt type="text/javascript" src="customizations/route.js?cb=' +cachebuster+'"></scr' + 'ipt>');      
-         
-    </script>
+    <!-- build:js app/app.js  -->
+    <!-- inject:js -->
+
+    <script src="app/app.module.js"></script>
+
+    <script src="app/views/summary/summary.js"></script>
+
+    <script src="app/views/rider/rider.js"></script>
+
+    <script src="app/views/form.js"></script>
+
+    <script src="app/views/customer/directives.js"></script>
+
+    <script src="app/views/customer/customer.js"></script>
+
+    <script src="app/views/baseplan/baseplan.js"></script>
+
+    <script src="app/shared/translate.js"></script>
+
+    <script src="app/shared/static.js"></script>
+
+    <script src="app/shared/main.js"></script>
+
+    <script src="app/shared/index.js"></script>
+
+    <script src="app/shared/filters.js"></script>
+
+    <script src="app/shared/base.js"></script>
+
+    <script src="app/services/productServices.js"></script>
+
+    <script src="app/services/commonServices.js"></script>
+
+    <script src="app/customizations/route.js"></script>
+
+    <script src="app/app.routes.js"></script>
+
+    <script src="app/app.constants.js"></script>
+
+    <!-- endinject -->
+    <!-- endbuild -->
+
+ 
+ 
   <script type="text/javascript" src="cordova.js"></script>
   
-  
-  <script type="text/javascript" src="app/shared/index.js"></script>
 
 
 

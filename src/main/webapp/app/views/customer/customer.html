@@ -5,23 +5,20 @@
                 <h2 class="mainTitle"> {{'customerinfo' | translate}}</h2>
             </div>
             <insured-input data="baseObj.customers.insured" title="'Insured'"></insured-input>
-            <div class="grid">
-                <div class="span6" style="width: calc(50% - 10px); margin-right: 10px;">
-                </div>
-                <div class="span6" style="width: calc(50% - 10px); margin-right: 10px;">
 
-                    <div class="checkboxContainers">
-                        <div class="checkboxContainer checkboxContainer--individualBox" ng-class='{"is-active" : isQuestionSetVisible1($index)}'
-                            id="checkboxContainer1[{$index}]">
-                            <div class="checkbox">
-                                <input name="[{q.name}]" id="[{q.name}]" type="checkbox" ng-model="baseObj.settings.isSamePerson">
-                                <label for="[{q.name}]">Policy holder is same as insured</label>
-                            </div>
-                            <label class="checkboxContainer__label" for="Q1">Policy holder is same as insured</label>
-                        </div>
+
+
+            <div class="checkboxContainers">
+                <div class="checkboxContainer checkboxContainer--individualBox" ng-class='{"is-active" : isQuestionSetVisible1($index)}'
+                    id="checkboxContainer1[{$index}]">
+                    <div class="checkbox">
+                        <input name="[{q.name}]" id="[{q.name}]" type="checkbox" ng-model="baseObj.settings.isSamePerson">
+                        <label for="[{q.name}]">Policy holder is same as insured</label>
                     </div>
+                    <label class="checkboxContainer__label" for="Q1">Policy holder is same as insured</label>
                 </div>
             </div>
+
             <policy-holder-input data="baseObj.customers.policyholder" title="'Policy Holder'" ng-if="!baseObj.settings.isSamePerson"></policy-holder-input>
 
     </form>

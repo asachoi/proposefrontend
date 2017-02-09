@@ -1,10 +1,14 @@
 (function () {
     'use strict';
-    
+
     angular
         .module('eProposeApp')
         .service('productServices',
-        function ($http, $rootScope, $filter, $q) {
+        function (
+            $http,
+            $rootScope,
+            $filter,
+            $q) {
 
             var vm = this;
 
@@ -80,7 +84,5 @@
                 };
                 return data;
             };
-
-
         });
 })();

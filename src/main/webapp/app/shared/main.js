@@ -3,8 +3,8 @@
 angular
     .module('eProposeApp')
     .controller('mainController',
-    ['$scope', '$rootScope', '$translate', '$http', 'productServices', 'commonServices',
-        function ($scope, $rootScope, $translate, $http, productServices, commonServices) {
+    ['$scope', '$rootScope', '$translate', '$http', 'productServices',
+        function ($scope, $rootScope, $translate, $http, productServices) {
 
             var vm = $scope;
 

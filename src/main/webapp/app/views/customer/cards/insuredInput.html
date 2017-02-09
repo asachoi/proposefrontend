@@ -1,101 +1,100 @@
 <div class="content padded">
     <h2 class="mainTitle"> {{data.role | translate}}</h2>
-    <fieldset>
-        <div class="sideBySideBlock sideBySideBlock--7030">
-            <div class="sideBySideBlock__leftBlock">
-                <h2 class="mainTitle">Title</h2>
-                <div class="myToggle myToggle--clearFix myToggle--large">
-                    <div class="radio">
-                        <input id="titleMR" type="radio" value='MR' ng-model="data.title">
-                        <label for="titleMR">Mr</label>
-                    </div>
-                    <div class="radio">
-                        <input id="titleMS" type="radio" value='MS' ng-model="data.title">
-                        <label for="titleMS">Ms</label>
-                    </div>
 
-                </div>
+    <div class="sideBySideBlock sideBySideBlock--7030">
+        <h2 class="mainTitle">Title</h2>
+        <div class="myToggle myToggle--clearFix myToggle--large">
+            <div class="radio">
+                <input id="titleMR" type="radio" value='MR' ng-model="data.title">
+                <label for="titleMR">Mr</label>
             </div>
-            <div class="sideBySideBlock__leftBlock">
-                <h2 class="mainTitle">Gender</h2>
-                <div class="myToggle myToggle--clearFix myToggle--large">
-                    <div class="radio">
-                        <input id="genderMale" name="gender" type="radio" value='Male' ng-model="data.sex">
-                        <label for="genderMale">Male</label>
-                    </div>
-                    <div class="radio">
-                        <input id="genderFemale" name="gender" type="radio" value='Female' ng-model="data.sex">
-                        <label for="genderFemale">Female</label>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="sideBySideBlock sideBySideBlock--7030">
-            <div class="sideBySideBlock__leftBlock">
-                <h2 class="mainTitle">Surname</h2>
-                <input name="surname" type="text" class="text" ng-model="data.surname">
-            </div>
-        </div>
-        <div class="sideBySideBlock sideBySideBlock--7030">
-            <div class="sideBySideBlock__leftBlock">
-                <h2 class="mainTitle">Given name</h2>
-                <input name="given" type="text" class="text" ng-model="data.given">
-            </div>
-        </div>
-
-
-
-
-
-        <div class="commonForm" style="padding: 30px 0; ">
-
-            <h2 class="mainTitle">Smoking status</h2>
-            <div class="myToggle myToggle--clearFix myToggle--large">
-                <div class="radio">
-                    <input id="smokingStatusSmoker" name="smokingStatus" type="radio" value='Y' ng-model="data.smokingstatus">
-                    <label for="smokingStatusSmoker">Smoker</label>
-                </div>
-                <div class="radio">
-                    <input id="smokingStatusNonSmoker" name="smokingStatus" type="radio" value='N' ng-model="data.smokingstatus">
-                    <label for="smokingStatusNonSmoker">Non-smoker</label>
-                </div>
-                <div class="radio">
-                    <input id="smokingStatusStandard" name="smokingStatus" type="radio" value='S' ng-model="data.smokingstatus">
-                    <label for="smokingStatusStandard">Standard</label>
-                </div>
-
+            <div class="radio">
+                <input id="titleMS" type="radio" value='MS' ng-model="data.title">
+                <label for="titleMS">Ms</label>
             </div>
 
         </div>
-        <div class="commonForm" style="padding: 30px 0; ">
-
-            <h2 class="mainTitle">Date of Birth</h2>
-            <div class="myToggle myToggle--clearFix myToggle--large">
-                <md-datepicker ng-model="data.dob " md-current-view="year " required layout-align="start start"> </md-datepicker> Age: {{ data.dob | Age }}
-
+    </div>
+    <div class="sideBySideBlock sideBySideBlock--7030">
+        <h2 class="mainTitle">Gender</h2>
+        <div class="myToggle myToggle--clearFix myToggle--large">
+            <div class="radio">
+                <input id="genderMale" name="gender" type="radio" value='Male' ng-model="data.sex">
+                <label for="genderMale">Male</label>
+            </div>
+            <div class="radio">
+                <input id="genderFemale" name="gender" type="radio" value='Female' ng-model="data.sex">
+                <label for="genderFemale">Female</label>
             </div>
 
         </div>
-        <div class="commonForm" style="padding: 30px 0; ">
+    </div>
 
-            <h2 class="mainTitle">Mobile (optional)</h2>
-            <div class="myToggle myToggle--clearFix myToggle--large">
-                <input name="phone" type="text" class="text" ng-model="data.phone">
 
+    <div class="sideBySideBlock sideBySideBlock--7030">
+        <div class="sideBySideBlock__leftBlock">
+            <h2 class="mainTitle">Surname</h2>
+            <input name="surname" type="text" class="text" ng-model="data.surname">
+        </div>
+    </div>
+    <div class="sideBySideBlock sideBySideBlock--7030">
+        <div class="sideBySideBlock__leftBlock">
+            <h2 class="mainTitle">Given name</h2>
+            <input name="given" type="text" class="text" ng-model="data.given">
+        </div>
+    </div>
+
+
+
+
+
+    <div class="commonForm" style="padding: 30px 0; ">
+
+        <h2 class="mainTitle">Smoking status</h2>
+        <div class="myToggle myToggle--clearFix myToggle--large">
+            <div class="radio">
+                <input id="smokingStatusSmoker" name="smokingStatus" type="radio" value='Y' ng-model="data.smokingstatus">
+                <label for="smokingStatusSmoker">Smoker</label>
+            </div>
+            <div class="radio">
+                <input id="smokingStatusNonSmoker" name="smokingStatus" type="radio" value='N' ng-model="data.smokingstatus">
+                <label for="smokingStatusNonSmoker">Non-smoker</label>
+            </div>
+            <div class="radio">
+                <input id="smokingStatusStandard" name="smokingStatus" type="radio" value='S' ng-model="data.smokingstatus">
+                <label for="smokingStatusStandard">Standard</label>
             </div>
 
         </div>
-        <div class="commonForm" style="padding: 30px 0; ">
 
-            <h2 class="mainTitle">Email (optional)</h2>
-            <div class="myToggle myToggle--clearFix myToggle--large">
-                <input name="phone" type="text" class="text" ng-model="data.email">
+    </div>
+    <div class="commonForm" style="padding: 30px 0; ">
 
-            </div>
+        <h2 class="mainTitle">Date of Birth</h2>
+        <div class="myToggle myToggle--clearFix myToggle--large">
+            <md-datepicker ng-model="data.dob " md-current-view="year " required layout-align="start start"> </md-datepicker> Age: {{ data.dob | Age }}
 
         </div>
+
+    </div>
+    <div class="commonForm" style="padding: 30px 0; ">
+
+        <h2 class="mainTitle">Mobile (optional)</h2>
+        <div class="myToggle myToggle--clearFix myToggle--large">
+            <input name="phone" type="text" class="text" ng-model="data.phone">
+
+        </div>
+
+    </div>
+    <div class="commonForm" style="padding: 30px 0; ">
+
+        <h2 class="mainTitle">Email (optional)</h2>
+        <div class="myToggle myToggle--clearFix myToggle--large">
+            <input name="phone" type="text" class="text" ng-model="data.email">
+
+        </div>
+
+    </div>
 
 
     </fieldset>

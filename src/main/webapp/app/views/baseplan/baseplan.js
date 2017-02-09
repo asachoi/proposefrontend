@@ -45,7 +45,10 @@
                     return productServices.getProduct(planid).customform;
 
                 }
-
+                vm.getPlanSchema = function (planid) {
+                    if (planid == null) return;
+                    return productServices.getPlan(planid); 
+                }
                 vm.planSearch = function (text, productgroupid) {
                     var sel = vm.getPlans(productgroupid);
                     var list = $filter('filter')(sel, { value: text }); 

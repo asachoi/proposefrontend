@@ -4,8 +4,7 @@
   angular.module('eProposeApp', [
     'ngMaterial',
     'ui.router',
-    'pascalprecht.translate',
-
+    'pascalprecht.translate'
   ]);
 
   angular.module('eProposeApp').config(function ($mdIconProvider, $mdThemingProvider) {

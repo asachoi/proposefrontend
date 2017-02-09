@@ -1,0 +1,33 @@
+<section class="panelz panelz--withTabs">
+    <div class="scrollable scrollable--vertical">
+        <form name="riderForm" ng-keyup="" ng-mouseup="" ng-init="baseObj.riders=setRiderList(baseObj.product.plan.key);">
+            <div class="content padded">
+                <customer-section data="baseObj.customers.insured"></customer-section>
+                <product-section data="baseObj.product"></product-section>
+
+
+                <h2 class="mainTitle">
+
+
+                    {{'riderform' | translate}}</h2>
+                <div ng-repeat="item in baseObj.riders;" layout="row" ng-init="ridersetting = getRiderSetting(item.ridercode)">
+
+                    <div class="md-block" flex=25>
+                        <md-input-container class="md-block" flex=25>
+                            <md-checkbox ng-checked="exists(item, selectedRiders)" ng-click="toggle(item,  selectedRiders)">
+                                {{item.ridercode}}
+                            </md-checkbox>
+                        </md-input-container>
+                    </div>
+                    <div ng-if="ridersetting==null || !ridersetting.ridertype" ng-include="'app/customizations/views/rider/default.html?111'" class="md-block"
+                        flex=70 layout="row"></div>
+
+                    <div ng-if="ridersetting.ridertype" ng-include="'app/customizations/views/rider/' + ridersetting.ridertype + '.html?333333'"
+                        class="md-block" flex=70 layout="row"></div>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+</section>

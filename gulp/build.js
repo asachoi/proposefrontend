@@ -32,9 +32,11 @@ module.exports = function() {
     var templates = fs.readFileSync(config.tmp + '/templates.js');
     var manifest = gulp.src(config.revManifest);
 
+    //need to update to handle HTML files build.
+
     return gulp.src([config.app + '**/*.html',
         '!' + config.app + 'app/**/*.html',
-        '!' + config.app + 'swagger-ui/**/*',
+        //'!' + config.app + 'swagger-ui/**/*',
         '!' + config.bower + '**/*.html'])
         .pipe(plumber({errorHandler: handleErrors}))
         //init sourcemaps and prepend semicolon

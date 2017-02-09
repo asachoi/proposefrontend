@@ -1,0 +1,559 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\nodejs\\node.exe',
+1 verbose cli   'D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'i',
+1 verbose cli   '-g',
+1 verbose cli   'cordova' ]
+2 info using npm@1.4.9
+3 info using node@v4.5.0
+4 verbose cache add [ 'cordova', null ]
+5 verbose cache add name=undefined spec="cordova" args=["cordova",null]
+6 verbose parsed url Url {
+6 verbose parsed url   protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'cordova',
+6 verbose parsed url   path: 'cordova',
+6 verbose parsed url   href: 'cordova' }
+7 silly lockFile a98f2055-cordova cordova
+8 verbose lock cordova D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\a98f2055-cordova.lock
+9 silly lockFile a98f2055-cordova cordova
+10 silly lockFile a98f2055-cordova cordova
+11 verbose addNamed [ 'cordova', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile de8d9fad-cordova cordova@
+14 verbose lock cordova@ D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\de8d9fad-cordova.lock
+15 silly addNameRange { name: 'cordova', range: '*', hasData: false }
+16 verbose url raw cordova
+17 verbose url resolving [ 'http://registry.npmjs.org/', './cordova' ]
+18 verbose url resolved http://registry.npmjs.org/cordova
+19 info trying registry request attempt 1 at 14:09:22
+20 verbose etag "122AXXXQ4TLSK6Q8XSTOMJK32"
+21 http GET http://registry.npmjs.org/cordova
+22 http 200 http://registry.npmjs.org/cordova
+23 silly registry.get cb [ 200,
+23 silly registry.get   { server: 'nginx/1.10.1',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'last-modified': 'Tue, 07 Feb 2017 20:00:56 GMT',
+23 silly registry.get     etag: 'W/"589a2778-1056ea"',
+23 silly registry.get     'cache-control': 'max-age=300',
+23 silly registry.get     'content-length': '40052',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     date: 'Wed, 08 Feb 2017 06:09:22 GMT',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'x-served-by': 'cache-hkg6826-HKG',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1486534162.362279,VS0,VE164',
+23 silly registry.get     vary: 'Accept-Encoding',
+23 silly registry.get     connection: 'close',
+23 silly registry.get     'content-encoding': 'gzip',
+23 silly registry.get     age: '0' } ]
+24 silly addNameRange number 2 { name: 'cordova', range: '*', hasData: true }
+25 silly addNameRange versions [ 'cordova',
+25 silly addNameRange   [ '0.0.1',
+25 silly addNameRange     '0.0.2',
+25 silly addNameRange     '0.0.3',
+25 silly addNameRange     '0.0.4',
+25 silly addNameRange     '0.0.5',
+25 silly addNameRange     '0.0.6',
+25 silly addNameRange     '0.0.7',
+25 silly addNameRange     '0.0.8',
+25 silly addNameRange     '0.0.9',
+25 silly addNameRange     '0.1.0',
+25 silly addNameRange     '0.1.1',
+25 silly addNameRange     '0.1.2',
+25 silly addNameRange     '0.1.3',
+25 silly addNameRange     '0.1.4',
+25 silly addNameRange     '0.1.5',
+25 silly addNameRange     '0.1.6',
+25 silly addNameRange     '0.1.7',
+25 silly addNameRange     '0.1.8',
+25 silly addNameRange     '0.1.9',
+25 silly addNameRange     '0.1.10',
+25 silly addNameRange     '0.1.11',
+25 silly addNameRange     '0.1.12',
+25 silly addNameRange     '0.1.13',
+25 silly addNameRange     '0.1.14',
+25 silly addNameRange     '2.2.0',
+25 silly addNameRange     '2.3.0',
+25 silly addNameRange     '2.3.1',
+25 silly addNameRange     '2.3.2',
+25 silly addNameRange     '2.3.3',
+25 silly addNameRange     '2.3.5',
+25 silly addNameRange     '2.3.6',
+25 silly addNameRange     '2.4.0',
+25 silly addNameRange     '2.4.1',
+25 silly addNameRange     '2.4.2',
+25 silly addNameRange     '2.4.3',
+25 silly addNameRange     '2.4.4',
+25 silly addNameRange     '2.4.5',
+25 silly addNameRange     '2.4.6',
+25 silly addNameRange     '2.4.7',
+25 silly addNameRange     '2.4.8',
+25 silly addNameRange     '2.4.9',
+25 silly addNameRange     '2.4.10',
+25 silly addNameRange     '2.5.0',
+25 silly addNameRange     '2.5.2',
+25 silly addNameRange     '2.5.3',
+25 silly addNameRange     '2.5.4',
+25 silly addNameRange     '2.5.5',
+25 silly addNameRange     '2.6.0',
+25 silly addNameRange     '2.6.1',
+25 silly addNameRange     '2.6.2',
+25 silly addNameRange     '2.7.0-rc.1',
+25 silly addNameRange     '2.7.1-rc.1',
+25 silly addNameRange     '2.7.2',
+25 silly addNameRange     '2.7.3',
+25 silly addNameRange     '2.7.4',
+25 silly addNameRange     '2.8.0',
+25 silly addNameRange     '2.8.1',
+25 silly addNameRange     '2.8.2',
+25 silly addNameRange     '2.8.3',
+25 silly addNameRange     '2.8.4',
+25 silly addNameRange     '2.8.5',
+25 silly addNameRange     '2.8.6',
+25 silly addNameRange     '2.8.7',
+25 silly addNameRange     '2.8.8',
+25 silly addNameRange     '2.8.9',
+25 silly addNameRange     '2.8.10',
+25 silly addNameRange     '2.8.11',
+25 silly addNameRange     '2.8.12',
+25 silly addNameRange     '2.8.13',
+25 silly addNameRange     '2.8.14',
+25 silly addNameRange     '2.8.15',
+25 silly addNameRange     '2.8.16',
+25 silly addNameRange     '2.8.17',
+25 silly addNameRange     '2.8.18',
+25 silly addNameRange     '2.8.19',
+25 silly addNameRange     '2.8.20',
+25 silly addNameRange     '2.8.21',
+25 silly addNameRange     '2.8.22',
+25 silly addNameRange     '2.8.23',
+25 silly addNameRange     '2.8.24',
+25 silly addNameRange     '2.8.25',
+25 silly addNameRange     '2.9.0',
+25 silly addNameRange     '2.9.1',
+25 silly addNameRange     '2.9.2',
+25 silly addNameRange     '2.9.3',
+25 silly addNameRange     '2.9.4',
+25 silly addNameRange     '2.9.5',
+25 silly addNameRange     '2.9.6',
+25 silly addNameRange     '2.9.7',
+25 silly addNameRange     '3.0.0-rc1',
+25 silly addNameRange     '3.0.0-rc1-1',
+25 silly addNameRange     '3.0.0-rc1-3',
+25 silly addNameRange     '3.0.0',
+25 silly addNameRange     '3.0.1',
+25 silly addNameRange     '3.0.2',
+25 silly addNameRange     '3.0.3',
+25 silly addNameRange     '3.0.4',
+25 silly addNameRange     '3.0.5',
+25 silly addNameRange     '3.0.6',
+25 silly addNameRange     '3.0.7',
+25 silly addNameRange     '3.0.8',
+25 silly addNameRange     '3.0.9',
+25 silly addNameRange     '3.0.10',
+25 silly addNameRange     '3.1.0-0.1.0',
+25 silly addNameRange     '3.1.0-0.2.0',
+25 silly addNameRange     '3.2.0-rc.1',
+25 silly addNameRange     '3.2.0-0.1.0',
+25 silly addNameRange     '3.2.0-0.2.0',
+25 silly addNameRange     '3.2.0-0.3.0',
+25 silly addNameRange     '3.2.0-0.4.0',
+25 silly addNameRange     '3.3.0-rc.1',
+25 silly addNameRange     '3.3.0-0.1.1',
+25 silly addNameRange     '3.3.1-0.1.2',
+25 silly addNameRange     '2.9.0-rc1',
+25 silly addNameRange     '3.3.1-0.3.0',
+25 silly addNameRange     '3.3.1-0.3.1',
+25 silly addNameRange     '3.3.1-0.4.1',
+25 silly addNameRange     '3.3.1-0.4.2',
+25 silly addNameRange     '3.4.0-0.1.0',
+25 silly addNameRange     '3.4.0-0.1.1',
+25 silly addNameRange     '3.4.0-0.1.2',
+25 silly addNameRange     '3.4.0-0.1.3',
+25 silly addNameRange     '0.0.0-fake',
+25 silly addNameRange     '3.4.1-0.1.0',
+25 silly addNameRange     '3.5.0-0.2.0',
+25 silly addNameRange     '3.5.0-0.2.1',
+25 silly addNameRange     '3.5.0-0.2.2',
+25 silly addNameRange     '3.5.0-0.2.3',
+25 silly addNameRange     '3.5.0-0.2.4',
+25 silly addNameRange     '3.5.0-0.2.6',
+25 silly addNameRange     '3.5.0-0.2.7',
+25 silly addNameRange     '3.6.0-0.2.8',
+25 silly addNameRange     '3.6.0-0.2.9',
+25 silly addNameRange     '3.6.1-0.2.10',
+25 silly addNameRange     '3.6.3-0.2.11',
+25 silly addNameRange     '3.6.3-0.2.12',
+25 silly addNameRange     '3.6.3-0.2.13',
+25 silly addNameRange     '4.0.0',
+25 silly addNameRange     '4.0.1',
+25 silly addNameRange     '4.1.0',
+25 silly addNameRange     '4.1.1',
+25 silly addNameRange     '4.1.2',
+25 silly addNameRange     '4.1.3-nightly.2014.10.21',
+25 silly addNameRange     '4.2.0',
+25 silly addNameRange     '4.3.0',
+25 silly addNameRange     '5.0.0',
+25 silly addNameRange     '4.3.1',
+25 silly addNameRange     '5.1.1',
+25 silly addNameRange     '5.2.0',
+25 silly addNameRange     '5.3.1',
+25 silly addNameRange     '5.3.3',
+25 silly addNameRange     '5.4.0',
+25 silly addNameRange     '5.4.1',
+25 silly addNameRange     '6.0.0',
+25 silly addNameRange     '6.1.0',
+25 silly addNameRange     '6.1.1',
+25 silly addNameRange     '6.2.0-nightly.2016.5.11',
+25 silly addNameRange     '6.2.0-nightly.2016.5.12',
+25 silly addNameRange     '6.2.0-nightly.2016.5.13',
+25 silly addNameRange     '6.2.1-nightly.2016.5.20.254844d7',
+25 silly addNameRange     '6.2.1-nightly.2016.5.21.254844d7',
+25 silly addNameRange     '6.2.1-nightly.2016.5.22.254844d7',
+25 silly addNameRange     '6.2.1-nightly.2016.5.23.6e87c71a',
+25 silly addNameRange     '6.2.1-nightly.2016.5.24.189f41a4',
+25 silly addNameRange     '6.2.0',
+25 silly addNameRange     '6.2.1-nightly.2016.5.25.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.5.26.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.5.27.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.5.28.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.5.30.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.5.31.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.6.1.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.6.2.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.6.3.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.6.4.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.6.5.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.6.6.189f41a4',
+25 silly addNameRange     '6.2.1-nightly.2016.6.7.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.8.486bdab5',
+25 silly addNameRange     '6.2.1-dev',
+25 silly addNameRange     '6.2.1-nightly.2016.6.10.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.12.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.13.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.14.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.16.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.17.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.18.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.20.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.21.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.22.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.23.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.24.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.26.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.27.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.28.486bdab5',
+25 silly addNameRange     '6.2.1-nightly.2016.6.29.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.6.30.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.1.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.2.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.3.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.4.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.5.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.6.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.7.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.8.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.10.64e11522',
+25 silly addNameRange     '6.2.1-nightly.2016.7.12.64e11522',
+25 silly addNameRange     '6.3.1-nightly.2016.7.14.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.15.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.16.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.17.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.18.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.20.83f93b96',
+25 silly addNameRange     '6.3.0',
+25 silly addNameRange     '6.3.1-nightly.2016.7.23.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.24.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.25.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.26.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.27.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.28.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.7.29.83f93b96',
+25 silly addNameRange     '6.3.1-nightly.2016.8.2.5e6e3bf1',
+25 silly addNameRange     '6.3.1-nightly.2016.8.4.5e6e3bf1',
+25 silly addNameRange     '6.3.1-nightly.2016.8.5.5e6e3bf1',
+25 silly addNameRange     '6.3.1-nightly.2016.8.6.5e6e3bf1',
+25 silly addNameRange     '6.3.1-nightly.2016.8.7.5e6e3bf1',
+25 silly addNameRange     '6.3.1-nightly.2016.8.8.5e6e3bf1',
+25 silly addNameRange     '6.3.1-nightly.2016.8.9.5e6e3bf1',
+25 silly addNameRange     '6.4.0-nightly.2016.8.10.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.11.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.12.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.13.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.15.258eb28f',
+25 silly addNameRange     '6.3.1',
+25 silly addNameRange     '6.4.0-nightly.2016.8.16.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.17.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.18.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.20.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.21.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.22.258eb28f',
+25 silly addNameRange     '6.4.0-nightly.2016.8.23.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.8.24.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.8.25.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.8.26.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.8.27.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.8.28.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.8.29.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.8.30.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.8.31.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.9.1.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.9.2.4935f1a5',
+25 silly addNameRange     '6.4.0-nightly.2016.9.3.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.4.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.5.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.7.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.10.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.11.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.12.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.13.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.14.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.15.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.16.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.17.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.18.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.19.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.20.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.21.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.22.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.23.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.24.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.25.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.26.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.27.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.9.28.ddd828f4',
+25 silly addNameRange     '6.4.0-nightly.2016.10.7.4759c467',
+25 silly addNameRange     '6.4.0-nightly.2016.10.8.4759c467',
+25 silly addNameRange     '6.4.0-nightly.2016.10.9.4759c467',
+25 silly addNameRange     '6.4.0-nightly.2016.10.10.4759c467',
+25 silly addNameRange     '6.4.0-nightly.2016.10.11.4759c467',
+25 silly addNameRange     '6.4.0-nightly.2016.10.12.4759c467',
+25 silly addNameRange     '6.4.0-nightly.2016.10.13.4759c467',
+25 silly addNameRange     '6.4.0-nightly.2016.10.14.9c306a44',
+25 silly addNameRange     '6.4.0-nightly.2016.10.15.576c8426',
+25 silly addNameRange     '6.4.0-nightly.2016.10.16.576c8426',
+25 silly addNameRange     '6.4.0-nightly.2016.10.17.576c8426',
+25 silly addNameRange     '6.4.0-nightly.2016.10.18.576c8426',
+25 silly addNameRange     '6.4.0-nightly.2016.10.19.576c8426',
+25 silly addNameRange     '6.4.0-nightly.2016.10.21.576c8426',
+25 silly addNameRange     '6.4.0-nightly.2016.10.22.576c8426',
+25 silly addNameRange     '6.4.1-nightly.2016.10.25.c5977c97',
+25 silly addNameRange     '6.4.1-nightly.2016.10.26.c5977c97',
+25 silly addNameRange     '6.4.0',
+25 silly addNameRange     '6.4.1-nightly.2016.10.27.c5977c97',
+25 silly addNameRange     '6.4.1-nightly.2016.11.1.c5977c97',
+25 silly addNameRange     '6.4.1-nightly.2016.11.2.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.3.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.4.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.5.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.6.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.7.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.8.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.9.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.10.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.11.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.12.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.15.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.16.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.17.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.18.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.19.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.20.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.21.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.22.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.23.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.24.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.25.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.26.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.27.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.28.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.29.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.11.30.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.12.1.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.12.2.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.12.3.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.12.4.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.12.5.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.12.6.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.12.7.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.12.8.0dad8c6d',
+25 silly addNameRange     '6.4.1-nightly.2016.12.9.0dad8c6d',
+25 silly addNameRange     '6.5.0' ] ]
+26 verbose addNamed [ 'cordova', '6.5.0' ]
+27 verbose addNamed [ '6.5.0', '6.5.0' ]
+28 silly lockFile 3c10d38c-cordova-6-5-0 cordova@6.5.0
+29 verbose lock cordova@6.5.0 D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\3c10d38c-cordova-6-5-0.lock
+30 silly lockFile 1c4d34f1-js-org-cordova-cordova-6-5-0-tgz http://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+31 verbose lock http://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\1c4d34f1-js-org-cordova-cordova-6-5-0-tgz.lock
+32 verbose addRemoteTarball [ 'http://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz',
+32 verbose addRemoteTarball   'e6ec81b17dd50c17c40b4b87330f7ced38fb0b47' ]
+33 info retry fetch attempt 1 at 14:09:22
+34 verbose fetch to= D:\Users\Asa HP Choi\AppData\Local\Temp\npm-7296-Zpnv7npa\1486534162774-0.4988829146604985\tmp.tgz
+35 http GET http://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+36 http 200 http://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+37 verbose tar unpack D:\Users\Asa HP Choi\AppData\Local\Temp\npm-7296-Zpnv7npa\1486534162774-0.4988829146604985\tmp.tgz
+38 silly lockFile 8e56ce35--npm-cache-cordova-6-5-0-package tar://D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\cordova\6.5.0\package
+39 verbose lock tar://D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\cordova\6.5.0\package D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\8e56ce35--npm-cache-cordova-6-5-0-package.lock
+40 silly lockFile d713c214-62774-0-4988829146604985-tmp-tgz tar://D:\Users\Asa HP Choi\AppData\Local\Temp\npm-7296-Zpnv7npa\1486534162774-0.4988829146604985\tmp.tgz
+41 verbose lock tar://D:\Users\Asa HP Choi\AppData\Local\Temp\npm-7296-Zpnv7npa\1486534162774-0.4988829146604985\tmp.tgz D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\d713c214-62774-0-4988829146604985-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm extractEntry .npmignore
+45 silly gunzTarPerm extractEntry README.md
+46 silly gunzTarPerm extractEntry LICENSE
+47 silly gunzTarPerm extractEntry cordova.js
+48 silly gunzTarPerm extractEntry .ratignore
+49 silly gunzTarPerm extractEntry .travis.yml
+50 silly gunzTarPerm extractEntry CONTRIBUTING.md
+51 silly gunzTarPerm extractEntry .github/PULL_REQUEST_TEMPLATE.md
+52 silly gunzTarPerm extractEntry NOTICE
+53 silly gunzTarPerm extractEntry .gitattributes
+54 silly gunzTarPerm extractEntry RELEASENOTES.md
+55 silly gunzTarPerm extractEntry appveyor.yml
+56 silly gunzTarPerm extractEntry bin/cordova
+57 silly gunzTarPerm extractEntry bin/cordova.cmd
+58 silly gunzTarPerm extractEntry .jscs.json
+59 silly gunzTarPerm extractEntry doc/ja/README.md
+60 silly gunzTarPerm extractEntry doc/ja/bash.md
+61 silly gunzTarPerm extractEntry doc/bash.md
+62 silly gunzTarPerm extractEntry doc/clean.txt
+63 silly gunzTarPerm extractEntry doc/compile.txt
+64 silly gunzTarPerm extractEntry doc/cordova.txt
+65 silly gunzTarPerm extractEntry doc/create.txt
+66 silly gunzTarPerm extractEntry doc/de/README.md
+67 silly gunzTarPerm extractEntry doc/de/bash.md
+68 silly gunzTarPerm extractEntry doc/emulate.txt
+69 silly gunzTarPerm extractEntry doc/es/README.md
+70 silly gunzTarPerm extractEntry doc/es/bash.md
+71 silly gunzTarPerm extractEntry doc/fr/README.md
+72 silly gunzTarPerm extractEntry doc/fr/bash.md
+73 silly gunzTarPerm extractEntry doc/help.txt
+74 silly gunzTarPerm extractEntry doc/info.txt
+75 silly gunzTarPerm extractEntry doc/it/README.md
+76 silly gunzTarPerm extractEntry doc/it/bash.md
+77 silly gunzTarPerm extractEntry doc/build.txt
+78 silly gunzTarPerm extractEntry doc/ko/README.md
+79 silly gunzTarPerm extractEntry doc/ko/bash.md
+80 silly gunzTarPerm extractEntry doc/pl/README.md
+81 silly gunzTarPerm extractEntry doc/pl/bash.md
+82 silly gunzTarPerm extractEntry doc/platform.txt
+83 silly gunzTarPerm extractEntry doc/plugin.txt
+84 silly gunzTarPerm extractEntry doc/prepare.txt
+85 silly gunzTarPerm extractEntry doc/readme.md
+86 silly gunzTarPerm extractEntry doc/requirements.txt
+87 silly gunzTarPerm extractEntry doc/ru/bash.md
+88 silly gunzTarPerm extractEntry doc/run.txt
+89 silly gunzTarPerm extractEntry doc/serve.txt
+90 silly gunzTarPerm extractEntry doc/telemetry.txt
+91 silly gunzTarPerm extractEntry doc/zh/README.md
+92 silly gunzTarPerm extractEntry doc/zh/bash.md
+93 silly gunzTarPerm extractEntry .jshintignore
+94 silly gunzTarPerm extractEntry scripts/cordova.completion
+95 silly gunzTarPerm extractEntry src/cli.js
+96 silly gunzTarPerm extractEntry src/create.js
+97 silly gunzTarPerm extractEntry src/help.js
+98 silly gunzTarPerm extractEntry src/telemetry.js
+99 silly lockFile 8e56ce35--npm-cache-cordova-6-5-0-package tar://D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\cordova\6.5.0\package
+100 silly lockFile 8e56ce35--npm-cache-cordova-6-5-0-package tar://D:\Users\Asa HP Choi\AppData\Roaming\npm-cache\cordova\6.5.0\package
+101 silly lockFile d713c214-62774-0-4988829146604985-tmp-tgz tar://D:\Users\Asa HP Choi\AppData\Local\Temp\npm-7296-Zpnv7npa\1486534162774-0.4988829146604985\tmp.tgz
+102 silly lockFile d713c214-62774-0-4988829146604985-tmp-tgz tar://D:\Users\Asa HP Choi\AppData\Local\Temp\npm-7296-Zpnv7npa\1486534162774-0.4988829146604985\tmp.tgz
+103 silly lockFile 1c4d34f1-js-org-cordova-cordova-6-5-0-tgz http://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+104 silly lockFile 1c4d34f1-js-org-cordova-cordova-6-5-0-tgz http://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz
+105 silly lockFile 3c10d38c-cordova-6-5-0 cordova@6.5.0
+106 silly lockFile 3c10d38c-cordova-6-5-0 cordova@6.5.0
+107 silly lockFile de8d9fad-cordova cordova@
+108 silly lockFile de8d9fad-cordova cordova@
+109 silly resolved [ { name: 'cordova',
+109 silly resolved     version: '6.5.0',
+109 silly resolved     preferGlobal: 'true',
+109 silly resolved     description: 'Cordova command line interface tool',
+109 silly resolved     main: 'cordova',
+109 silly resolved     engines: { node: '>=4.0.0' },
+109 silly resolved     bin: { cordova: './bin/cordova' },
+109 silly resolved     scripts:
+109 silly resolved      { test: 'npm run jshint && npm run jasmine',
+109 silly resolved        jshint: 'jshint spec && jshint src',
+109 silly resolved        cover: 'istanbul cover --root src --print detail jasmine',
+109 silly resolved        jasmine: 'jasmine --captureExceptions --color' },
+109 silly resolved     repository:
+109 silly resolved      { type: 'git',
+109 silly resolved        url: 'https://git-wip-us.apache.org/repos/asf/cordova-cli.git' },
+109 silly resolved     bugs:
+109 silly resolved      { url: 'https://issues.apache.org/jira/browse/CB',
+109 silly resolved        email: 'dev@cordova.apache.org' },
+109 silly resolved     keywords: [ 'cordova', 'client', 'cli' ],
+109 silly resolved     dependencies:
+109 silly resolved      { 'cordova-common': '2.0.0',
+109 silly resolved        'cordova-lib': '6.5.0',
+109 silly resolved        insight: '~0.8.2',
+109 silly resolved        nopt: '3.0.1',
+109 silly resolved        q: '1.0.1',
+109 silly resolved        underscore: '1.7.0',
+109 silly resolved        'update-notifier': '^0.5.0' },
+109 silly resolved     devDependencies: { jasmine: '^2.5.2', istanbul: '^0.4.5', jshint: '^2.9.4' },
+109 silly resolved     author: { name: 'Anis Kadri' },
+109 silly resolved     contributors:
+109 silly resolved      [ [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object],
+109 silly resolved        [Object] ],
+109 silly resolved     license: 'Apache-2.0',
+109 silly resolved     readme: '<!--\n#\n# Licensed to the Apache Software Foundation (ASF) under one\n# or more contributor license agreements.  See the NOTICE file\n# distributed with this work for additional information\n# regarding copyright ownership.  The ASF licenses this file\n# to you under the Apache License, Version 2.0 (the\n# "License"); you may not use this file except in compliance\n# with the License.  You may obtain a copy of the License at\n#\n# http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing,\n# software distributed under the License is distributed on an\n# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY\n#  KIND, either express or implied.  See the License for the\n# specific language governing permissions and limitations\n# under the License.\n#\n-->\n[![Build status](https://ci.appveyor.com/api/projects/status/github/apache/cordova-cli?branch=master)](https://ci.appveyor.com/project/ApacheSoftwareFoundation/cordova-cli)\n[![Build Status](https://travis-ci.org/apache/cordova-cli.svg?branch=master)](https://travis-ci.org/apache/cordova-cli)\n\n# Cordova CLI\n\n> The command line tool to build, deploy and manage [Cordova](http://cordova.apache.org)-based applications.\n\n[Apache Cordova](http://cordova.apache.org) allows for building native mobile applications using HTML, CSS and JavaScript. \nThis tool helps with management of multi-platform Cordova applications as well as Cordova plugin integration.\n\n#Installation\nIn your command-line on Windows:    \n```bash    \n    c:\\> npm install -g cordova\n```    \n    \nIn your terminal on Mac OS X/Linux:\n```bash    \n    $sudo npm install -g cordova\n```\n\n# Creating a new Cordova project\nThis simple example demonstrates how Cordova CLI can be used to create a `myApp` project with the `camera` plugin and run it for `android` platform:\n\n```bash\n    cordova create myApp com.myCompany.myApp myApp\n    cd myApp\n    cordova plugin add cordova-plugin-camera --save\n    cordova platform add android --save\n    cordova requirements android    \n    cordova build android --verbose\n    cordova run android\n```\n\n# Docs\n- [Overview of Cordova]\n- [Create your first Cordova app] guide\n- [Full reference docs for Cordova CLI][Reference docs] has details of commands to add platforms, add plugins, build, package, and sign your HTML, JS apps. \n- Cordova allows you to build apps for a number of platforms. Learn more about our [Supported platforms].\n- [Project directory structure] documents the details of the directory structure created by Cordova CLI.\n\n# Contributing\nCordova is an open source Apache project and contributors are needed to keep this project moving forward. Learn more on \n[how to contribute on our website][contribute]. \n\n# TO-DO + Issues\n\nIf you find issues with this tool, please follow our guidelines for [reporting issues]. \nWe do not use github issue system as an Apache project, we have a JIRA issue management system which covers over 30+ cli, platform, \nplugin repos in the Cordova project. Use the "CLI" component for Cordova CLI issues. However, most of the \nfunctionality of Cordova CLI is implemented in cordova-lib npm module. You can also use "CordovaLib" component to file issues.\n\n[Overview of Cordova]: http://cordova.apache.org/docs/en/latest/guide/overview/\n[Create your first Cordova app]: http://cordova.apache.org/docs/en/latest/guide/cli/index.html\n[Reference docs]: http://cordova.apache.org/docs/en/latest/cordova-cli/index.html\n[Supported platforms]: http://cordova.apache.org/docs/en/latest/guide/support/index.html\n[Project directory structure]: http://cordova.apache.org/docs/en/latest/cordova-cli/index.html#directory-structure\n[Contribute]: http://cordova.apache.org/contribute/\n[Reporting issues]: http://cordova.apache.org/contribute/issues.html\n',
+109 silly resolved     readmeFilename: 'README.md',
+109 silly resolved     _id: 'cordova@6.5.0',
+109 silly resolved     _shasum: 'e6ec81b17dd50c17c40b4b87330f7ced38fb0b47',
+109 silly resolved     _from: 'cordova@',
+109 silly resolved     _resolved: 'http://registry.npmjs.org/cordova/-/cordova-6.5.0.tgz' } ]
+110 info install cordova@6.5.0 into D:\nodejs
+111 info installOne cordova@6.5.0
+112 info D:\nodejs\node_modules\cordova unbuild
+113 info D:\nodejs\node_modules\cordova unbuild
+114 error Error: EPERM: operation not permitted, rmdir 'D:\nodejs\node_modules\cordova\node_modules\cordova-lib\node_modules\cordova-js\node_modules\browserify\node_modules\events\tests'
+114 error     at Error (native)
+114 error  { [Error: EPERM: operation not permitted, rmdir 'D:\nodejs\node_modules\cordova\node_modules\cordova-lib\node_modules\cordova-js\node_modules\browserify\node_modules\events\tests']
+114 error   errno: -4048,
+114 error   code: 'EPERM',
+114 error   syscall: 'rmdir',
+114 error   path: 'D:\\nodejs\\node_modules\\cordova\\node_modules\\cordova-lib\\node_modules\\cordova-js\\node_modules\\browserify\\node_modules\\events\\tests' }
+115 error Please try running this command again as root/Administrator.
+116 error System Windows_NT 6.1.7601
+117 error command "D:\\nodejs\\node.exe" "D:\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "i" "-g" "cordova"
+118 error cwd D:\phproposal\propose\frontend
+119 error node -v v4.5.0
+120 error npm -v 1.4.9
+121 error path D:\nodejs\node_modules\cordova\node_modules\cordova-lib\node_modules\cordova-js\node_modules\browserify\node_modules\events\tests
+122 error syscall rmdir
+123 error code EPERM
+124 error errno -4048
+125 error stack Error: EPERM: operation not permitted, rmdir 'D:\nodejs\node_modules\cordova\node_modules\cordova-lib\node_modules\cordova-js\node_modules\browserify\node_modules\events\tests'
+125 error stack     at Error (native)
+126 verbose exit [ -4048, true ]

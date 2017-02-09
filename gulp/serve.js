@@ -17,7 +17,7 @@ module.exports = function () {
     var proxyRoutes = [
         '/api',
         '/management',
-        '/swagger-resources',
+        //'/swagger-resources',
         '/v2/api-docs',
         '/h2-console'
     ];

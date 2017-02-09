@@ -14,14 +14,14 @@ var config = require('./config');
 
 module.exports = {
     i18n: i18n,
-    languages: languages,
+    //languages: languages,
     fonts: fonts,
     common: common,
-    swagger: swagger,
+    //swagger: swagger,
     images: images
 }
 
-var yorc = require('../.yo-rc.json')['generator-jhipster'];
+//var yorc = require('../.yo-rc.json')['generator-jhipster'];
 
 function i18n() {
     return gulp.src(config.app + 'i18n/**')
@@ -31,9 +31,9 @@ function i18n() {
 }
 
 function languages() {
-    var locales = yorc.languages.map(function (locale) {
-        return config.bower + 'angular-i18n/angular-locale_' + locale + '.js';
-    });
+//   var locales = yorc.languages.map(function (locale) {
+//        return config.bower + 'angular-i18n/angular-locale_' + locale + '.js';
+//    });
     return gulp.src(locales)
         .pipe(plumber({errorHandler: handleErrors}))
         .pipe(changed(config.app + 'i18n/'))
@@ -72,6 +72,7 @@ function common() {
         .pipe(gulp.dest(config.dist));
 }
 
+/*
 function swagger() {
     return es.merge(
         gulp.src([config.bower + 'swagger-ui/dist/**',
@@ -93,6 +94,7 @@ function swagger() {
             .pipe(gulp.dest(config.swaggerDist + 'lib/'))
     );
 }
+*/
 
 function images() {
     return gulp.src(bowerFiles({filter: ['**/*.{gif,jpg,png}']}), { base: config.bower })

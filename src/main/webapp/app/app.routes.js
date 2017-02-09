@@ -11,7 +11,7 @@
                 .state('list', {
                     url: '/list',
                     cache: false,
-                    templateUrl: 'app/views/en/list.html'
+                    templateUrl: 'app/views/list.html'
                     ,
                     controller: function ($scope, $rootScope) {
                         var vm = $scope;
@@ -21,31 +21,31 @@
                 .state('form', {
                     url: '/form',
                     cache: false,
-                    templateUrl: 'app/views/en/form.html',
+                    templateUrl: 'app/views/form.html',
                     controller: 'formController'
                 })
                 .state('form.customer', {
                     url: '/customers',
                     cache: false,
-                    templateUrl: 'app/views/customer/en/customer.html',
+                    templateUrl: 'app/views/customer/customer.html',
                     controller: 'form.customer.controller'
                 })
                 .state('form.baseplan', {
                     url: '/baseplan',
                     cache: false,
-                    templateUrl: 'app/views/baseplan/en/baseplan.html',
+                    templateUrl: 'app/views/baseplan/baseplan.html',
                     controller: 'formbaseplanController'
                 })
                 .state('form.rider', {
                     url: '/rider',
                     cache: false,
-                    templateUrl: 'app/views/rider/en/rider.html',
+                    templateUrl: 'app/views/rider/rider.html',
                     controller: 'formriderController'
                 })
                 .state('form.summary', {
                     url: '/summary',
                     cache: false,
-                    templateUrl: 'app/views/summary/en/summary.html',
+                    templateUrl: 'app/views/summary/summary.html',
                     controller: 'form.summary.controller'
                 })
                 ;

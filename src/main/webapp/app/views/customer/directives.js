@@ -10,7 +10,7 @@
                     data: '='
                 },
                 //template: "<h1>{{customer}}</h1>",
-                templateUrl: 'app/views/customer/en/cards/customersection.html'
+                templateUrl: 'app/views/customer/cards/customersection.html'
             };
         })
         .directive("productSection", function () {
@@ -20,7 +20,7 @@
                     data: '='
                 },
                 //template: "product: <h1>{{data}}</h1>",
-                templateUrl: 'app/views/customer/en/cards/productsection.html'
+                templateUrl: 'app/views/customer/cards/productsection.html'
             };
         })
         .directive("policyHolderInput", function () {
@@ -31,7 +31,7 @@
                     title: '='
                 },
                 //template: "Customer: <h1>{{data}}</h1> {{title}}",
-                templateUrl: 'app/views/customer/en/cards/policyHolderInput.html'
+                templateUrl: 'app/views/customer/cards/policyHolderInput.html'
             };
         })
         .directive("insuredInput", function () {
@@ -42,7 +42,7 @@
                     title: '='
                 },
                 //template: "Customer: <h1>{{data}}</h1> {{title}}",
-                templateUrl: 'app/views/customer/en/cards/insuredInput.html'
+                templateUrl: 'app/views/customer/cards/insuredInput.html'
             };
         });
 })();

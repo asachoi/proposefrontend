@@ -3,7 +3,7 @@
 module.exports = {
     app: 'src/main/webapp/',
     dist: 'target/www/',
-    swaggerDist: 'target/www/swagger-ui/',
+    //swaggerDist: 'target/www/swagger-ui/',
     test: 'src/test/javascript/',
     bower: 'src/main/webapp/bower_components/',
     tmp: 'target/tmp',

@@ -11,7 +11,7 @@
                     title: '='
                 },
                 //template: "Customer: <h1>{{data}}</h1> {{title}}",
-                templateUrl: 'app/views/common/cards/policyHolderInput.html'
+                templateUrl: 'app/views/customer/cards/policyHolderInput.html'
             };
         })
         .directive("insuredInput", function () {

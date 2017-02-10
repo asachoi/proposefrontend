@@ -67,11 +67,13 @@
                     {
                         insured:
                         {
-                            role: "insured"
+                            role: "insured",
+                            smokingstatus: 'NA'
                         },
                         policyholder:
                         {
-                            role: "policyholder"
+                            role: "policyholder",
+                            smokingstatus: 'NA'
                         }
                     },
                     product: {

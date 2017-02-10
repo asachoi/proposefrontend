@@ -19,8 +19,8 @@ angular.module('eProposeApp').config(
             error_surname: 'Your surname must be between 10 and 100 characters long and look like an e-mail address.',
             premium: 'Basic Annual Premium',
             riderform: 'Riders',
-            insurer: 'Insurer',
-            policyholder: 'Policy Holder'
+            insured: 'Insurer Information',
+            policyholder: 'Policy Holder Information'
         });
         $translateProvider.translations('de', {
             TITLE: 'Hallo',

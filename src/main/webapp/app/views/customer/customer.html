@@ -1,13 +1,8 @@
 <section class="panelz panelz--withTabs">
     <form name="userForm" ng-keyup="" ng-mouseup="" class="my-form commonForm">
         <div class="scrollable scrollable--vertical">
-            <div class="content padded">
-                <h2 class="mainTitle"> {{'customerinfo' | translate}}</h2>
-            </div>
-            <insured-input data="baseObj.customers.insured" title="'Insured'"></insured-input>
-
-
-
+ 
+            <insured-input data="baseObj.customers.insured" title="'Insured'"></insured-input> 
             <div class="checkboxContainers">
                 <div class="checkboxContainer checkboxContainer--individualBox" ng-class='{"is-active" : isQuestionSetVisible1($index)}'
                     id="checkboxContainer1[{$index}]">

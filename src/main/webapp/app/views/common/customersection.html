@@ -8,7 +8,7 @@
     <div class="viewDetailBlock__content">
         <div class="grid">
             <section class="span12">
-
+<!--
                 <div class="valuePairBlock">
                     <div class="valuePairBlock__leftBlock">
                         <span class="valuePairBlock__description">{{'name' | translate }}</span>
@@ -17,13 +17,13 @@
                         <span class="valuePairBlock__value">{{data.surname}} {{data.given}}</span>
                     </div>
                 </div>
-
+//-->
                 <div class="valuePairBlock">
                     <div class="valuePairBlock__leftBlock">
                         <span class="valuePairBlock__description">{{'gender' | translate }}</span>
                     </div>
                     <div class="valuePairBlock__rightBlock">
-                        <span class="valuePairBlock__value">{{data.gender}}</span>
+                        <span class="valuePairBlock__value">{{data.sex}}</span>
                     </div>
                 </div>
                 <div class="valuePairBlock">
@@ -40,7 +40,7 @@
                         <span class="valuePairBlock__description">{{'smoker' | translate }}</span>
                     </div>
                     <div class="valuePairBlock__rightBlock">
-                        <span class="valuePairBlock__value">{{data.smoking | YesNo}}</span>
+                        <span class="valuePairBlock__value">{{data.smokingstatus}}</span>
                     </div>
                 </div>
             </section>

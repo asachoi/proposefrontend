@@ -42,6 +42,12 @@
                     templateUrl: 'app/views/rider/rider.html',
                     controller: 'formriderController'
                 })
+                .state('form.fundactivity', {
+                    url: '/fundactivity',
+                    cache: false,
+                    templateUrl: 'app/views/fundactivity/fundactivity.html',
+                    controller: 'formfundactivityController'
+                })                
                 .state('form.summary', {
                     url: '/summary',
                     cache: false,

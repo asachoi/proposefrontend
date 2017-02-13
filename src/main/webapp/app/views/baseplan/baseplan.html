@@ -27,10 +27,10 @@
                         </md-not-found>
                     </md-autocomplete>
                 </div>
-                <baseplanfields planschama="getPlanSchema(baseObj.product.plan.key)"></baseplanfields>
+      
 
                 <!-- plan specified input //-->
-                <div   ng-if="customForm(baseObj.product.plan.key)" ng-include="'app/customizations/views/baseplan/' + customForm(baseObj.product.plan.key) + '.html'">
+                <div ng-if="customForm(baseObj.product.plan.key)" ng-include="'app/customizations/views/baseplan/' + customForm(baseObj.product.plan.key) + '.html'">
                 </div>
             </div>
         </form>

@@ -16,6 +16,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     changed = require('gulp-changed'),
     gulpIf = require('gulp-if');
+    //count = require('gulp-count');
 
 var handleErrors = require('./gulp/handle-errors'),
     serve = require('./gulp/serve'),

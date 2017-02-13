@@ -35,36 +35,44 @@
             "funds": [
                 {
                     "code": "RSCF",
-                    "name": "PHP Secure Fund"
+                    "name": "PHP Secure Fund",
+                    "default": 100
                 },
                 {
                     "code": "RGF",
-                    "name": "PHP Growth Fund"
+                    "name": "PHP Growth Fund",
+                    "default": 0
                 },
                 {
                     "code": "RDVF",
-                    "name": "PHP Diversified Value Fund"
+                    "name": "PHP Diversified Value Fund",
+                    "default": 0
                 },
                 {
                     "code": "RDAF",
-                    "name": "PHP Dynamic Allocation Fund"
+                    "name": "PHP Dynamic Allocation Fund",
+                    "default": 0
                 },
                 {
                     "code": "PHF07",
-                    "name": "PHP Powerhouse Fund"
+                    "name": "PHP Powerhouse Fund",
+                    "default": 0
                 },                
                 {
                     "code": "PWO1H",
-                    "name": "PHP Wealth Optimizer 2026 Fund"
+                    "name": "PHP Wealth Optimizer 2026 Fund",
+                    "default": 0
                 },
                 {
                     "code": "PWO2H",			
 
-                    "name": "PHP Wealth Optimizer 2031 Fund"
+                    "name": "PHP Wealth Optimizer 2031 Fund",
+                    "default": 0
                 },
                 {
                     "code": "PWO3H",
-                    "name": "PHP Wealth Optimizer 2036 Fund"
+                    "name": "PHP Wealth Optimizer 2036 Fund",
+                    "default": 0
                 }
             ],
             "productcode": "SPUL",

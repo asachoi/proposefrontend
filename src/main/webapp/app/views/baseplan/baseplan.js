@@ -1,6 +1,5 @@
 (function () {
     'use strict';
- 
 
     angular.module('eProposeApp').controller('formbaseplanController',
         ['$scope', '$rootScope', '$filter', '$state', 'productServices', '$controller',
@@ -55,6 +54,16 @@
                     var sel = vm.getPlans(productgroupid);
                     var list = $filter('filter')(sel, { value: text }); 
                     return list;
+                }
+
+                vm.getFundSetting = function(planid, fundcode) {
+                    
+                    if (planid == null) return 0;
+                    var fund = $filter('filter')(vm.getPlanSchema(planid).funds, {code: fundcode});
+                    //console.debug(;
+                    return fund[0].default;
+                    
+            
                 }
             }]
     );

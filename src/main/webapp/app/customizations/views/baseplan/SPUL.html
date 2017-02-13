@@ -25,19 +25,14 @@
     </md-input-container>
 
 </div>
-<h2>Fund allocation</h2>
-<div layout="row" flex=100 ng-controller="SPULCtrl as ctrl">
-    
-    <div ng-repeat="f in currentPlan.funds" flex=25>
-        {{f.name}}:
-        <input  ng-model="baseObj.product.funds[f.code].value">
-    </div>
-</div>
-
 <div layout="row" flex=100>
     {{currentPlan}}
 </div>
 <div layout=row flex=100>
     {{baseObj.product}}
 </div>
+<h2>Fund allocation</h2>
+<fundallocation />
+
+
 

@@ -10,13 +10,13 @@
                    <faceamount></faceamount>
                 `;
 
-            var linker = function(scope, element, attrs) {
+            var linker = function (scope, element, attrs) {
                 //scope.rootDirectory = 'images/';
                 //element.html(getTemplate(scope.content.content_type)).show();
-                 template = scope.content;
-                 
-                 console.debug(scope.planschama);
-                 
+                template = scope.content;
+
+                console.debug(scope.planschama);
+
             }
 
             return {
@@ -24,27 +24,43 @@
                 scope: {
                     planschama: '='
                 },
-               //template: template,
+                //template: template,
                 link: linker
 
             };
         }
         )
         .directive("faceamount",
-            function() {
-                return {
-                    restrict: "E",
-                    template: `
+        function () {
+            return {
+                restrict: "E",
+                template: `
                             <md-input-container class="md-block" flex=40>
                                 <label>{{'faceamount'|translate}}</label>
                                 <input ng-model="baseObj.product.faceamount" type="number" min="{{currentPlan.minifaceamount}}" max="{{currentPlan.maxfaceamount}}" aria-label="" required>
                                 </md-input>
                             </md-input-container>
-                    `                    
-                }
+                    `
+            }
+
+        }
+        )
+        .directive("fundallocation",
+        function () {
+            return {
+                restrict: "E",
+                template: `
+                    <div layout="row" flex=100>
+                        <div ng-repeat="f in currentPlan.funds" flex=25>
+                            {{f.name}}:
+                            <input  ng-model="baseObj.product.funds[f.code].value" ng-init="baseObj.product.funds[f.code].value = getFundSetting(currentPlan.planid, f.code)">
+                        </div>
+                    </div>                
+                `
 
             }
-        );
+        }
+        )
 }
 )();
 

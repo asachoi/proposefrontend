@@ -7,6 +7,7 @@
                 var vm = $scope;
 
                 $controller('baseController', { $scope: $scope });
+
                 $scope.$watch('productForm.$valid', function (form) {
                     $rootScope.settingObj.validPlan = form;
                 });
@@ -53,7 +54,6 @@
                     var sel = vm.getPlans(productgroupid);
                     var list = $filter('filter')(sel, { value: text }); 
                     return list;
-
                 }
             }]
     );

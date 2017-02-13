@@ -6,7 +6,7 @@
         .directive("baseplanfields",
         function ($compile) {
             var template = `
-                    Schema: <h1>{{planschama.maxfaceamount}}</h1>
+                   Schema: <h1>{{planschama.maxfaceamount}}</h1>
                    <faceamount></faceamount>
                 `;
 

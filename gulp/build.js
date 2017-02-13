@@ -38,6 +38,7 @@ module.exports = function() {
         '!' + config.app + 'app/**/*.html',
         //'!' + config.app + 'swagger-ui/**/*',
         '!' + config.bower + '**/*.html'])
+        //.pipe(gulp-count())
         .pipe(plumber({errorHandler: handleErrors}))
         //init sourcemaps and prepend semicolon
         .pipe(useref({}, initTask))

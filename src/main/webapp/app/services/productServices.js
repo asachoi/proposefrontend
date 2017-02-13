@@ -48,6 +48,13 @@
                 return riders[0];
             }
 
+            vm.getFunds = function(planid) {
+                var plan = getPlan(planid);
+                if(plan == null) return;
+
+                return plan.funds; 
+            }
+
 
             vm.loadProducts = function () {
                 return $http.get("app/customizations/data/product.json");

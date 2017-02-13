@@ -1,5 +1,6 @@
 (function () {
     'use strict';
+ 
 
     angular.module('eProposeApp').controller('formbaseplanController',
         ['$scope', '$rootScope', '$filter', '$state', 'productServices', '$controller',

@@ -32,7 +32,41 @@
             "faceamount": {},
             "currency": "PHP",
             "riders": [],
-            "funds": [],
+            "funds": [
+                {
+                    "code": "RSCF",
+                    "name": "PHP Secure Fund"
+                },
+                {
+                    "code": "RGF",
+                    "name": "PHP Growth Fund"
+                },
+                {
+                    "code": "RDVF",
+                    "name": "PHP Diversified Value Fund"
+                },
+                {
+                    "code": "RDAF",
+                    "name": "PHP Dynamic Allocation Fund"
+                },
+                {
+                    "code": "PHF07",
+                    "name": "PHP Powerhouse Fund"
+                },                
+                {
+                    "code": "PWO1H",
+                    "name": "PHP Wealth Optimizer 2026 Fund"
+                },
+                {
+                    "code": "PWO2H",			
+
+                    "name": "PHP Wealth Optimizer 2031 Fund"
+                },
+                {
+                    "code": "PWO3H",
+                    "name": "PHP Wealth Optimizer 2036 Fund"
+                }
+            ],
             "productcode": "SPUL",
             "productgroupname": "Enrich Max"
         },
@@ -97,7 +131,7 @@
                 "M",
                 "F"
             ],
-            "startpayoutyear" : {
+            "startpayoutyear": {
                 "default": 1
             },
             "initialfaceamount": 1.25,

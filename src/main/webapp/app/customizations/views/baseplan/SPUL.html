@@ -1,33 +1,43 @@
-<span layout="row" flex=100 ng-init="currentPlan = getPlan(baseObj.product.plan.key)">
+ 
+<div layout="row" flex=100 ng-init="currentPlan = getPlan(baseObj.product.plan.key)">
 
-<md-input-container class="md-block" flex=20 aria-label="">
-    <md-select name="currency" ng-model="baseObj.product.currency" ng-init="baseObj.product.currency=currentPlan.currency;"
-        ng-disabled="true" aria-label="">
-        <md-option ng-value="currentPlan.currency" aria-label="">{{currentPlan.currency}}</md-option>
-    </md-select>
-</md-input-container>
-<md-input-container class="md-block" flex=40>
-    <label>{{'basicsinglepremium'|translate}}</label>
-    <input ng-model="baseObj.product.basicsinglepremium" type="number"  aria-label=""
-    ng-change="baseObj.product.faceamount = baseObj.product.basicsinglepremium * currentPlan.initialfaceamount" 
-    required>
-    </md-input>
-</md-input-container>
-<md-input-container class="md-block" flex=40>
-    <label>{{'faceamount'|translate}}</label>
-    <input ng-model="baseObj.product.faceamount" type="number" aria-label=""   >
-    </md-input>
-</md-input-container>
- 
-<md-input-container class="md-block" flex=40>
-    <label>{{'deathbenefitoption'|translate}}</label>
-    <input ng-model="baseObj.product.payperiod" ng-value="currentPlan.payperiod" aria-label="">
-</md-input-container>
-<md-input-container class="md-block" flex=40>
-    <label>{{'startpayoutperiod'|translate}}</label>
- 
-</md-input-container>
-</span>
-{{baseObj.product}}
+    <md-input-container class="md-block" flex=20 aria-label="">
+        <md-select name="currency" ng-model="baseObj.product.currency" ng-init="baseObj.product.currency=currentPlan.currency;" ng-disabled="true"
+            aria-label="">
+            <md-option ng-value="currentPlan.currency" aria-label="">{{currentPlan.currency}}</md-option>
+        </md-select>
+    </md-input-container>
+    <md-input-container class="md-block" flex=40>
+        <label>{{'basicsinglepremium'|translate}}</label>
+        <input ng-model="baseObj.product.basicsinglepremium" type="number" aria-label="" ng-change="baseObj.product.faceamount = baseObj.product.basicsinglepremium * currentPlan.initialfaceamount"
+            required>
+        </md-input>
+    </md-input-container>
+    <md-input-container class="md-block" flex=40>
+        <label>{{'faceamount'|translate}}</label>
+        <input ng-model="baseObj.product.faceamount" type="number" aria-label="" readonly>
+        </md-input>
+    </md-input-container>
 
- 
+    <md-input-container class="md-block" flex=40>
+        <label>{{'deathbenefitoption'|translate}}</label>
+        <input ng-model="baseObj.product.payperiod" ng-value="currentPlan.payperiod" aria-label="">
+    </md-input-container>
+
+</div>
+<h2>Fund allocation</h2>
+<div layout="row" flex=100 ng-controller="SPULCtrl as ctrl">
+    
+    <div ng-repeat="f in currentPlan.funds" flex=25>
+        {{f.name}}:
+        <input  ng-model="baseObj.product.funds[f.code].value">
+    </div>
+</div>
+
+<div layout="row" flex=100>
+    {{currentPlan}}
+</div>
+<div layout=row flex=100>
+    {{baseObj.product}}
+</div>
+

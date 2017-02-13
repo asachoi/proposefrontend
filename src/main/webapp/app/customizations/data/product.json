@@ -1,298 +1,118 @@
 {
-    "productgroups": [{
-        "productgroupname": "Enrich Max"
-    }],
-    "products": [{
-        "productcode": "SPUL",
-        "customform": "SPUL"
- 
-    }],
+    "productgroups": [
+        {
+            "productgroupname": "Enrich Max"
+        }
+    ],
+    "products": [
+        {
+            "productcode": "SPUL",
+            "customform": "SPUL"
+        }
+    ],
     "plans": [
         {
-            "planname": "MCBL Legacy Protect 1005-Pay (Peso)",
-            "planid": "RE100",
-            "payperiod": "5",
-            "minifaceamount": 200000,
-            "maxfaceamount": 999999999,
+            "planname": "Enrich Max (DB Option 1 Face Plus) (Peso)",
+            "planid": "US789",
+            "issueage": {
+                "max": 70,
+                "min": 0
+            },
+            "gender": [
+                "M",
+                "F"
+            ],
+            "initialfaceamount": 1.25,
+            "payperiod": "singlepay",
+            "deathbenfitoption": "DB1",
+            "premium": {
+                "min": 100000,
+                "max": 499999
+            },
+            "faceamount": {},
             "currency": "PHP",
-            "riders": [
-                "AE885",
-                "WE885",
-                "PE885",
-                "HE120",
-                "HE220",
-                "CE320"
-            ],
-            "funds": [
-                "F1",
-                "F2",
-                "F3"
-            ],
-            "facevaluemultiplier": 1.25,
+            "riders": [],
+            "funds": [],
             "productcode": "SPUL",
             "productgroupname": "Enrich Max"
         },
         {
-            "planname": "MCBL Legacy Protect 100 Prime5-Pay (Peso)",
-            "planid": "RE200",
-            "payperiod": "5",
-            "minifaceamount": 100000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AE885",
-                "WE885",
-                "PE885",
-                "HE120",
-                "HE220",
-                "CE320"
+            "planname": "Enrich Max (DB Option 2 Level Face) (Peso)",
+            "planid": "US889",
+            "issueage": {
+                "max": 70,
+                "min": 0
+            },
+            "gender": [
+                "M",
+                "F"
             ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
+            "initialfaceamount": 1.25,
+            "payperiod": "singlepay",
+            "deathbenfitoption": "DB2",
+            "premium": {
+                "min": 100000,
+                "max": 499999
+            },
+            "faceamount": {},
+            "currency": "PHP",
+            "riders": [],
+            "funds": [],
+            "productcode": "SPUL",
+            "productgroupname": "Enrich Max"
         },
         {
-            "planname": "MCBL Legacy Protect 100 Gold Package A5-Pay (Peso)",
-            "planid": "RE300",
-            "payperiod": "5",
-            "minifaceamount": 100000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AE885",
-                "WE885",
-                "PE885",
-                "HE120",
-                "HE220",
-                "CE320"
+            "planname": "Enrich Max (DB Option 1 Face Plus) (Dollar)",
+            "planid": "UD799",
+            "issueage": {
+                "max": 70,
+                "min": 0
+            },
+            "gender": [
+                "M",
+                "F"
             ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
+            "initialfaceamount": 1.25,
+            "payperiod": "singlepay",
+            "deathbenfitoption": "DB1",
+            "premium": {
+                "min": 2500,
+                "max": 12499
+            },
+            "faceamount": {},
+            "currency": "USD",
+            "riders": [],
+            "funds": [],
+            "productcode": "SPUL",
+            "productgroupname": "Enrich Max"
         },
         {
-            "planname": "MCBL Legacy Protect 100 Gold Package B5-Pay (Peso)",
-            "planid": "RE400",
-            "payperiod": "5",
-            "minifaceamount": 100000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AE885",
-                "WE885",
-                "PE885",
-                "HE120",
-                "HE220",
-                "CE320"
+            "planname": "Enrich Max (DB Option 2 Level Face) (Dollar)",
+            "planid": "UD899",
+            "issueage": {
+                "max": 70,
+                "min": 0
+            },
+            "gender": [
+                "M",
+                "F"
             ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 10010-Pay (Peso)",
-            "planid": "RJ100",
-            "payperiod": "10",
-            "minifaceamount": 200000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AJ885",
-                "WJ885",
-                "PJ885",
-                "HJ165",
-                "CJ385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 Prime 10-Pay (Peso)",
-            "planid": "RJ200",
-            "payperiod": "10",
-            "minifaceamount": 100000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AJ885",
-                "WJ885",
-                "PJ885",
-                "HJ165",
-                "CJ385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 Gold Package A10-Pay (Peso)",
-            "planid": "RJ300",
-            "payperiod": "10",
-            "minifaceamount": 100000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AJ885",
-                "WJ885",
-                "PJ885",
-                "HJ165",
-                "CJ385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 Gold Package B10-Pay (Peso)",
-            "planid": "RJ400",
-            "payperiod": "10",
-            "minifaceamount": 100000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AJ885",
-                "WJ885",
-                "PJ885",
-                "HJ165",
-                "CJ385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 10015-Pay (Peso)",
-            "planid": "RO100",
-            "payperiod": "15",
-            "minifaceamount": 200000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AO885",
-                "WO885",
-                "PO885",
-                "HO165 ",
-                "HO265",
-                "CO385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 Prime 15-Pay (Peso)",
-            "planid": "RO200",
-            "payperiod": "15",
-            "minifaceamount": 100000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AO885",
-                "WO885",
-                "PO885",
-                "HO165 ",
-                "HO265",
-                "CO385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 Gold Package A15-Pay (Peso)",
-            "planid": "RO300",
-            "payperiod": "15",
-            "minifaceamount": 100000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AO885",
-                "WO885",
-                "PO885",
-                "HO165 ",
-                "HO265",
-                "CO385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 Gold Package B15-Pay (Peso)",
-            "planid": "RO400",
-            "payperiod": "15",
-            "minifaceamount": 100000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AO885",
-                "WO885",
-                "PO885",
-                "HO165 ",
-                "HO265",
-                "CO385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 Reg-Pay (Peso)",
-            "planid": "RZ100",
-            "payperiod": "RegularPay",
-            "minifaceamount": 300000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AZ099",
-                "WZ885",
-                "PZ885",
-                "HE065",
-                "CZ385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 PrimeReg-Pay (Peso)",
-            "planid": "RZ200",
-            "payperiod": "RegularPay",
-            "minifaceamount": 200000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AZ099",
-                "WZ885",
-                "PZ885",
-                "HE065",
-                "CZ385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 Gold Package A Reg-Pay (Peso)",
-            "planid": "RZ300",
-            "payperiod": "RegularPay",
-            "minifaceamount": 200000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AZ099",
-                "WZ885",
-                "PZ885",
-                "HE065",
-                "CZ385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
-        },
-        {
-            "planname": "MCBL Legacy Protect 100 Gold Package B Reg-Pay (Peso)",
-            "planid": "RZ400",
-            "payperiod": "RegularPay",
-            "minifaceamount": 200000,
-            "maxfaceamount": 999999999,
-            "currency": "PHP",
-            "riders": [
-                "AZ099",
-                "WZ885",
-                "PZ885",
-                "HE065",
-                "CZ385"
-            ],
-            "productcode": "LP",
-            "productgroupname": "Legacy Protect "
+            "startpayoutyear" : {
+                "default": 1
+            },
+            "initialfaceamount": 1.25,
+            "payperiod": "singlepay",
+            "deathbenfitoption": "DB2",
+            "premium": {
+                "min": 2500,
+                "max": 12499
+            },
+            "faceamount": {},
+            "currency": "USD",
+            "riders": [],
+            "funds": [],
+            "productcode": "SPUL",
+            "productgroupname": "Enrich Max"
         }
     ]
 }

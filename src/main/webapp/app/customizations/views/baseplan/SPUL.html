@@ -9,7 +9,7 @@
 <md-input-container class="md-block" flex=40>
     <label>{{'basicsinglepremium'|translate}}</label>
     <input ng-model="baseObj.product.basicsinglepremium" type="number"  aria-label=""
-    ng-change="baseObj.product.faceamount = baseObj.product.basicsinglepremium * currentPlan.facevaluemultiplier" 
+    ng-change="baseObj.product.faceamount = baseObj.product.basicsinglepremium * currentPlan.initialfaceamount" 
     required>
     </md-input>
 </md-input-container>

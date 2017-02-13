@@ -21,7 +21,7 @@
 
     <md-input-container class="md-block" flex=40>
         <label>{{'deathbenefitoption'|translate}}</label>
-        <input ng-model="baseObj.product.payperiod" ng-value="currentPlan.payperiod" aria-label="">
+        <input ng-model="baseObj.product.deathbenfitoption" ng-init="baseObj.product.deathbenfitoption=currentPlan.deathbenfitoption" aria-label="" readonly>
     </md-input-container>
 
 </div>

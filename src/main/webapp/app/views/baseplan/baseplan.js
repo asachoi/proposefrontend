@@ -61,7 +61,7 @@
                     if (planid == null) return 0;
                     var fund = $filter('filter')(vm.getPlanSchema(planid).funds, {code: fundcode});
                     //console.debug(;
-                    return fund[0].default;
+                    return fund[0];
                     
             
                 }

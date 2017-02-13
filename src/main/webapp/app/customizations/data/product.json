@@ -57,15 +57,14 @@
                     "code": "PHF07",
                     "name": "PHP Powerhouse Fund",
                     "default": 0
-                },                
+                },
                 {
                     "code": "PWO1H",
                     "name": "PHP Wealth Optimizer 2026 Fund",
                     "default": 0
                 },
                 {
-                    "code": "PWO2H",			
-
+                    "code": "PWO2H",
                     "name": "PHP Wealth Optimizer 2031 Fund",
                     "default": 0
                 },
@@ -99,7 +98,48 @@
             "faceamount": {},
             "currency": "PHP",
             "riders": [],
-            "funds": [],
+            "funds": [
+                {
+                    "code": "RSCF",
+                    "name": "PHP Secure Fund",
+                    "default": 100
+                },
+                {
+                    "code": "RGF",
+                    "name": "PHP Growth Fund",
+                    "default": 0
+                },
+                {
+                    "code": "RDVF",
+                    "name": "PHP Diversified Value Fund",
+                    "default": 0
+                },
+                {
+                    "code": "RDAF",
+                    "name": "PHP Dynamic Allocation Fund",
+                    "default": 0
+                },
+                {
+                    "code": "PHF07",
+                    "name": "PHP Powerhouse Fund",
+                    "default": 0
+                },
+                {
+                    "code": "PWO1H",
+                    "name": "PHP Wealth Optimizer 2026 Fund",
+                    "default": 0
+                },
+                {
+                    "code": "PWO2H",
+                    "name": "PHP Wealth Optimizer 2031 Fund",
+                    "default": 0
+                },
+                {
+                    "code": "PWO3H",
+                    "name": "PHP Wealth Optimizer 2036 Fund",
+                    "default": 0
+                }
+            ],
             "productcode": "SPUL",
             "productgroupname": "Enrich Max"
         },
@@ -124,7 +164,29 @@
             "faceamount": {},
             "currency": "USD",
             "riders": [],
-            "funds": [],
+            "funds": [
+                {
+                    "code": "DTPF",
+                    "name": "USD Global Target Income Fund",
+                    "default": 100,
+                    "startperiodyear": 1
+                },
+                {
+                    "code": "RSCF",
+                    "name": "USD Secure Fund",
+                    "default": 0
+                },
+                {
+                    "code": "RAPS",
+                    "name": "USD Asia Pacific Bond Fund",
+                    "default": 0
+                },
+                {
+                    "code": "RAGF",
+                    "name": "USD ASEAN Growth Fund",
+                    "default": 0
+                }
+            ],
             "productcode": "SPUL",
             "productgroupname": "Enrich Max"
         },
@@ -152,7 +214,29 @@
             "faceamount": {},
             "currency": "USD",
             "riders": [],
-            "funds": [],
+            "funds": [
+                {
+                    "code": "DTPF",
+                    "name": "USD Global Target Income Fund",
+                    "default": 100,
+                    "startperiodyear": 1
+                },
+                {
+                    "code": "RSCF",
+                    "name": "USD Secure Fund",
+                    "default": 0
+                },
+                {
+                    "code": "RAPS",
+                    "name": "USD Asia Pacific Bond Fund",
+                    "default": 0
+                },
+                {
+                    "code": "RAGF",
+                    "name": "USD ASEAN Growth Fund",
+                    "default": 0
+                }
+            ],
             "productcode": "SPUL",
             "productgroupname": "Enrich Max"
         }

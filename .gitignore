@@ -1,5 +1,8 @@
-node_modules
+node_modules/
 dist
 .tmp
 .sass-cache
-bower_components
+bower_components/
+target/
+src/main/webapp/bower_components/
+bower_components/

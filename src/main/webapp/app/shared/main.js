@@ -14,10 +14,7 @@ angular
                 });
             $rootScope.stateObj = productServices.loadInitState();
             vm.stateObj = $rootScope.stateObj;
-
- 
-
-
+            
             productServices.loadProducts().then(
                 function (payload) {
                     $rootScope.productSchema = payload.data;

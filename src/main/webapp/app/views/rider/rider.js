@@ -1,22 +1,22 @@
 angular.module('eProposeApp').controller('formriderController',
     function ($scope, $rootScope, $filter, $state, productServices, $controller) {
-        var vm = $scope;
+        var vm = this;
 
         $controller('baseController', { $scope: $scope });
         
-        vm.selectedRiders = $rootScope.productSchema.selectedRiders;
+        $scope.selectedRiders = $rootScope.productSchema.selectedRiders;
 
         if ($rootScope.productSchema.selectedRiders == null) {
             $rootScope.productSchema.selectedRiders = [];
         }
 
         vm.getRiderObject = function (ridercode) {
-            return $filter('filter')(vm.baseObj.riders, { ridercode: ridercode })[0];
+            return $filter('filter')($scope.baseObj.riders, { ridercode: ridercode })[0];
         }
 
         vm.setRiderList = function (planid) {
             if (planid == null) return;
-            if (vm.baseObj.riders != null) return vm.baseObj.riders;
+            if ($scope.baseObj.riders != null) return $scope.baseObj.riders;
             var rs = productServices.getPlan(planid).riders;
             var riders = [];
 

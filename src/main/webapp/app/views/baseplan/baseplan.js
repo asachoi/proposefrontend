@@ -16,6 +16,7 @@
                 vm.planChange = function () {
                     //console.debug(vm.baseObj.riders);
                     $scope.baseObj.riders = null;
+                    //$rootScope.baseObj.riders = [];
                 }
                 vm.getProductGroup = function (productgroupid) {
                     return productServices.getProductGroup(productgroupid);

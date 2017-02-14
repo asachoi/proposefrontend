@@ -39,7 +39,7 @@
                 scope: {
                     data: '='
                 },
-                template: '                DATA:{{data}}              <div ng-if="DEBUG_INFO_ENABLED">                  {{data}}              </div>'
+                template: '{{data}}              <div ng-if="DEBUG_INFO_ENABLED">                  {{data}}              </div>'
                 ,
                 controller: function($scope, DEBUG_INFO_ENABLED) {
                     $scope.DEBUG_INFO_ENABLED = DEBUG_INFO_ENABLED;

@@ -40,7 +40,14 @@
             },
             "faceamount": {},
             "currency": "PHP",
-            "riders": [],
+            "riders": [
+                "AE885",
+                "WE885",
+                "PE885",
+                "HE120",
+                "HE220",
+                "CE320"
+            ],
             "funds": [
                 {
                     "code": "RSCF",

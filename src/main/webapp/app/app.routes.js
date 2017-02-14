@@ -40,7 +40,7 @@
                     url: '/rider',
                     cache: false,
                     templateUrl: 'app/views/rider/rider.html',
-                    controller: 'formriderController'
+                    controller: 'formriderController as riderCtrl'
                 })
                 .state('form.fundactivity', {
                     url: '/fundactivity',

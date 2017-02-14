@@ -21,11 +21,10 @@ module.exports = {
 }
 
 function app() {
-
-
     return gulp.src(config.app + 'index.html')
-        .pipe(inject(gulp.src(config.app + 'src/mian/webapp/app/**/*.js')
-            .pipe(count('## assets copied'))
+        .pipe(plumber({ errorHandler: handleErrors }))        
+        .pipe(inject(gulp.src(config.app + 'app/**/*.js')
+            //.pipe(count('## assets copied'))
             .pipe(naturalSort())
             .pipe(angularFilesort()), { relative: true }))
         .pipe(gulp.dest(config.app));
@@ -39,7 +38,7 @@ function vendor() {
         .pipe(inject(gulp.src(bowerFiles(), { read: false }), {
             name: 'bower',
             relative: true
-        }))                
+        }))
         .pipe(gulp.dest(config.app))
         .pipe(count('## assets copied'))
         ;

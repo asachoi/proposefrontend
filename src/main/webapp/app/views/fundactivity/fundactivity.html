@@ -1,21 +1,11 @@
 <section class="panelz panelz--withTabs">
     <div class="scrollable scrollable--vertical">
-        <form name="riderForm" ng-keyup="" ng-mouseup="" ng-init="baseObj.riders=setRiderList(baseObj.product.plan.key);">
+        <form name="riderForm" ng-keyup="" ng-mouseup="" ng-init="ctrl.baseObj.riders=setRiderList(ctrl.baseObj.product.plan.key);">
             <div class="content padded">
-                 <h2 class="mainTitle">
-                    {{'fundactivity' | translate}}
-                </h2>
-                From Age<input ng-model="editFund.fromage">
-                To Age<input ng-model="editFund.toage">
-                Topup<input ng-model="editFund.topup">
-                Withdraw<input ng-model="editFund.withdraw">
-                <md-button class="md-raised" type="button" ng-click="addFund()">Add</md-button>
+                <h2 class="mainTitle">{{'fundactivity' | translate}}</h2>From Age<input ng-model="ctrl.editFund.fromage"> To Age<input ng-model="ctrl.editFund.toage">                Topup<input ng-model="ctrl.editFund.topup"> Withdraw<input ng-model="ctrl.editFund.withdraw">
+                <md-button class="md-raised"
+                    type="button" ng-click="ctrl.addFund()">Add</md-button>
             </div>
-            
         </form>
 
-        {{Funds}}
-
-        {{baseObj}}
-    </div>
-</section>
+        {{ctrl.Funds}}</section>

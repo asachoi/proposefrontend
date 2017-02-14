@@ -18,7 +18,8 @@ module.exports = {
     fonts: fonts,
     common: common,
     //swagger: swagger,
-    images: images
+    images: images,
+    htmls: htmls
 }
 
 //var yorc = require('../.yo-rc.json')['generator-jhipster'];
@@ -38,6 +39,11 @@ function languages() {
         .pipe(plumber({errorHandler: handleErrors}))
         .pipe(changed(config.app + 'i18n/'))
         .pipe(gulp.dest(config.app + 'i18n/'));
+}
+
+function htmls () {
+    gulp.src(config.app + 'app/**/*.html')
+    .pipe(gulp.dest(config.dist));
 }
 
 function fonts() {

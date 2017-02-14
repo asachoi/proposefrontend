@@ -5,7 +5,7 @@ angular.module('eProposeApp').controller('form.summary.controller',
 
         vm.current = $state.current;
         vm.baseObj = $rootScope.stateObj;
-        vm.settingObj = $rootScope.settingObj;
+        vm.productSchema = $rootScope.productSchema;
 
 
         vm.baseObj.baseplan = {};

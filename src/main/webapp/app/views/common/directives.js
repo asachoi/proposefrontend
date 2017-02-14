@@ -31,13 +31,19 @@
             };
         })
         .directive("debug", function() {
+            var toJson = function(json) {
+                return angular.toJson(json);
+            };
             return {
                 restrict: "AE",
-                template: `
-                <div ng-if="DEBUG_INFO_ENABLED">
-                    {{data}}
-                </div>
-                `           
+                scope: {
+                    data: '='
+                },
+                template: '                DATA:{{data}}              <div ng-if="DEBUG_INFO_ENABLED">                  {{data}}              </div>'
+                ,
+                controller: function($scope, DEBUG_INFO_ENABLED) {
+                    $scope.DEBUG_INFO_ENABLED = DEBUG_INFO_ENABLED;
+                }            
             }
         });
 

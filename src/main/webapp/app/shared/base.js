@@ -8,7 +8,7 @@
                 var vm = $scope;
 
                 vm.baseObj = $rootScope.stateObj;
-                vm.settingObj = $rootScope.settingObj;
+                vm.productSchema = $rootScope.productSchema;
                 vm.title = 'title.form';
                 vm.customFormTabs = $rootScope.customFormTabs;
                 //vm.currentTab = 'Testing';   

@@ -20,14 +20,14 @@ angular
 
             productServices.loadProducts().then(
                 function (payload) {
-                    $rootScope.settingObj = payload.data;
+                    $rootScope.productSchema = payload.data;
 
-                    vm.settingObj = $rootScope.settingObj;
+                    vm.productSchema = $rootScope.productSchema;
 
                     productServices.loadRiders().then(
                         function (payload) {
-                            $rootScope.settingObj.riders = payload.data;
-                            vm.settingObj = $rootScope.settingObj;
+                            $rootScope.productSchema.riders = payload.data;
+                            vm.productSchema = $rootScope.productSchema;
                         }
                     );
                 }

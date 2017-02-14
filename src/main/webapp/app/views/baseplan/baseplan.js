@@ -4,13 +4,10 @@
     angular.module('eProposeApp').controller('formbaseplanController',
         ['$scope', '$rootScope', '$filter', '$state', 'productServices', '$controller',
             function ($scope, $rootScope, $filter, $state, productServices, $controller) {
-                var vm = $scope;
+                var vm = this;
 
                 $controller('baseController', { $scope: $scope });
-
-                $scope.$watch('productForm.$valid', function (form) {
-                    $rootScope.settingObj.validPlan = form;
-                });
+ 
 
                 vm.getProductGroups = function () {
                     return productServices.getProductGroups();
@@ -18,7 +15,7 @@
 
                 vm.planChange = function () {
                     //console.debug(vm.baseObj.riders);
-                    vm.baseObj.riders = null;
+                    $scope.baseObj.riders = null;
                 }
                 vm.getProductGroup = function (productgroupid) {
                     return productServices.getProductGroup(productgroupid);

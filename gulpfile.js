@@ -15,7 +15,8 @@ var gulp = require('gulp'),
     KarmaServer = require('karma').Server,
     plumber = require('gulp-plumber'),
     changed = require('gulp-changed'),
-    gulpIf = require('gulp-if');
+    gulpIf = require('gulp-if'),
+    concat = require('gulp-concat');
     //count = require('gulp-count');
 
 var handleErrors = require('./gulp/handle-errors'),
@@ -44,6 +45,13 @@ gulp.task('copy:common', copy.common);
 gulp.task('copy:swagger', copy.swagger);
 
 gulp.task('copy:images', copy.images);
+
+// task
+gulp.task('testg', function () {
+    gulp.src(config.app + '*/*.js') // path to your files
+    .pipe(concat('concat.js'))  // concat and name it "concat.js"
+    .pipe(gulp.dest(config.tmp));
+});
 
 gulp.task('images', function () {
     return gulp.src(config.app + 'content/images/**')
@@ -83,14 +91,16 @@ gulp.task('inject:troubleshoot', inject.troubleshoot);
 gulp.task('assets:prod', ['images', 'styles', 'html', 'copy:swagger', 'copy:images'], build);
 
 gulp.task('html', function () {
+    //gulp.src(config.app + 'app/**/*.js'
     return gulp.src(config.app + 'app/**/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
-        .pipe(templateCache({
-            module: 'eProposeApp',
-            root: 'app/',
-            moduleSystem: 'IIFE'
-        }))
-        .pipe(gulp.dest(config.tmp));
+     //   .pipe(templateCache({
+     //       module: 'eProposeApp',
+     //       root: 'app/',
+      //      moduleSystem: 'IIFE'
+      //  }))
+        .pipe(gulp.dest(config.tmp))
+        .pipe(gulp.dest(config.app + 'app/'));
 });
 
 gulp.task('ngconstant:dev', function () {

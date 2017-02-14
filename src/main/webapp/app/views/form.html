@@ -1,24 +1,16 @@
 <nav class="horizontalNav">
- 
-  <ul>
-    <li class="item" ng-class="{'is-active' : currentstate == 'form.customer'}" ui-sref=".customer">
-      <a href="#/form/customers">{{'Customer'|translate}}</a>
-    </li>
-    <li class="item" ng-class="{'is-active' : currentstate == 'form.baseplan'}" ui-sref=".baseplan">
-      <a href="#/form/baseplan">{{'Base Plan'|translate}}</a>
-    </li>
-    <li class="item" ng-class="{'is-active' : currentstate == 'form.rider'}" ui-sref=".rider">
-      <a href="#/form/baseplan" ng-show="settingObj.validPlan">    {{'rider'|translate}}</a>
-    </li>
-    <li class="item" ng-class="{'is-active' : currentstate == 'form.fundactivity'}" ui-sref=".fundactivity">
-      <a href="#/form/fundactivity" ng-show="settingObj.validPlan">{{'fundactivity'|translate}}</a>
-    </li>    
-    <li class="item" ng-class="{'is-active' : currentstate == 'form.summary'}" ui-sref=".summary">
-      <a href="#/form/summary" ng-show="settingObj.validPlan">{{'summary'|translate}}</a>
-    </li>
-    <li class="item" ng-repeat="tab in customFormTabs" ng-class="{'is-active' : selectedTab == 0}" ui-sref=".{{tab}}">
-      <a href="#/form/summary">{{tab|translate}}</a>
-    </li>
-  </ul>
+    <ul>
+        <li class="item" ng-class="{'is-active' : currentstate == 'form.customer'}" ui-sref=".customer"><a href="#/form/customers">{{'Customer'|translate}}</a></li>
+        <li class="item" ng-class="{'is-active' : currentstate == 'form.baseplan'}"
+            ui-sref=".baseplan"><a href="#/form/baseplan">{{'Base Plan'|translate}}</a></li>
+        <li class="item" ng-class="{'is-active' : currentstate == 'form.rider'}"
+            ui-sref=".rider"><a href="#/form/baseplan" >{{'rider'|translate}}</a></li>
+        <li class="item" ng-class="{'is-active' : currentstate == 'form.fundactivity'}"
+            ui-sref=".fundactivity"><a href="#/form/fundactivity" >{{'fundactivity'|translate}}</a></li>
+        <li class="item"
+            ng-class="{'is-active' : currentstate == 'form.summary'}" ui-sref=".summary"><a href="#/form/summary"  >{{'summary'|translate}}</a></li>
+        <li class="item" ng-repeat="tab in customFormTabs"
+            ng-class="{'is-active' : selectedTab == 0}" ui-sref=".{{tab}}"><a href="#/form/summary">{{tab|translate}}</a></li>
+    </ul>
 </nav>
 <div ui-view></div>

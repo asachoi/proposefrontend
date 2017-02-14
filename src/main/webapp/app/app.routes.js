@@ -28,13 +28,13 @@
                     url: '/customers',
                     cache: false,
                     templateUrl: 'app/views/customer/customer.html',
-                    controller: 'form.customer.controller'
+                    controller: 'form.customer.controller as customerCtrl'
                 })
                 .state('form.baseplan', {
                     url: '/baseplan',
                     cache: false,
                     templateUrl: 'app/views/baseplan/baseplan.html',
-                    controller: 'formbaseplanController'
+                    controller: 'formbaseplanController as baseplanCtrl'
                 })
                 .state('form.rider', {
                     url: '/rider',
@@ -46,7 +46,7 @@
                     url: '/fundactivity',
                     cache: false,
                     templateUrl: 'app/views/fundactivity/fundactivity.html',
-                    controller: 'formfundactivityController'
+                    controller: 'formfundactivityController as ctrl'
                 })                
                 .state('form.summary', {
                     url: '/summary',

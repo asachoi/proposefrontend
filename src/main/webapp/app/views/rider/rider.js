@@ -3,10 +3,11 @@ angular.module('eProposeApp').controller('formriderController',
         var vm = $scope;
 
         $controller('baseController', { $scope: $scope });
-        vm.selectedRiders = $rootScope.settingObj.selectedRiders;
+        
+        vm.selectedRiders = $rootScope.productSchema.selectedRiders;
 
-        if ($rootScope.settingObj.selectedRiders == null) {
-            $rootScope.settingObj.selectedRiders = [];
+        if ($rootScope.productSchema.selectedRiders == null) {
+            $rootScope.productSchema.selectedRiders = [];
         }
 
         vm.getRiderObject = function (ridercode) {

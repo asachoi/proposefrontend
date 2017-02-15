@@ -3,17 +3,17 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
 
   <link rel="icon" href="data:;base64,=">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="content/style/default.css?4=1">
   <link rel="stylesheet" type="text/css" href="content/style/animate.css?4=1">
+
   <!-- build:css content/css/vendor.css -->
   <!-- bower:css -->
-
   <link rel="stylesheet" href="../../../bower_components/angular-material/angular-material.css">
-
+  <link rel="stylesheet" href="../../../bower_components/angular-material-expansion-panel/dist/md-expansion-panel.css">
   <!-- endinject -->
   <!-- endbuild -->
   <!-- build:css content/css/main.css -->
@@ -38,8 +38,7 @@
       </ul>
     </div>
   </header>
-  <div id="app" class="full-screen editMode md-dynamic-height md-border-bottom" >
-
+  <div id="app" class="full-screen editMode md-dynamic-height md-border-bottom">
     <div ui-view class="animated flipInX">
 
     </div>
@@ -75,6 +74,8 @@
   <script src="../../../bower_components/angular-material/angular-material.js"></script>
 
   <script src="../../../bower_components/angularLocalStorage/dist/angularLocalStorage.min.js"></script>
+
+  <script src="../../../bower_components/angular-material-expansion-panel/dist/md-expansion-panel.js"></script>
 
   <!-- endinject -->
   <!-- endbuild -->
@@ -124,14 +125,7 @@
 
   <!-- endinject -->
   <!-- endbuild -->
-
-
-
   <script type="text/javascript" src="cordova.js"></script>
-
-
-
-
 </body>
 
 </html>

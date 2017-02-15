@@ -7,10 +7,6 @@ angular.module('eProposeApp').controller('formriderController',
         vm.getRiderList = getRiderList;
         vm.getRiderSchema = getRiderSchema;
         vm.getPlanSchema = getPlanSchema;
- 
-
-
- 
 
         function getRiderList(planid) {
             if (planid == null) return;

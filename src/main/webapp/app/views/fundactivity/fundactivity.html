@@ -2,9 +2,11 @@
     <div class="scrollable scrollable--vertical">
         <form name="riderForm" ng-keyup="" ng-mouseup="" ng-init="ctrl.baseObj.riders=setRiderList(ctrl.baseObj.product.plan.key);">
             <div class="content padded">
+                <customer-section data="baseObj.customers.insured"></customer-section>
+                <product-section data="baseObj.product"></product-section>
                 <h2 class="mainTitle">{{'fundactivity' | translate}}</h2>From Age<input ng-model="ctrl.editFund.fromage"> To Age<input ng-model="ctrl.editFund.toage">                Topup<input ng-model="ctrl.editFund.topup"> Withdraw<input ng-model="ctrl.editFund.withdraw">
-                <md-button class="md-raised"
-                    type="button" ng-click="ctrl.addFund()">Add</md-button>
+                <md-button class="md-raised" type="button" ng-click="ctrl.addFund()">Add</md-button>
             </div>
-        </form>{{ctrl.Funds}}</div>
+        </form>
+    </div>
 </section>

@@ -1,1 +1,31 @@
-<h2 class="mainTitle">{{'planinfo' | translate}}</h2><section class="viewDetailBlock viewDetailBlock--firstBlock"><div class="viewDetailBlock__header"></div><div class="viewDetailBlock__content"><div class="grid"><section class="span12"><div class="valuePairBlock"><div class="valuePairBlock__leftBlock"><span class="valuePairBlock__description">{{'product' | translate}}</span></div><div class="valuePairBlock__rightBlock"><span class="valuePairBlock__value">{{data.productgroup}}</span></div></div><div class="valuePairBlock"><div class="valuePairBlock__leftBlock"><span class="valuePairBlock__description">{{'plancode' | translate}}</span></div><div class="valuePairBlock__rightBlock"><span class="valuePairBlock__value">{{data.plan.value}}</span></div></div></section></div></div></section><debug></debug>
+<md-expansion-panel md-component-id="panelCustomer">
+    <md-expansion-panel-collapsed>
+        <div class="md-title">{{'planinfo' | translate}}</div>
+        <div class="md-summary">{{data.productgroup}} | {{data.plan.value}}</div>
+        <md-expansion-panel-icon></md-expansion-panel-icon>
+    </md-expansion-panel-collapsed>
+    <md-expansion-panel-expanded>
+        <md-expansion-panel-header>
+            <div class="md-title">{{'planinfo' | translate}}</div>
+            <md-expansion-panel-icon></md-expansion-panel-icon>
+        </md-expansion-panel-header>
+        <md-expansion-panel-content>
+            <section class="span12">
+                <div class="valuePairBlock">
+                    <div class="valuePairBlock__leftBlock"><span class="valuePairBlock__description">{{'product' | translate}}</span></div>
+                    <div class="valuePairBlock__rightBlock"><span class="valuePairBlock__value">{{data.productgroup}}</span></div>
+                </div>
+                <div class="valuePairBlock">
+                    <div class="valuePairBlock__leftBlock"><span class="valuePairBlock__description">{{'plancode' | translate}}</span></div>
+                    <div class="valuePairBlock__rightBlock"><span class="valuePairBlock__value">{{data.plan.value}}</span></div>
+                </div>
+            </section>
+        </md-expansion-panel-content>
+
+        <md-expansion-panel-footer>
+            <div flex></div>
+            <md-button class="md-warn" ng-click="$panel.collapse()">Collapse</md-button>
+        </md-expansion-panel-footer>
+    </md-expansion-panel-expanded>
+</md-expansion-panel>
+ 

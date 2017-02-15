@@ -19,7 +19,8 @@
     "ngCordova": "^0.1.27-alpha",
     "angularLocalStorage": "ngStorage#^0.3.2",
     "angular-translate": "^2.13.1",
-    "angular-sanitize": "^1.6.1"
+    "angular-sanitize": "^1.6.1",
+    "angular-material-expansion-panel": "^0.7.2"
   },
   "resolutions": {
     "angular": "^1.6.1"

@@ -18,8 +18,14 @@ angular
             productServices.loadProducts().then(
                 function (payload) {
                     $rootScope.productSchema = payload.data;
+                    
 
-                    vm.productSchema = $rootScope.productSchema;
+                    productServices.loadPlans().then(
+                        function(payload) {
+                            $rootScope.productSchema.plans = payload.data;
+                            vm.productSchema = $rootScope.productSchema;
+                        }
+                    )
 
                     productServices.loadRiders().then(
                         function (payload) {
@@ -30,6 +36,7 @@ angular
                 }
             );
 
+            
 
 
 

@@ -62,6 +62,11 @@
                 return $http.get("app/customizations/data/product.json");
             };
 
+            vm.loadPlans = function () {
+                return $http.get("app/customizations/data/plan.json");
+            };
+            
+
             vm.loadRiders = function () {
                 return $http.get("app/customizations/data/rider.json");
             };

@@ -1,0 +1,238 @@
+[
+    {
+        "planname": "Enrich Max (DB Option 1 Face Plus) (Peso)",
+        "planid": "US789",
+        "issueage": {
+            "max": 70,
+            "min": 0
+        },
+        "gender": [
+            "M",
+            "F"
+        ],
+        "initialfaceamount": 1.25,
+        "payperiod": "singlepay",
+        "deathbenfitoption": "DB1",
+        "premium": {
+            "min": 100000,
+            "max": 499999
+        },
+        "faceamount": {},
+        "currency": "PHP",
+        "riders": [
+            "AE885",
+            "WE885",
+            "PE885",
+            "HE120",
+            "HE220",
+            "CE320"
+        ],
+        "funds": [
+            {
+                "code": "RSCF",
+                "name": "PHP Secure Fund",
+                "default": 100
+            },
+            {
+                "code": "RGF",
+                "name": "PHP Growth Fund",
+                "default": 0
+            },
+            {
+                "code": "RDVF",
+                "name": "PHP Diversified Value Fund",
+                "default": 0
+            },
+            {
+                "code": "RDAF",
+                "name": "PHP Dynamic Allocation Fund",
+                "default": 0
+            },
+            {
+                "code": "PHF07",
+                "name": "PHP Powerhouse Fund",
+                "default": 0
+            },
+            {
+                "code": "PWO1H",
+                "name": "PHP Wealth Optimizer 2026 Fund",
+                "default": 0
+            },
+            {
+                "code": "PWO2H",
+                "name": "PHP Wealth Optimizer 2031 Fund",
+                "default": 0
+            },
+            {
+                "code": "PWO3H",
+                "name": "PHP Wealth Optimizer 2036 Fund",
+                "default": 0
+            }
+        ],
+        "productcode": "SPUL",
+        "productgroupname": "Enrich Max"
+    },
+    {
+        "planname": "Enrich Max (DB Option 2 Level Face) (Peso)",
+        "planid": "US889",
+        "issueage": {
+            "max": 70,
+            "min": 0
+        },
+        "gender": [
+            "M",
+            "F"
+        ],
+        "initialfaceamount": 1.25,
+        "payperiod": "singlepay",
+        "deathbenfitoption": "DB2",
+        "premium": {
+            "min": 100000,
+            "max": 499999
+        },
+        "faceamount": {},
+        "currency": "PHP",
+        "riders": [],
+        "funds": [
+            {
+                "code": "RSCF",
+                "name": "PHP Secure Fund",
+                "default": 100
+            },
+            {
+                "code": "RGF",
+                "name": "PHP Growth Fund",
+                "default": 0
+            },
+            {
+                "code": "RDVF",
+                "name": "PHP Diversified Value Fund",
+                "default": 0
+            },
+            {
+                "code": "RDAF",
+                "name": "PHP Dynamic Allocation Fund",
+                "default": 0
+            },
+            {
+                "code": "PHF07",
+                "name": "PHP Powerhouse Fund",
+                "default": 0
+            },
+            {
+                "code": "PWO1H",
+                "name": "PHP Wealth Optimizer 2026 Fund",
+                "default": 0
+            },
+            {
+                "code": "PWO2H",
+                "name": "PHP Wealth Optimizer 2031 Fund",
+                "default": 0
+            },
+            {
+                "code": "PWO3H",
+                "name": "PHP Wealth Optimizer 2036 Fund",
+                "default": 0
+            }
+        ],
+        "productcode": "SPUL",
+        "productgroupname": "Enrich Max"
+    },
+    {
+        "planname": "Enrich Max (DB Option 1 Face Plus) (Dollar)",
+        "planid": "UD799",
+        "issueage": {
+            "max": 70,
+            "min": 0
+        },
+        "gender": [
+            "M",
+            "F"
+        ],
+        "initialfaceamount": 1.25,
+        "payperiod": "singlepay",
+        "deathbenfitoption": "DB1",
+        "premium": {
+            "min": 2500,
+            "max": 12499
+        },
+        "faceamount": {},
+        "currency": "USD",
+        "riders": [],
+        "funds": [
+            {
+                "code": "DTPF",
+                "name": "USD Global Target Income Fund",
+                "default": 100,
+                "startperiodyear": 1
+            },
+            {
+                "code": "RSCF",
+                "name": "USD Secure Fund",
+                "default": 0
+            },
+            {
+                "code": "RAPS",
+                "name": "USD Asia Pacific Bond Fund",
+                "default": 0
+            },
+            {
+                "code": "RAGF",
+                "name": "USD ASEAN Growth Fund",
+                "default": 0
+            }
+        ],
+        "productcode": "SPUL",
+        "productgroupname": "Enrich Max"
+    },
+    {
+        "planname": "Enrich Max (DB Option 2 Level Face) (Dollar)",
+        "planid": "UD899",
+        "issueage": {
+            "max": 70,
+            "min": 0
+        },
+        "gender": [
+            "M",
+            "F"
+        ],
+        "startpayoutyear": {
+            "default": 1
+        },
+        "initialfaceamount": 1.25,
+        "payperiod": "singlepay",
+        "deathbenfitoption": "DB2",
+        "premium": {
+            "min": 2500,
+            "max": 12499
+        },
+        "faceamount": {},
+        "currency": "USD",
+        "riders": [],
+        "funds": [
+            {
+                "code": "DTPF",
+                "name": "USD Global Target Income Fund",
+                "default": 100,
+                "startperiodyear": 1
+            },
+            {
+                "code": "RSCF",
+                "name": "USD Secure Fund",
+                "default": 0
+            },
+            {
+                "code": "RAPS",
+                "name": "USD Asia Pacific Bond Fund",
+                "default": 0
+            },
+            {
+                "code": "RAGF",
+                "name": "USD ASEAN Growth Fund",
+                "default": 0
+            }
+        ],
+        "productcode": "SPUL",
+        "productgroupname": "Enrich Max"
+    }
+]

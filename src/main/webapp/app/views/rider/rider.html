@@ -8,11 +8,16 @@
                 <div ng-repeat="item in riderlist" layout="row">
                     <div class="sideBySideBlock sideBySideBlock--7030" ng-init="baseObj.product.riders[item].value = (baseObj.product.riders[item].value == null? 
                         0: baseObj.product.riders[item].value)">
-                        <h2 class="mainTitle">{{item}}</h2>
-                        <div class="myToggle myToggle--clearFix myToggle--large">
-                            <input type="checkbox" ng-model="baseObj.product.riders[item].selected">
+                        <md-input-container>
+
+                            <md-checkbox ng-model="baseObj.product.riders[item].selected">
+                                {{item}}
+                            </md-checkbox>
                             <input type="number" ng-model="baseObj.product.riders[item].faceamount">
-                        </div>
+                        </md-input-container>
+                        {{riderCtrl.getRiderSchema(item)}}
+
+
                     </div>
                 </div>
             </div>

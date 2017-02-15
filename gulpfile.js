@@ -93,7 +93,7 @@ gulp.task('assets:prod', ['images', 'styles', 'html', 'copy:swagger', 'copy:imag
 gulp.task('html', function () {
     //gulp.src(config.app + 'app/**/*.js'
     return gulp.src(config.app + 'app/**/*.html')
-        .pipe(htmlmin({collapseWhitespace: true}))
+        //.pipe(htmlmin({collapseWhitespace: true}))
      //   .pipe(templateCache({
      //       module: 'eProposeApp',
      //       root: 'app/',

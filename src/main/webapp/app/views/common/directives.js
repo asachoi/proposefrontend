@@ -45,7 +45,28 @@
                     $scope.DEBUG_INFO_ENABLED = DEBUG_INFO_ENABLED;
                 }            
             }
-        });
+        })
+        .directive("buttonoption", function() {
+            return {
+                restrict: "E",
+                scope: {
+                    data: '=',
+                    options: '='
+                },
+                template: `
+                
+                <div class="myToggle myToggle--clearFix myToggle--large">
+                 
+                    <div class="radio" ng-repeat='o in options'>{{o}}
+                        <input  type="radio" value="{{o}}" ng-model="data">
+                        <label  >{{o}}</label>
+                    </div>
+                </div>                
+                `
+            }
+
+        })
+        ;
 
         
 

@@ -1,4 +1,6 @@
-<div class="content padded"><h2 class="mainTitle">{{data.role | translate}}</h2><!--
+<div class="content padded">
+    <h2 class="mainTitle">{{data.role | translate}}</h2>
+    <!--
     <div class="sideBySideBlock sideBySideBlock--7030">
         <h2 class="mainTitle">Title</h2>
         <div class="myToggle myToggle--clearFix myToggle--large">
@@ -13,7 +15,21 @@
 
         </div>
     </div>
-    //--><div class="sideBySideBlock sideBySideBlock--7030"><h2 class="mainTitle">Gender</h2><div class="myToggle myToggle--clearFix myToggle--large"><div class="radio"><input id="genderMale" name="gender" type="radio" value="Male" ng-model="data.sex"><label for="genderMale">Male</label></div><div class="radio"><input id="genderFemale" name="gender" type="radio" value="Female" ng-model="data.sex"><label for="genderFemale">Female</label></div></div></div><div class="commonForm" style="padding: 30px 0"><h2 class="mainTitle">Date of Birth</h2><div class="myToggle myToggle--clearFix myToggle--large"><md-datepicker ng-model="data.dob " md-current-view="year " required layout-align="start start"></md-datepicker>Age: {{ data.dob | Age }}</div></div><!--
+    //-->
+    <div class="sideBySideBlock sideBySideBlock--7030">
+        <h2 class="mainTitle">Gender</h2>
+        <div class="myToggle myToggle--clearFix myToggle--large">
+            <div class="radio"><input id="ingenderMale" name="ingender" type="radio" value="Male" ng-model="data.sex"><label for="ingenderMale">Male</label></div>
+            <div class="radio"><input id="ingenderFemale" name="ingender" type="radio" value="Female" ng-model="data.sex"><label for="ingenderFemale">Female</label></div>
+        </div>
+    </div>
+    <div class="commonForm" style="padding: 30px 0">
+        <h2 class="mainTitle">Date of Birth</h2>
+        <div class="myToggle myToggle--clearFix myToggle--large">
+            <md-datepicker ng-model="data.dob " md-current-view="year " required layout-align="start start"></md-datepicker>Age: {{ data.dob | Age }}</div>
+    </div>
+
+    <!--
     <div class="sideBySideBlock sideBySideBlock--7030">
         <div class="sideBySideBlock__leftBlock">
             <h2 class="mainTitle">Surname</h2>

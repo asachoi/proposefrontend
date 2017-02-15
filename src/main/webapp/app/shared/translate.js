@@ -1,7 +1,6 @@
 angular.module('eProposeApp').config(
     function ($translateProvider) {
         $translateProvider.translations('en', {
-            TITLE: 'Hello',
             name: 'Name',
             smoker: 'Smoking Status',
             gender: 'Gender',
@@ -20,7 +19,16 @@ angular.module('eProposeApp').config(
             premium: 'Basic Annual Premium',
             riderform: 'Riders',
             insured: 'Insurer Information',
-            policyholder: 'Policy Holder Information'
+            policyholder: 'Policy Holder Information',
+            fundactivity: 'Fund Activity',
+            summary: 'Summary',
+            rider: 'Supplementary Benefit',
+            product: 'Product Group',
+            basicsinglepremium: 'Basic Single Premium',
+            deathbenefitoption: 'Death Benefit',
+            DB1: 'Face Plus',
+            
+
         });
         $translateProvider.translations('de', {
             TITLE: 'Hallo',

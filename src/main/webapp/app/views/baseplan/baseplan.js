@@ -61,16 +61,7 @@
 
 
                 }
-                vm.getFundValue = function (painid, code) {
-                    vm.getFundSetting(planid, code).default
-                }
-                vm.fundInit = function (planid, code) {
-                    //currentPlan.funds
-                    if ($scope.baseObj.product.funds[code] == null) {
-                        $scope.baseObj.product.funds[code] = vm.getFundSetting(planid, code).default;
-                        //$scope.baseObj.product.funds[code].value = vm.getFundSetting(planid, code).default;
-                    }
-                }
+ 
 
             }]
     );

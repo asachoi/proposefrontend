@@ -13,26 +13,7 @@ angular.module('eProposeApp').controller('formriderController',
         vm.getRiderObject = function (ridercode) {
             return $filter('filter')($scope.baseObj.riders, { ridercode: ridercode })[0];
         }
-
-        vm.setRiderList = function (planid) {
-            if (planid == null) return;
-            if ($scope.baseObj.riders != null) return $scope.baseObj.riders;
-            var rs = productServices.getPlan(planid).riders;
-            var riders = [];
-
-            rs.forEach(
-                function (item, index) {
-                    //console.debug(item);
-                    riders.push(
-                        {
-                            ridercode: item,
-                            selected: false
-                        }
-                    )
-                }
-            );
-            return riders;
-        }
+ 
 
         vm.getRiderList = function (planid) {
             if (planid == null) return;
@@ -40,8 +21,8 @@ angular.module('eProposeApp').controller('formriderController',
             return rs;
         }
 
-        vm.getRiderSetting = function (ridercode) {
-            return productServices.getRiderSetting(ridercode);
+        vm.getRiderSchema = function (ridercode) {
+            return productServices.getRiderSchema(ridercode);
         }
 
         vm.getPlanSchema = function (planid) {

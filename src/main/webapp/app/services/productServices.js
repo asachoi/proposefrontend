@@ -43,7 +43,7 @@
                 return plans[0];
             }
 
-            vm.getRiderSetting = function (ridercode) {
+            vm.getRiderSchema = function (ridercode) {
                 if (ridercode == null) return;
                 var riders = $filter('filter')($rootScope.productSchema.riders, { ridercode: ridercode });
                 if (riders == null) return;

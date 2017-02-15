@@ -1,4 +1,4 @@
-<div layout="row" flex="100" ng-init="currentPlan = baseplanCtrl.getPlan(baseObj.product.plan.key)">
+<div layout="row" flex="100" ng-init="currentPlan = baseplanCtrl.getPlanSchema(baseObj.product.plan.key)">
     <md-input-container class="md-block" flex="20" aria-label="">
         <md-select name="currency" ng-model="baseObj.product.currency" ng-init="baseObj.product.currency=currentPlan.currency;"
             ng-disabled="true" aria-label="" style="display:none">
@@ -19,4 +19,5 @@
                 {{baseObj.product.deathbenfitoption|translate}}
         </md-input-container>
 </div>
+   
 <fundallocation>

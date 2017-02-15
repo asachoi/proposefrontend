@@ -7,7 +7,7 @@
                 var vm = this;
 
                 $controller('baseController', { $scope: $scope });
- 
+
 
                 vm.getProductGroups = function () {
                     return productServices.getProductGroups();
@@ -34,35 +34,44 @@
                     );
                 }
 
-                vm.getPlan = function (planid) {
-                    return productServices.getPlan(planid);
-                }
+  
                 vm.customForm = function (planid) {
- 
+
                     if (planid == null) return;
- 
+
                     return productServices.getProduct(planid).customform;
 
                 }
                 vm.getPlanSchema = function (planid) {
                     if (planid == null) return;
-                    return productServices.getPlan(planid); 
+                    return productServices.getPlan(planid);
                 }
                 vm.planSearch = function (text, productgroupid) {
                     var sel = vm.getPlans(productgroupid);
-                    var list = $filter('filter')(sel, { value: text }); 
+                    var list = $filter('filter')(sel, { value: text });
                     return list;
                 }
 
-                vm.getFundSetting = function(planid, fundcode) {
-                    
+                vm.getFundSetting = function (planid, fundcode) {
+
                     if (planid == null) return 0;
-                    var fund = $filter('filter')(vm.getPlanSchema(planid).funds, {code: fundcode});
+                    var fund = $filter('filter')(vm.getPlanSchema(planid).funds, { code: fundcode });
                     //console.debug(;
                     return fund[0];
-                    
-            
+
+
                 }
+                vm.getFundValue = function (painid, code) {
+                    vm.getFundSetting(planid, code).default
+                }
+                vm.fundInit = function (planid, code) {
+                    //currentPlan.funds
+                    if ($scope.baseObj.product.funds[code] == null) {
+                        $scope.baseObj.product.funds[code] = vm.getFundSetting(planid, code).default;
+                        //$scope.baseObj.product.funds[code].value = vm.getFundSetting(planid, code).default;
+                    }
+                }
+
             }]
     );
 })();

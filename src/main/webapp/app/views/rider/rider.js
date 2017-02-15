@@ -3,7 +3,7 @@ angular.module('eProposeApp').controller('formriderController',
         var vm = this;
 
         $controller('baseController', { $scope: $scope });
-        
+
         $scope.selectedRiders = $rootScope.productSchema.selectedRiders;
 
         if ($rootScope.productSchema.selectedRiders == null) {
@@ -42,6 +42,11 @@ angular.module('eProposeApp').controller('formriderController',
 
         vm.getRiderSetting = function (ridercode) {
             return productServices.getRiderSetting(ridercode);
+        }
+
+        vm.getPlanSchema = function (planid) {
+            if (planid == null) return;
+            return productServices.getPlan(planid);
         }
 
         vm.toggle = function (item, list) {

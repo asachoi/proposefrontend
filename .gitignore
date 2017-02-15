@@ -4,5 +4,5 @@ dist
 .tmp
 .sass-cache
 target/
-src/main/webapp/bower_components/
+
  

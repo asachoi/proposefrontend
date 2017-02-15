@@ -5,7 +5,7 @@
                 <customer-section data="baseObj.customers.insured"></customer-section>
                 <product-section data="baseObj.product"></product-section>
                 <h2 class="mainTitle">{{'riderform' | translate}}</h2>
-                {{currentPlan}}
+                {{riderCtrl.getRiderList(baseObj.product.plan.key)}}
                 <div ng-repeat="item in currentPlan.riders;" layout="row">
                     {{item}}
 
@@ -15,7 +15,6 @@
         </div>
 </section>
 
-{{riderCtrl.getPlan(baseObj.product.plan.key)}}
 
 <div layout="row" flex="100">
     <div ng-repeat="f in currentPlan.funds" flex="25">{{f.name}}<br>

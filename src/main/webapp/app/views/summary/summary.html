@@ -1,6 +1,6 @@
 <section class="panelz panelz--withTabs">
     <div class="scrollable scrollable--vertical">
-        <form name="riderForm" ng-keyup="" ng-mouseup="" ng-init="baseObj.riders=setRiderList(baseObj.product.plan.key);">
+        <form name="riderForm" ng-keyup="" ng-mouseup="">
 
             <customer-section data="baseObj.customers.insured"></customer-section>
             <product-section data="baseObj.product"></product-section>
@@ -12,7 +12,7 @@
                             <tr md-row>
                                 <th md-column>Coverage</th>
                                 <th md-column>Description</th>
-                                <th md-column>Topup</th>
+                                <th md-column>Face Amount</th>
 
                                 <th md-column>Annual</th>
                                 <th md-column>Semi-annual</th>
@@ -25,17 +25,27 @@
                             <tr md-row  md-select-id="name" md-auto-select  >
                                 <td md-cell>{{baseObj.product.plan.key}}</td>
                                 <td md-cell>{{baseObj.product.plan.value}}</td>
-                                <td md-cell>{{baseObj.product.faceamount | currency}}</td>
-                                <td md-cell>{{baseObj.baseplan.premium.annual | currency}}</td>
-                                <td md-cell>{{baseObj.baseplan.premium.semiannual | currency}}</td>
-                                <td md-cell>{{baseObj.baseplan.premium.quarterly | currency}}</td>
-                                <td md-cell>{{baseObj.baseplan.premium.monthly | currency}}</td>
+                                <td md-cell layout-align="end end">{{baseObj.product.faceamount | currency}}</td>
+                                <td md-cell layout-align="end end">{{baseObj.baseplan.premium.annual | currency}}</td>
+                                <td md-cell layout-align="end end">{{baseObj.baseplan.premium.semiannual | currency}}</td>
+                                <td md-cell layout-align="end end">{{baseObj.baseplan.premium.quarterly | currency}}</td>
+                                <td md-cell layout-align="end end">{{baseObj.baseplan.premium.monthly | currency}}</td>
                             </tr>
+                            <tr md-row  md-select-id="name" md-auto-select ng-repeat="(k,r) in baseObj.product.riders" ng-if="r.selected">
+                                <td md-cell>{{k}}</td>
+                                <td md-cell> </td>
+                                <td md-cell layout-align="end end">{{r.faceamount | currency}}</td>
+                                <td md-cell> </td>
+                                <td md-cell> </td>
+                                <td md-cell> </td>
+                                <td md-cell> </td>
+                            </tr>
+                            
                         </tbody>
                     </table>
                 </md-table-container>
             </div>
-
+<debug data="baseObj.product.riders" />
         </form>
     </div>
 </section>

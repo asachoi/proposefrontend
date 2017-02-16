@@ -1,15 +1,14 @@
 <section class="panelz panelz--withTabs">
- 
     <form name="userForm" ng-keyup="" ng-mouseup="" class="my-form commonForm">
         <div class="scrollable scrollable--vertical">
-                        
             <insured-input data="baseObj.customers.insured" title="'Insured'"></insured-input>
-            <div class="checkboxContainers">
-                <div class="checkboxContainer checkboxContainer--individualBox" id="checkboxContainer1[{$index}]">
-                    <div class="checkbox"><input name="[{q.name}]" id="[{q.name}]" type="checkbox" ng-model="baseObj.settings.isSamePerson">
-                        <label
-                            for="[{q.name}]">Policy holder is same as insured</label>
-                    </div><label class="checkboxContainer__label" for="Q1">Policy holder is same as insured</label></div>
+
+            <div class="checkboxContainer checkboxContainer--individualBox content padded" id="checkboxContainer1[{$index}]">
+                <div class="checkbox">
+                    <input name="[{q.name}]" id="[{q.name}]" type="checkbox" ng-model="baseObj.settings.isSamePerson">
+                    <label for="[{q.name}]">Policy holder is same as insured</label>
+                </div>
+                <label class="checkboxContainer__label" for="Q1">Policy holder is same as insured</label>
             </div>
             <policy-holder-input data="baseObj.customers.policyholder" title="'Policy Holder'" ng-if="!baseObj.settings.isSamePerson"></policy-holder-input>
         </div>

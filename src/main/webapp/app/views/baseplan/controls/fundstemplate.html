@@ -13,7 +13,9 @@
                 </md-input-container>
                 <div ng-if="baseplanCtrl.getFundSetting(currentPlan.planid, f.code).startperiodyear != null">
                     start year period:
+                    <md-input-container>
                     <input type="number" ng-model="baseObj.product.funds[f.code].startperiodyear" ng-init="baseObj.product.funds[f.code].startperiodyear = getFundSetting(currentPlan.planid, f.code).startperiodyear">
+                    </md-input-container>
                 </div>
             </md-grid-tile-content>
         </md-grid-tile>

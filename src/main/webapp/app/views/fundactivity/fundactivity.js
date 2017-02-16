@@ -24,6 +24,12 @@
                     this.editFund = null;
                     vm.baseObj.product.fundacts = this.FundActs;
                 }
+
+                vm.delFund = function(i) {   
+                    console.debug(i);                 
+                    this.FundActs.splice(i,1);
+                    //vm.baseObj.product.fundacts = this.FundActs;
+                }
             }
         ]
     );

@@ -39,7 +39,7 @@
                 scope: {
                     data: '='
                 },
-                template: '<json-formatter json="data" open="1" class="md-headline"></json-formatter>'
+                template: '<json-formatter json="data" open="1" class="md-subhead debug"></json-formatter>'
                 ,
                 controller: function($scope, DEBUG_INFO_ENABLED) {
                     $scope.DEBUG_INFO_ENABLED = DEBUG_INFO_ENABLED;

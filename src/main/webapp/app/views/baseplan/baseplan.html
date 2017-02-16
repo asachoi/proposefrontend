@@ -1,29 +1,31 @@
 <section class="panelz panelz--withTabs">
     <div class="scrollable scrollable--vertical">
         <form name="productForm" ng-keyup="" ng-mouseup="" ng-init="baseplanCtrl.changePlan();">
+
+            <customer-section data="baseObj.customers.insured"></customer-section>
+            <!--form //-->
+            <!--generic product and plan selector //-->
             <div class="content padded">
-                <customer-section data="baseObj.customers.insured"></customer-section>
-                <!--form //-->
-                <!--generic product and plan selector //-->
                 <h2 class="mainTitle">{{'planinfo' | translate}}</h2>
-                <div class="commonForm" style="padding: 30px 0">
+                <div class="commonForm"  >
                     <h2 class="mainTitle">Product</h2>
-                    <md-select name="productid" ng-model="baseObj.product.productgroup" required>
+                    <md-select class="md-body-2" name="productid" ng-model="baseObj.product.productgroup" required>
                         <md-option ng-repeat="n in baseplanCtrl.getProductGroups();" ng-value="n.productgroupname">{{n.productgroupname}}</md-option>
                     </md-select>
                 </div>
-                <div class="commonForm" style="padding:  0">
+                <div class="commonForm" >
                     <h2 class="mainTitle">Plan</h2>
-                    <md-autocomplete required md-selected-item="baseObj.product.plan" md-selected-item-change="baseplanCtrl.planChange()"
-                        md-search-text="searchText" md-items="n in baseplanCtrl.planSearch(searchText, baseObj.product.productgroup)"
-                        md-item-text="n.value" md-min-length="0" flex="100">
+                    <md-autocomplete required md-selected-item="baseObj.product.plan" md-selected-item-change="baseplanCtrl.planChange()" md-search-text="searchText"
+                        md-items="n in baseplanCtrl.planSearch(searchText, baseObj.product.productgroup)" md-item-text="n.value"
+                        md-min-length="0" flex="100" class="md-body-2">
                         <md-item-template><span md-highlight-text="searchText" md-highlight-flags="^i">{{n.value}}</span></md-item-template>
                         <md-not-found>No plan matching "{{searchText}}" were found.</md-not-found>
                     </md-autocomplete>
                 </div>
-                <!-- plan specified input //-->{{baseObj.product.plan.key}}
-                <div ng-if="baseplanCtrl.customForm(baseObj.product.plan.key)" ng-include="'app/customizations/views/baseplan/' + baseplanCtrl.customForm(baseObj.product.plan.key) + '.html'"></div>
+
+                <div class="padding: 10px 0 0 0" ng-if="baseplanCtrl.customForm(baseObj.product.plan.key)" ng-include="'app/customizations/views/baseplan/' + baseplanCtrl.customForm(baseObj.product.plan.key) + '.html'"></div>
             </div>
+
         </form>
     </div>
 </section>

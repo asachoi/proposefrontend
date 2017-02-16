@@ -34,15 +34,16 @@
             var toJson = function(json) {
                 return angular.toJson(json);
             };
-            return {
+            return {                
                 restrict: "AE",
                 scope: {
                     data: '='
                 },
-                template: '{{data}}              <div ng-if="DEBUG_INFO_ENABLED">                  {{data}}              </div>'
+                template: '<json-formatter json="data" open="1" class="md-headline"></json-formatter>'
                 ,
                 controller: function($scope, DEBUG_INFO_ENABLED) {
                     $scope.DEBUG_INFO_ENABLED = DEBUG_INFO_ENABLED;
+                    $scope.toJson = toJson;
                 }            
             }
         })

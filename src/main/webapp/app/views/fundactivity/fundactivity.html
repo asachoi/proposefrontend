@@ -1,12 +1,35 @@
 <section class="panelz panelz--withTabs">
     <div class="scrollable scrollable--vertical">
         <form name="riderForm" ng-keyup="" ng-mouseup="" ng-init="ctrl.baseObj.riders=setRiderList(ctrl.baseObj.product.plan.key);">
+
+            <customer-section data="baseObj.customers.insured"></customer-section>
+            <product-section data="baseObj.product"></product-section>
             <div class="content padded">
-                <customer-section data="baseObj.customers.insured"></customer-section>
-                <product-section data="baseObj.product"></product-section>
-                <h2 class="mainTitle">{{'fundactivity' | translate}}</h2>From Age<input ng-model="ctrl.editFund.fromage"> To Age<input ng-model="ctrl.editFund.toage">                Topup<input ng-model="ctrl.editFund.topup"> Withdraw<input ng-model="ctrl.editFund.withdraw">
-                <md-button class="md-raised" type="button" ng-click="ctrl.addFund()">Add</md-button>
+                <h2 class="mainTitle">{{'fundactivity' | translate}}</h2>
+                <div class="md-body2">
+                    <md-input-container>
+                        <label>From Age</label><input ng-model="ctrl.editFund.fromage">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>To Age</label><input ng-model="ctrl.editFund.toage">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Topup</label>
+                        <input ng-model="ctrl.editFund.topup">
+                    </md-input-container>
+                    <md-input-container>
+                        <label>Withdraw</label>
+                        <input ng-model="ctrl.editFund.withdraw">
+                    </md-input-container>
+                    <md-input-container>
+                        <md-button class="md-raised" type="button" ng-click="ctrl.addFund()">Add</md-button>
+                    </md-input-container>
+                </div>
             </div>
+
+
         </form>
+
+        <debug data="baseObj.product.funds" />
     </div>
 </section>

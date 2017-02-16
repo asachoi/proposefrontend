@@ -5,12 +5,19 @@
     'ngMaterial',
     'ui.router',
     'pascalprecht.translate',
-    'material.components.expansionPanels'
+    'material.components.expansionPanels',
+     'jsonFormatter'
   ]);
 
   angular.module('eProposeApp').config(function ($mdIconProvider, $mdThemingProvider) {
     $mdThemingProvider.theme('default');
     $mdIconProvider.fontSet('md', 'material-icons');
+  });
+
+  angular.module('eProposeApp').config(function (JSONFormatterConfigProvider) {
+
+    // Enable the hover preview feature
+    JSONFormatterConfigProvider.hoverPreviewEnabled = true;
   });
 })();
 

@@ -1,11 +1,21 @@
-<div layout="row" flex="100">
-    <div ng-repeat="f in currentPlan.funds" flex="25">{{f.name}}<br>
-        <input type="number" min="0" max="100" ng-model="baseObj.product.funds[f.code].value" ng-init="
+<div class="md-subhead">Fund Allocation</div>
+
+
+<md-content class="md-subhead">
+    <md-grid-list md-cols-gt-md="8" md-cols="4" md-cols-md="4" md-row-height="2:1">
+        <md-grid-tile ng-repeat="f in currentPlan.funds">
+            <md-grid-tile-footer>{{f.name}}</md-grid-tile-footer>
+            <md-grid-tile-content>
+                <md-input-container>
+                    <input type="number" min="0" max="100" ng-model="baseObj.product.funds[f.code].value" ng-init="
         baseObj.product.funds[f.code].value = (baseObj.product.funds[f.code].value == null? 
         baseplanCtrl.getFundSetting(currentPlan.planid, f.code).default : baseObj.product.funds[f.code].value)">
-        <div ng-if="baseplanCtrl.getFundSetting(currentPlan.planid, f.code).startperiodyear != null">
-            start year period:
-            <input type="number" ng-model="baseObj.product.funds[f.code].startperiodyear" ng-init="baseObj.product.funds[f.code].startperiodyear = getFundSetting(currentPlan.planid, f.code).startperiodyear">
-        </div>
-    </div>
-</div>
+                </md-input-container>
+                <div ng-if="baseplanCtrl.getFundSetting(currentPlan.planid, f.code).startperiodyear != null">
+                    start year period:
+                    <input type="number" ng-model="baseObj.product.funds[f.code].startperiodyear" ng-init="baseObj.product.funds[f.code].startperiodyear = getFundSetting(currentPlan.planid, f.code).startperiodyear">
+                </div>
+            </md-grid-tile-content>
+        </md-grid-tile>
+    </md-grid-list>
+</md-content>

@@ -31,10 +31,11 @@
                                 <td md-cell layout-align="end end">{{baseObj.baseplan.premium.quarterly | currency}}</td>
                                 <td md-cell layout-align="end end">{{baseObj.baseplan.premium.monthly | currency}}</td>
                             </tr>
-                            <tr md-row  md-select-id="name" md-auto-select ng-repeat="(k,r) in baseObj.product.riders" ng-if="r.selected">
-                                <td md-cell>{{k}}</td>
-                                <td md-cell> </td>
-                                <td md-cell layout-align="end end">{{r.faceamount | currency}}</td>
+                            <tr md-row  md-select-id="name" md-auto-select ng-repeat="(k,r) in baseObj.product.riders" ng-if="r.selected"
+                            ng-init="schema=summaryCtrl.getRiderSchema(k)">
+                                <td md-cell>{{schema.ridername}}</td>
+                                <td md-cell>{{schema.term}}</td>
+                                <td md-cell>{{r.faceamount | currency}}</td>
                                 <td md-cell> </td>
                                 <td md-cell> </td>
                                 <td md-cell> </td>

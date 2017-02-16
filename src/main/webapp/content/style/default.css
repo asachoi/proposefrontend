@@ -3,8 +3,12 @@
 
 .debug {
     background-color: lightgrey;
-    opacity: .8;
+    opacity: .2;
     position: absolute;
     top: 0;
     left: 400px;
+}
+
+.debug:hover {
+    opacity: 1;
 }

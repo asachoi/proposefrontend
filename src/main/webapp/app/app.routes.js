@@ -52,7 +52,7 @@
                     url: '/summary',
                     cache: false,
                     templateUrl: 'app/views/summary/summary.html',
-                    controller: 'form.summary.controller'
+                    controller: 'form.summary.controller as summaryCtrl'
                 })
                 ;
 

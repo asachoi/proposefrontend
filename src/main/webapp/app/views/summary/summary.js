@@ -1,7 +1,7 @@
 angular.module('eProposeApp').controller('form.summary.controller',
-    function ($scope, $rootScope, $filter, $state, $controller) {
+    function ($scope, $rootScope, $filter, $state, $controller, productServices) {
         $controller('baseController', { $scope: $scope });
-        var vm = $scope;
+        var vm = this;
 
         vm.current = $state.current;
         vm.baseObj = $rootScope.stateObj;
@@ -15,6 +15,13 @@ angular.module('eProposeApp').controller('form.summary.controller',
             'quarterly': 400000,
             'monthly': 180000
         };
+
+        vm.getRiderSchema = getRiderSchema;
+        
+        function getRiderSchema(ridercode) {
+            console.debug(ridercode);
+            return productServices.getRiderSchema(ridercode);
+        }
 
         vm.createRequest = function () {
             var req = {

@@ -22,7 +22,8 @@
     "angular-sanitize": "^1.6.1",
     "angular-material-expansion-panel": "^0.7.2",
     "json-formatter": "^0.6.0",
-    "angular-material-data-table": "^0.10.10"
+    "angular-material-data-table": "^0.10.10",
+    "font-awesome": "^4.7.0"
   },
   "resolutions": {
     "angular": "^1.6.1"

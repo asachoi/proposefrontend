@@ -6,7 +6,8 @@
     'ui.router',
     'pascalprecht.translate',
     'material.components.expansionPanels',
-     'jsonFormatter'
+     'jsonFormatter',
+     'md.data.table'
   ]);
 
   angular.module('eProposeApp').config(function ($mdIconProvider, $mdThemingProvider) {

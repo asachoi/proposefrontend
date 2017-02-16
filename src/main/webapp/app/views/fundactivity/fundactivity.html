@@ -1,6 +1,6 @@
 <section class="panelz panelz--withTabs">
     <div class="scrollable scrollable--vertical">
-        <form name="riderForm" ng-keyup="" ng-mouseup="" ng-init="ctrl.baseObj.riders=setRiderList(ctrl.baseObj.product.plan.key);">
+        <div ng-init="ctrl.baseObj.riders=setRiderList(ctrl.baseObj.product.plan.key);">
 
             <customer-section data="baseObj.customers.insured"></customer-section>
             <product-section data="baseObj.product"></product-section>
@@ -28,8 +28,29 @@
             </div>
 
 
-        </form>
+        </div>
 
-        <debug data="baseObj.product.funds" />
+        <md-table-container>
+            <table md-table md-row-select multiple  >
+                <thead md-head  >
+                    <tr md-row>
+
+                        <th md-column >From</th>
+                        <th md-column >To</th>
+                        <th md-column >Topup</th>
+                        <th md-column >Withdrawal</th>
+                    </tr>
+                </thead>
+                <tbody md-body>
+                    <tr md-row md-select="dessert" md-select-id="name" md-auto-select ng-repeat="fa in baseObj.product.fundacts">
+                        <td md-cell>{{fa.fromage}}</td>
+                        <td md-cell>{{fa.toage}}</td>
+                        <td md-cell>{{fa.topup}}</td>
+                        <td md-cell>{{fa.withdraw}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </md-table-container>
+
     </div>
 </section>

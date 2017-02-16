@@ -6,31 +6,34 @@
             <product-section data="baseObj.product"></product-section>
             <div class="content padded">
                 <h2 class="mainTitle">{{'summary' | translate}}</h2>
-                <div layout="row" layout-align="center end">
-                    <div flex="10">Coverage</div>
-                    <div flex="20">Description</div>
-                    <div flex="10">Face Amount</div>
-                    <div flex="60" layout="column">
-                        <div>Modal Premium</div>
-                        <div layout="row" layout-align="center end">
-                            <div flex="25">Annual</div>
-                            <div flex="25">Semi-annual</div>
-                            <div flex="25">Quarterly</div>
-                            <div flex="25">Monthly</div>
-                        </div>
-                    </div>
-                </div>
-                <div layout="row" layout-align="center end">
-                    <div flex="10">{{baseObj.product.plan.key}}</div>
-                    <div flex="20">{{baseObj.product.plan.value}}</div>
-                    <div flex="10" layout-align="end end">{{baseObj.product.faceamount | currency}}</div>
-                    <div flex="60" layout="row" layout-align="center end">
-                        <div flex="25" layout-align="end end">{{baseObj.baseplan.premium.annual | currency}}</div>
-                        <div flex="25" layout-align="end end">{{baseObj.baseplan.premium.semiannual | currency}}</div>
-                        <div flex="25" layout-align="end end">{{baseObj.baseplan.premium.quarterly | currency}}</div>
-                        <div flex="25" layout-align="end end">{{baseObj.baseplan.premium.monthly | currency}}</div>
-                    </div>
-                </div>
+                <md-table-container>
+                    <table md-table md-row-select multiple>
+                        <thead md-head>
+                            <tr md-row>
+                                <th md-column>Coverage</th>
+                                <th md-column>Description</th>
+                                <th md-column>Topup</th>
+
+                                <th md-column>Annual</th>
+                                <th md-column>Semi-annual</th>
+                                <th md-column>Quarterly</th>
+                                <th md-column>Monthly</th>
+
+                            </tr>
+                        </thead>
+                        <tbody md-body>
+                            <tr md-row  md-select-id="name" md-auto-select  >
+                                <td md-cell>{{baseObj.product.plan.key}}</td>
+                                <td md-cell>{{baseObj.product.plan.value}}</td>
+                                <td md-cell>{{baseObj.product.faceamount | currency}}</td>
+                                <td md-cell>{{baseObj.baseplan.premium.annual | currency}}</td>
+                                <td md-cell>{{baseObj.baseplan.premium.semiannual | currency}}</td>
+                                <td md-cell>{{baseObj.baseplan.premium.quarterly | currency}}</td>
+                                <td md-cell>{{baseObj.baseplan.premium.monthly | currency}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </md-table-container>
             </div>
 
         </form>

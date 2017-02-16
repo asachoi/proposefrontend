@@ -9,15 +9,17 @@
                 <md-content class="md-subhead">
                     <md-grid-list md-cols-gt-md="8" md-cols="3" md-cols-md="3" md-row-height="2:1">
                         <md-grid-tile ng-repeat="item in riderlist">
-                            <md-grid-tile-footer>{{item}}</md-grid-tile-footer>
+                            <md-grid-tile-footer>
+                                <md-checkbox ng-model="baseObj.product.riders[item].selected">
+
+                                </md-checkbox>
+                                {{item}}</md-grid-tile-footer>
                             <md-grid-tile-content>
                                 <div class="sideBySideBlock sideBySideBlock--7030" ng-init="baseObj.product.riders[item].value = (baseObj.product.riders[item].value == null? 
                         0: baseObj.product.riders[item].value)">
                                     <md-input-container>
 
-                                        <md-checkbox ng-model="baseObj.product.riders[item].selected">
 
-                                        </md-checkbox>
                                         <input type="number" ng-model="baseObj.product.riders[item].faceamount">
                                     </md-input-container>
                                 </div>

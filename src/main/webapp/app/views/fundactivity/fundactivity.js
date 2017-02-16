@@ -9,10 +9,10 @@
                 vm.current = $state.current;
                 vm.baseObj = $rootScope.stateObj;
 
-                this.Funds = [];
+                this.FundActs = [];
 
-                if (vm.baseObj.product.funds != null)
-                    this.Funds = vm.baseObj.product.funds;
+                if (vm.baseObj.product.fundacts != null)
+                    this.FundActs = vm.baseObj.product.fundacts;
 
 
                 vm.productSchema = $rootScope.productSchema;
@@ -20,9 +20,9 @@
                 vm.addFund = function () {
                     console.debug(vm.baseObj);
 
-                    this.Funds.push(JSON.parse(JSON.stringify(this.editFund)));
+                    this.FundActs.push(JSON.parse(JSON.stringify(this.editFund)));
                     this.editFund = null;
-                    vm.baseObj.product.funds = this.Funds;
+                    vm.baseObj.product.fundacts = this.FundActs;
                 }
             }
         ]
